@@ -4,6 +4,7 @@
 "myclass_mx\gpio.o"
 "myclass_mx\freertos.o"
 "myclass_mx\adc.o"
+"myclass_mx\dma.o"
 "myclass_mx\spi.o"
 "myclass_mx\tim.o"
 "myclass_mx\stm32f4xx_it.o"
@@ -37,7 +38,11 @@
 "myclass_mx\cmsis_os2.o"
 "myclass_mx\heap_4.o"
 "myclass_mx\port.o"
---strict --scatter "MYCLASS_MX\MYCLASS_MX.sct"
+"myclass_mx\font.o"
+"myclass_mx\gc9a01.o"
+"myclass_mx\lcd_spi.o"
+"myclass_mx\joystick.o"
+--library_type=microlib --strict --scatter "MYCLASS_MX\MYCLASS_MX.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "MYCLASS_MX.map" -o MYCLASS_MX\MYCLASS_MX.axf

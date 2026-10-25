@@ -46,6 +46,9 @@ myclass_mx\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 myclass_mx\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 myclass_mx\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 myclass_mx\main.o: ../Core/Inc/adc.h
+myclass_mx\main.o: ../Core/Inc/dma.h
 myclass_mx\main.o: ../Core/Inc/spi.h
 myclass_mx\main.o: ../Core/Inc/tim.h
 myclass_mx\main.o: ../Core/Inc/gpio.h
+myclass_mx\main.o: ..\HARDWARE\gc9a01.h
+myclass_mx\main.o: ..\HARDWARE\joystick.h
