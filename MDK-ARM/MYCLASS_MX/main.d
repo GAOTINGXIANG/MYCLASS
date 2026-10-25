@@ -50,5 +50,7 @@ myclass_mx\main.o: ../Core/Inc/dma.h
 myclass_mx\main.o: ../Core/Inc/spi.h
 myclass_mx\main.o: ../Core/Inc/tim.h
 myclass_mx\main.o: ../Core/Inc/gpio.h
-myclass_mx\main.o: ..\HARDWARE\gc9a01.h
-myclass_mx\main.o: ..\HARDWARE\joystick.h
+myclass_mx\main.o: ../HARDWARE/gc9a01.h
+myclass_mx\main.o: ../HARDWARE/joystick.h
+myclass_mx\main.o: ../HARDWARE/led.h
+myclass_mx\main.o: ../HARDWARE/hcsr04.h

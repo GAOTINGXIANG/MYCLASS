@@ -29,6 +29,8 @@
 /* USER CODE BEGIN Includes */
 #include "gc9a01.h"
 #include "joystick.h"
+#include "led.h"
+#include "hcsr04.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,9 +102,20 @@ int main(void)
   /* USER CODE BEGIN 2 */
 gc9a01_init();
 joy_init(); 
+led_init();
+hcsr04_init();
 joy_state_t js;
 int i=128;int j=128;
+int hcsr_state=-1;
+ uint16_t distance_cm = 0; 
 while(1){
+	hcsr_state=hcsr04_measure_cm(&distance_cm);
+	if(distance_cm<10)
+		gc9a01_fill_screen(GC9A01_MAGENTA);
+led_on(LED_1);
+led_toggle(LED_6);
+led_all( 0 );
+HAL_GPIO_WritePin(GPIOC, GPIO_PIN_12,GPIO_PIN_SET );
 	joy_read(&js); switch (js.dir)
 { case JOY_DIR_UP:gc9a01_fill_screen(GC9A01_RED); break ; 
 	case JOY_DIR_DOWN: gc9a01_fill_screen(GC9A01_GREEN); 	break ; 

@@ -59,7 +59,7 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define JS_VRy_Pin GPIO_PIN_1
 #define JS_VRy_GPIO_Port GPIOC
-#define JS_VRx_Pin GPIO_PIN_2
+#define JS_VRx_Pin GPIO_PIN_3
 #define JS_VRx_GPIO_Port GPIOC
 #define LCD_LED_Pin GPIO_PIN_2
 #define LCD_LED_GPIO_Port GPIOA

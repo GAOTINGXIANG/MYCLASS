@@ -21,8 +21,8 @@
 #define JOY_Y_INVERT        0
 
 /*
- * 缓冲区内容：buf[0] = Rank1 = IN11 = VRy
- *             buf[1] = Rank2 = IN12 = VRx
+ * 缓冲区内容：buf[0] = Rank1 = IN11 = VRy (PC1)
+ *             buf[1] = Rank2 = IN13 = VRx (PC3)
  */
 static uint16_t joy_adc_buf[JOY_ADC_LEN];
 static uint16_t joy_center_x = JOY_ADC_CENTER_DEF;

@@ -2,7 +2,7 @@
  * @file joystick.h
  * @brief 摇杆（双轴电位器）读取与数字方向判断
  *
- * 硬件：VRx = PC2 / ADC1_IN12（规则组 Rank 2）
+ * 硬件：VRx = PC3 / ADC1_IN13（规则组 Rank 2）
  *       VRy = PC1 / ADC1_IN11（规则组 Rank 1）
  * ADC1 已配置为“扫描 + 连续转换 + DMA 循环”，本模块启动一次 DMA 后
  * 由硬件持续刷新缓冲区，读取时直接取最新采样值。
