@@ -9,6 +9,8 @@
 #include "lcd_spi.h"
 #include "font.h"
 #include "main.h"
+#include <stdarg.h>
+#include <stdio.h>
 
 /* ---- GC9A01 命令码 ---- */
 #define GC9A01_CASET    0x2A   /* 列地址设置 */
@@ -131,7 +133,7 @@ void gc9a01_init(void)
 {
     lcd_spi_init();          /* SPI + GPIO 初始化，内含硬件复位 */
     gc9a01_init_sequence();  /* 寄存器初始化序列 */
-    gc9a01_fill_screen(GC9A01_BLACK);   /* 清屏为黑色 */
+    gc9a01_fill_screen(BLACK);   /* 清屏为黑色 */
 }
 
 void gc9a01_set_window(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1)
@@ -192,9 +194,87 @@ void gc9a01_fill_screen(uint16_t color)
     gc9a01_fill_rect(0U, 0U, GC9A01_WIDTH, GC9A01_HEIGHT, color);
 }
 
+/* 整数开方（牛顿迭代），避免引入浮点库 */
+static uint32_t gc9a01_isqrt(uint32_t v)
+{
+    uint32_t x;
+    uint32_t y;
+
+    if (v < 2U) {
+        return v;
+    }
+
+    x = v;
+    y = (x + 1U) / 2U;
+    while (y < x) {
+        x = y;
+        y = ((v / x) + x) / 2U;
+    }
+
+    return x;
+}
+
+void gc9a01_fill_circle(uint16_t cx, uint16_t cy, uint16_t r, uint16_t color)
+{
+    int32_t dy;
+    int32_t rr;
+
+    if (r == 0U) {
+        gc9a01_draw_pixel(cx, cy, color);
+        return;
+    }
+
+    rr = (int32_t)r * (int32_t)r;
+
+    /* 逐行求该行半宽 dx，再用 fill_rect 画水平线 */
+    for (dy = -(int32_t)r; dy <= (int32_t)r; dy++) {
+        int32_t y = (int32_t)cy + dy;
+        int32_t dx;
+        int32_t x_start;
+        int32_t x_end;
+
+        if ((y < 0) || (y >= (int32_t)GC9A01_HEIGHT)) {
+            continue;
+        }
+
+        dx = (int32_t)gc9a01_isqrt((uint32_t)(rr - (dy * dy)));
+
+        x_start = (int32_t)cx - dx;
+        x_end   = (int32_t)cx + dx;
+
+        if ((x_end < 0) || (x_start >= (int32_t)GC9A01_WIDTH)) {
+            continue;
+        }
+        if (x_start < 0) {
+            x_start = 0;
+        }
+        if (x_end >= (int32_t)GC9A01_WIDTH) {
+            x_end = (int32_t)GC9A01_WIDTH - 1;
+        }
+
+        gc9a01_fill_rect((uint16_t)x_start, (uint16_t)y,
+                         (uint16_t)(x_end - x_start + 1), 1U, color);
+    }
+}
+
+/* 当前使用的字模，默认 font_ascii_8x16 */
+static const font_t *gc9a01_font = &font_ascii_8x16;
+
+void gc9a01_set_font(const font_t *font)
+{
+    if ((font != NULL) && (font->data != NULL) && (font->bytes_per_char != 0U)) {
+        gc9a01_font = font;
+    }
+}
+
+const font_t *gc9a01_get_font(void)
+{
+    return gc9a01_font;
+}
+
 void gc9a01_draw_char(uint16_t x, uint16_t y, char ch, uint16_t fg, uint16_t bg)
 {
-    const font_t *font = &font_ascii_8x16;
+    const font_t *font = gc9a01_font;
     const uint8_t *glyph;
     uint8_t row_bytes;
     uint8_t line[64];       /* 一行像素缓冲，支持行宽 <= 32 像素的字模 */
@@ -239,6 +319,84 @@ void gc9a01_draw_string(uint16_t x, uint16_t y, const char *str, uint16_t fg, ui
     while (*str != '\0') {
         gc9a01_draw_char(x, y, *str, fg, bg);
         str++;
-        x = (uint16_t)(x + font_ascii_8x16.width);
+        x = (uint16_t)(x + gc9a01_font->width);
     }
+}
+
+/* 字号 -> 字模指针（字号即字符高度） */
+static const font_t *gc9a01_font_from_size(gc9a01_font_size_t size)
+{
+    switch (size) {
+    case GC9A01_FONT_24:
+        return &font_ascii_12x24;
+    case GC9A01_FONT_32:
+        return &font_ascii_16x32;
+    case GC9A01_FONT_16:
+    default:
+        return &font_ascii_8x16;
+    }
+}
+
+void gc9a01_set_font_size(gc9a01_font_size_t size)
+{
+    gc9a01_set_font(gc9a01_font_from_size(size));
+}
+
+/* 临时切换字模绘制字符串，绘制完成后恢复原字模 */
+static void gc9a01_draw_string_font(const font_t *font, uint16_t x, uint16_t y,
+                                    const char *str, uint16_t fg, uint16_t bg)
+{
+    const font_t *saved = gc9a01_font;
+
+    gc9a01_set_font(font);
+    gc9a01_draw_string(x, y, str, fg, bg);
+    gc9a01_font = saved;
+}
+
+void gc9a01_draw_string_size(uint16_t x, uint16_t y, gc9a01_font_size_t size,
+                             const char *str, uint16_t fg, uint16_t bg)
+{
+    gc9a01_draw_string_font(gc9a01_font_from_size(size), x, y, str, fg, bg);
+}
+
+static void gc9a01_vprintf_font(const font_t *font, uint16_t x, uint16_t y,
+                                uint16_t fg, uint16_t bg, const char *fmt, va_list ap)
+{
+    static char buf[GC9A01_PRINTF_BUF];
+    int len;
+
+    len = vsnprintf(buf, sizeof(buf), fmt, ap);
+    if (len < 0) {
+        return;
+    }
+
+    buf[sizeof(buf) - 1U] = '\0';   /* 确保截断后仍以 0 结尾 */
+    gc9a01_draw_string_font(font, x, y, buf, fg, bg);
+}
+
+void gc9a01_printf(uint16_t x, uint16_t y, uint16_t fg, uint16_t bg, const char *fmt, ...)
+{
+    va_list ap;
+
+    if (fmt == NULL) {
+        return;
+    }
+
+    va_start(ap, fmt);
+    gc9a01_vprintf_font(gc9a01_font, x, y, fg, bg, fmt, ap);
+    va_end(ap);
+}
+
+void gc9a01_printf_size(uint16_t x, uint16_t y, gc9a01_font_size_t size,
+                        uint16_t fg, uint16_t bg, const char *fmt, ...)
+{
+    va_list ap;
+
+    if (fmt == NULL) {
+        return;
+    }
+
+    va_start(ap, fmt);
+    gc9a01_vprintf_font(gc9a01_font_from_size(size), x, y, fg, bg, fmt, ap);
+    va_end(ap);
 }

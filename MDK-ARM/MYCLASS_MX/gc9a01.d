@@ -1,9 +1,9 @@
 myclass_mx\gc9a01.o: ..\HARDWARE\gc9a01.c
 myclass_mx\gc9a01.o: ..\HARDWARE\gc9a01.h
 myclass_mx\gc9a01.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+myclass_mx\gc9a01.o: ..\HARDWARE\font.h
 myclass_mx\gc9a01.o: ..\HARDWARE\lcd_spi.h
 myclass_mx\gc9a01.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-myclass_mx\gc9a01.o: ..\HARDWARE\font.h
 myclass_mx\gc9a01.o: ../Core/Inc/main.h
 myclass_mx\gc9a01.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 myclass_mx\gc9a01.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -37,3 +37,5 @@ myclass_mx\gc9a01.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 myclass_mx\gc9a01.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 myclass_mx\gc9a01.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 myclass_mx\gc9a01.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+myclass_mx\gc9a01.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+myclass_mx\gc9a01.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

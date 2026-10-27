@@ -31,6 +31,9 @@
 #include "joystick.h"
 #include "led.h"
 #include "hcsr04.h"
+#include "beep.h"
+#include "dht11.h"
+#include "joystick_lcd_demo.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -63,6 +66,7 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+volatile int hcsr_state=-1;
 
 /* USER CODE END 0 */
 
@@ -104,25 +108,18 @@ gc9a01_init();
 joy_init(); 
 led_init();
 hcsr04_init();
+dht11_init();
 joy_state_t js;
-int i=128;int j=128;
-int hcsr_state=-1;
- uint16_t distance_cm = 0; 
+int i=120;int j=120;
+uint16_t distance_cm = 0; 
+int state=-1;
+dht11_data_t testdata;
 while(1){
-	hcsr_state=hcsr04_measure_cm(&distance_cm);
-	if(distance_cm<10)
-		gc9a01_fill_screen(GC9A01_MAGENTA);
-led_on(LED_1);
-led_toggle(LED_6);
-led_all( 0 );
-HAL_GPIO_WritePin(GPIOC, GPIO_PIN_12,GPIO_PIN_SET );
-	joy_read(&js); switch (js.dir)
-{ case JOY_DIR_UP:gc9a01_fill_screen(GC9A01_RED); break ; 
-	case JOY_DIR_DOWN: gc9a01_fill_screen(GC9A01_GREEN); 	break ; 
-	case JOY_DIR_LEFT: gc9a01_fill_screen(GC9A01_YELLOW); break ; 
-	case JOY_DIR_RIGHT: gc9a01_fill_screen(GC9A01_BLUE); break ;
-	default : gc9a01_fill_screen(GC9A01_WHITE);break ;
-}	
+	state=dht11_read(&testdata);
+	gc9a01_printf_size(100,100,GC9A01_FONT_32,BLACK,WHITE,"state=%d",11);
+	gc9a01_printf(120,120,BLACK,WHITE,"wendu:%d",testdata.temperature);
+	gc9a01_printf(140,140,BLACK,WHITE,"shidu:%d",testdata.humidity);
+
 }
   /* USER CODE END 2 */
 

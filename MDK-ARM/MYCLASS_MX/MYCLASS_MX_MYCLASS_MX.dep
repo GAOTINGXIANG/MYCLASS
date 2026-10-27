@@ -1,7 +1,7 @@
 Dependencies for Project 'MYCLASS_MX', Target 'MYCLASS_MX': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
 F (startup_stm32f407xx.s)(0x6ADE011D)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o myclass_mx\startup_stm32f407xx.o --depend myclass_mx\startup_stm32f407xx.d)
-F (../Core/Src/main.c)(0x6ADE0DD8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\main.o --omf_browse myclass_mx\main.crf --depend myclass_mx\main.d)
+F (../Core/Src/main.c)(0x6ADF663E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\main.o --omf_browse myclass_mx\main.crf --depend myclass_mx\main.d)
 I (../Core/Inc/main.h)(0x6ADE011C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690880BD)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6ADDD027)
@@ -52,10 +52,14 @@ I (../Core/Inc/dma.h)(0x6ADDD026)
 I (../Core/Inc/spi.h)(0x6ADDCA3F)
 I (../Core/Inc/tim.h)(0x6ADDCA3F)
 I (../Core/Inc/gpio.h)(0x6ADDCA3D)
-I (../HARDWARE/gc9a01.h)(0x6ADDFB6E)
-I (../HARDWARE/joystick.h)(0x6ADE0161)
+I (../HARDWARE/gc9a01.h)(0x6ADF65D4)
+I (../HARDWARE/font.h)(0x6ADF635C)
+I (../HARDWARE/joystick.h)(0x6ADF5AC9)
 I (../HARDWARE/led.h)(0x6ADE0195)
 I (../HARDWARE/hcsr04.h)(0x6ADE0863)
+I (../HARDWARE/beep.h)(0x6ADE0E29)
+I (../HARDWARE/dht11.h)(0x6ADF5F56)
+I (../DEMO/joystick_lcd_demo.h)(0x6ADF5AEB)
 F (../Core/Src/gpio.c)(0x6ADDD024)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\gpio.o --omf_browse myclass_mx\gpio.crf --depend myclass_mx\gpio.d)
 I (../Core/Inc/gpio.h)(0x6ADDCA3D)
 I (../Core/Inc/main.h)(0x6ADE011C)
@@ -1184,17 +1188,17 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6908806E)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6908806E)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6908806E)
-F (..\HARDWARE\font.c)(0x6ADDD5A4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\font.o --omf_browse myclass_mx\font.crf --depend myclass_mx\font.d)
-I (..\HARDWARE\font.h)(0x6ADDD4DC)
+F (..\HARDWARE\font.c)(0x6ADF6565)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\font.o --omf_browse myclass_mx\font.crf --depend myclass_mx\font.d)
+I (..\HARDWARE\font.h)(0x6ADF635C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
-F (..\HARDWARE\font.h)(0x6ADDD4DC)()
-F (..\HARDWARE\gc9a01.c)(0x6ADDFB68)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\gc9a01.o --omf_browse myclass_mx\gc9a01.crf --depend myclass_mx\gc9a01.d)
-I (..\HARDWARE\gc9a01.h)(0x6ADDFB6E)
+F (..\HARDWARE\font.h)(0x6ADF635C)()
+F (..\HARDWARE\gc9a01.c)(0x6ADF65CE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\gc9a01.o --omf_browse myclass_mx\gc9a01.crf --depend myclass_mx\gc9a01.d)
+I (..\HARDWARE\gc9a01.h)(0x6ADF65D4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\HARDWARE\font.h)(0x6ADF635C)
 I (..\HARDWARE\lcd_spi.h)(0x6ADDD491)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (..\HARDWARE\font.h)(0x6ADDD4DC)
 I (../Core/Inc/main.h)(0x6ADE011C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690880BD)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6ADDD027)
@@ -1227,7 +1231,9 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x690880BD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x690880BD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x690880BD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x690880BD)
-F (..\HARDWARE\gc9a01.h)(0x6ADDFB6E)()
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (..\HARDWARE\gc9a01.h)(0x6ADF65D4)()
 F (..\HARDWARE\lcd_spi.c)(0x6ADDD50B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\lcd_spi.o --omf_browse myclass_mx\lcd_spi.crf --depend myclass_mx\lcd_spi.d)
 I (..\HARDWARE\lcd_spi.h)(0x6ADDD491)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1266,8 +1272,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x690880BD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x690880BD)
 I (../Core/Inc/spi.h)(0x6ADDCA3F)
 F (..\HARDWARE\lcd_spi.h)(0x6ADDD491)()
-F (..\HARDWARE\joystick.c)(0x6ADE0162)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\joystick.o --omf_browse myclass_mx\joystick.crf --depend myclass_mx\joystick.d)
-I (..\HARDWARE\joystick.h)(0x6ADE0161)
+F (..\HARDWARE\joystick.c)(0x6ADF5E70)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\joystick.o --omf_browse myclass_mx\joystick.crf --depend myclass_mx\joystick.d)
+I (..\HARDWARE\joystick.h)(0x6ADF5AC9)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (../Core/Inc/adc.h)(0x6ADDCA3F)
 I (../Core/Inc/main.h)(0x6ADE011C)
@@ -1303,7 +1309,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x690880BD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x690880BD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x690880BD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x690880BD)
-F (..\HARDWARE\joystick.h)(0x6ADE0161)()
+F (..\HARDWARE\joystick.h)(0x6ADF5AC9)()
 F (..\HARDWARE\led.c)(0x6ADE01A6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\led.o --omf_browse myclass_mx\led.crf --depend myclass_mx\led.d)
 I (..\HARDWARE\led.h)(0x6ADE0195)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1379,3 +1385,96 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x690880BD)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x690880BD)
 I (../Core/Inc/tim.h)(0x6ADDCA3F)
 F (..\HARDWARE\hcsr04.h)(0x6ADE0863)()
+F (..\HARDWARE\beep.c)(0x6ADE0E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\beep.o --omf_browse myclass_mx\beep.crf --depend myclass_mx\beep.d)
+I (..\HARDWARE\beep.h)(0x6ADE0E29)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Core/Inc/main.h)(0x6ADE011C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690880BD)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6ADDD027)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x690880BD)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x690880BD)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x690880BD)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x690880BD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x690880BD)
+F (..\HARDWARE\beep.h)(0x6ADE0E29)()
+F (..\HARDWARE\dht11.c)(0x6ADF5F58)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\dht11.o --omf_browse myclass_mx\dht11.crf --depend myclass_mx\dht11.d)
+I (..\HARDWARE\dht11.h)(0x6ADF5F56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Core/Inc/main.h)(0x6ADE011C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690880BD)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6ADDD027)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x690880BD)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x690880BD)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x690880BD)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x690880BD)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x690880BD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x690880BD)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x690880BD)
+F (..\HARDWARE\dht11.h)(0x6ADF5F56)()
+F (..\DEMO\joystick_lcd_demo.c)(0x6ADF5B03)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\joystick_lcd_demo.o --omf_browse myclass_mx\joystick_lcd_demo.crf --depend myclass_mx\joystick_lcd_demo.d)
+I (..\DEMO\joystick_lcd_demo.h)(0x6ADF5AEB)
+I (../HARDWARE/joystick.h)(0x6ADF5AC9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../HARDWARE/gc9a01.h)(0x6ADF65D4)
+I (../HARDWARE/font.h)(0x6ADF635C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x6908806E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6908806E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Core/Inc/FreeRTOSConfig.h)(0x6ADDCA3E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6908806E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6908806E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6908806E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6908806E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6908806E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6908806E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6908806E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6908806E)
+F (..\DEMO\joystick_lcd_demo.h)(0x6ADF5AEB)()

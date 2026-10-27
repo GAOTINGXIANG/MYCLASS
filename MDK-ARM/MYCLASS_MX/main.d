@@ -51,6 +51,10 @@ myclass_mx\main.o: ../Core/Inc/spi.h
 myclass_mx\main.o: ../Core/Inc/tim.h
 myclass_mx\main.o: ../Core/Inc/gpio.h
 myclass_mx\main.o: ../HARDWARE/gc9a01.h
+myclass_mx\main.o: ../HARDWARE/font.h
 myclass_mx\main.o: ../HARDWARE/joystick.h
 myclass_mx\main.o: ../HARDWARE/led.h
 myclass_mx\main.o: ../HARDWARE/hcsr04.h
+myclass_mx\main.o: ../HARDWARE/beep.h
+myclass_mx\main.o: ../HARDWARE/dht11.h
+myclass_mx\main.o: ../DEMO/joystick_lcd_demo.h

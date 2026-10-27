@@ -44,6 +44,9 @@
 "myclass_mx\joystick.o"
 "myclass_mx\led.o"
 "myclass_mx\hcsr04.o"
+"myclass_mx\beep.o"
+"myclass_mx\dht11.o"
+"myclass_mx\joystick_lcd_demo.o"
 --library_type=microlib --strict --scatter "MYCLASS_MX\MYCLASS_MX.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

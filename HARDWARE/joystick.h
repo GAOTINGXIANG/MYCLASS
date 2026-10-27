@@ -20,22 +20,36 @@ extern "C" {
 /* 方向判定死区（归一化值，范围 -1000 ~ +1000，值越大越不灵敏） */
 #define JOY_DIR_THRESHOLD   300
 
-/* 数字方向 */
+/* 数字方向（8 方向，支持斜推） */
 typedef enum {
     JOY_DIR_NONE = 0,   /* 中位 */
-    JOY_DIR_UP,
-    JOY_DIR_DOWN,
+    JOY_DIR_RIGHT,
     JOY_DIR_LEFT,
-    JOY_DIR_RIGHT
+    JOY_DIR_DOWN,
+    JOY_DIR_UP,
+    JOY_DIR_DOWN_RIGHT,
+    JOY_DIR_DOWN_LEFT,
+    JOY_DIR_UP_RIGHT,
+    JOY_DIR_UP_LEFT
 } joy_dir_t;
+
+/* 方向位掩码：两轴独立判定，可同时置多个位（斜推时两个方向同时为 1） */
+typedef enum {
+    JOY_MASK_NONE  = 0x00,
+    JOY_MASK_UP    = 0x01,
+    JOY_MASK_DOWN  = 0x02,
+    JOY_MASK_LEFT  = 0x04,
+    JOY_MASK_RIGHT = 0x08
+} joy_mask_t;
 
 /* 一次读取的结果 */
 typedef struct {
-    uint16_t raw_x;     /* VRx 原始 ADC 值（0~4095） */
-    uint16_t raw_y;     /* VRy 原始 ADC 值（0~4095） */
-    int16_t  x;         /* 相对中心的归一化值：-1000（左）~ +1000（右） */
-    int16_t  y;         /* 相对中心的归一化值：-1000（上）~ +1000（下） */
-    joy_dir_t dir;      /* 数字方向判断结果 */
+    uint16_t   raw_x;   /* VRx 原始 ADC 值（0~4095） */
+    uint16_t   raw_y;   /* VRy 原始 ADC 值（0~4095） */
+    int16_t    x;       /* 相对中心的归一化值：-1000（左）~ +1000（右） */
+    int16_t    y;       /* 相对中心的归一化值：-1000（上）~ +1000（下） */
+    joy_dir_t  dir;     /* 8 方向判定结果 */
+    joy_mask_t mask;    /* 左右/上下独立位掩码，可组合（如 JOY_MASK_UP | JOY_MASK_RIGHT） */
 } joy_state_t;
 
 /**
@@ -51,9 +65,14 @@ void joy_init(void);
 void joy_read(joy_state_t *st);
 
 /**
- * @brief 仅获取当前数字方向
+ * @brief 仅获取当前数字方向（8 方向）
  */
 joy_dir_t joy_get_dir(void);
+
+/**
+ * @brief 仅获取当前方向位掩码（左右/上下各自独立，斜推时可同时为多个方向）
+ */
+joy_mask_t joy_get_mask(void);
 
 #ifdef __cplusplus
 }

@@ -714,6 +714,41 @@
               <FileType>5</FileType>
               <FilePath>..\HARDWARE\hcsr04.h</FilePath>
             </File>
+            <File>
+              <FileName>beep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\beep.c</FilePath>
+            </File>
+            <File>
+              <FileName>beep.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\HARDWARE\beep.h</FilePath>
+            </File>
+            <File>
+              <FileName>dht11.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\dht11.c</FilePath>
+            </File>
+            <File>
+              <FileName>dht11.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\HARDWARE\dht11.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>DEMO</GroupName>
+          <Files>
+            <File>
+              <FileName>joystick_lcd_demo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\DEMO\joystick_lcd_demo.c</FilePath>
+            </File>
+            <File>
+              <FileName>joystick_lcd_demo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\DEMO\joystick_lcd_demo.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

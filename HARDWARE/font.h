@@ -29,6 +29,12 @@ typedef struct {
 /* ASCII 8x16 字模（数据待自行取模填入 font.c） */
 extern const font_t font_ascii_8x16;
 
+/* ASCII 12x24 字模（24 号，数据留空待填充） */
+extern const font_t font_ascii_12x24;
+
+/* ASCII 16x32 字模（32 号，数据留空待填充） */
+extern const font_t font_ascii_16x32;
+
 /**
  * @brief 取指定字符的字模首地址
  * @param font 字模描述
