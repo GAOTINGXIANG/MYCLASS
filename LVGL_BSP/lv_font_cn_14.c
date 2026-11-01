@@ -1,22 +1,10 @@
-/*******************************************************************************
+﻿/*******************************************************************************
  * Size: 14 px
  * Bpp: 4
  * Opts: --bpp 4 --size 14 --lcd --use-color-info --stride 1 --align 1 --font simhei.ttf --symbols ℃°：温湿度雷达钟表指南针系统信息游戏贪吃蛇打砖块结束你赢了按确认键开始北东西校准运行时间内存占用距离错误失败最高分得生命卡暂停继续退出设置难剩余重帮助于版本俄罗斯方块数字华容道小恐龙跳跃地鼠大鱼坦克射击飞黄金矿工切水果五子棋豆电脑马奥滑雪冒险铁跑酷狙外星旋转赛泡堂台球青蛙祖玛植物战僵尸保卫萝卜愤怒的鸟中国象棋羽毛火柴格斗冰菜 --range 32-127 --format lvgl -o lv_font_cn_14.c
  ******************************************************************************/
 
-#ifdef __has_include
-    #if __has_include("lvgl.h")
-        #ifndef LV_LVGL_H_INCLUDE_SIMPLE
-            #define LV_LVGL_H_INCLUDE_SIMPLE
-        #endif
-    #endif
-#endif
-
-#ifdef LV_LVGL_H_INCLUDE_SIMPLE
-    #include "lvgl.h"
-#else
-    #include "lvgl/lvgl.h"
-#endif
+#include "lvgl.h"
 
 
 
