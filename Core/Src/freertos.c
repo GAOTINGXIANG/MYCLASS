@@ -28,11 +28,9 @@
 #include "lvgl.h"
 #include "lv_port_disp.h"
 #include "lv_port_indev.h"
-#include "demo_encoder.h"
-#include "demo_keys.h"
-#include "demo_sensor.h"
-#include "demo_clock.h"
-#include "demo_compass.h"
+#include "app_launcher.h"
+#include "sys_sensor.h"
+#include "sys_notify.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -175,11 +173,7 @@ void LVGL_TASK(void *argument)
   lv_init();
   lv_port_disp_init();
   lv_port_indev_init();
-  /* demo_encoder_init(); */
-  /* demo_keys_init(); */
-  /* demo_sensor_init(); */
-  /* demo_clock_init(); */
-  demo_compass_init();
+  app_launcher_init();
 
   for(;;)
   {
@@ -200,10 +194,11 @@ void LVGL_TASK(void *argument)
 void sensor_task(void *argument)
 {
   /* USER CODE BEGIN sensor_task */
-  /* Infinite loop */
+  /* 阻塞型传感器集中采样：结果写入 g_sensor，UI 只读 */
   for(;;)
   {
-    osDelay(1);
+    sys_sensor_poll();
+    osDelay(20);
   }
   /* USER CODE END sensor_task */
 }
@@ -218,11 +213,9 @@ void sensor_task(void *argument)
 void notify_task(void *argument)
 {
   /* USER CODE BEGIN notify_task */
-  /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
+  /* 声光提示服务：命令队列驱动，LED/蜂鸣器由本任务独占 */
+  sys_notify_init();
+  sys_notify_loop();
   /* USER CODE END notify_task */
 }
 

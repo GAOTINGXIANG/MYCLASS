@@ -253,6 +253,17 @@
 "myclass_mx\lv_switch.o"
 "myclass_mx\lv_table.o"
 "myclass_mx\lv_textarea.o"
+"myclass_mx\app_info.o"
+"myclass_mx\app_launcher.o"
+"myclass_mx\app_breakout.o"
+"myclass_mx\app_clock.o"
+"myclass_mx\app_compass.o"
+"myclass_mx\app_radar.o"
+"myclass_mx\app_snake.o"
+"myclass_mx\app_temp.o"
+"myclass_mx\game_common.o"
+"myclass_mx\sys_notify.o"
+"myclass_mx\sys_sensor.o"
 --library_type=microlib --strict --scatter "MYCLASS_MX\MYCLASS_MX.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

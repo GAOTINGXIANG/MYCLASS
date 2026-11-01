@@ -177,8 +177,6 @@ myclass_mx\freertos.o: ../lvgl-8.3.11/src/extra/widgets/imgbtn/lv_imgbtn.h
 myclass_mx\freertos.o: ../lvgl-8.3.11/src/extra/widgets/span/lv_span.h
 myclass_mx\freertos.o: ../LVGL_BSP/lv_port_disp.h
 myclass_mx\freertos.o: ../LVGL_BSP/lv_port_indev.h
-myclass_mx\freertos.o: ../DEMO/demo_encoder.h
-myclass_mx\freertos.o: ../DEMO/demo_keys.h
-myclass_mx\freertos.o: ../DEMO/demo_sensor.h
-myclass_mx\freertos.o: ../DEMO/demo_clock.h
-myclass_mx\freertos.o: ../DEMO/demo_compass.h
+myclass_mx\freertos.o: ../APP/app_launcher.h
+myclass_mx\freertos.o: ../APP/sys_sensor.h
+myclass_mx\freertos.o: ../APP/sys_notify.h

@@ -1,0 +1,17 @@
+myclass_mx\sys_notify.o: ..\APP\sys_notify.c
+myclass_mx\sys_notify.o: ..\APP\sys_notify.h
+myclass_mx\sys_notify.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+myclass_mx\sys_notify.o: ../HARDWARE/led.h
+myclass_mx\sys_notify.o: ../HARDWARE/beep.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+myclass_mx\sys_notify.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+myclass_mx\sys_notify.o: ../Core/Inc/FreeRTOSConfig.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+myclass_mx\sys_notify.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
