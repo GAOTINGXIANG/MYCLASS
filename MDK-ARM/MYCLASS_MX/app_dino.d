@@ -133,4 +133,6 @@ myclass_mx\app_dino.o: ../lvgl-8.3.11/src/extra/widgets/imgbtn/lv_imgbtn.h
 myclass_mx\app_dino.o: ../lvgl-8.3.11/src/extra/widgets/span/lv_span.h
 myclass_mx\app_dino.o: ..\APP\game_common.h
 myclass_mx\app_dino.o: ../HARDWARE/keys.h
+myclass_mx\app_dino.o: ../HARDWARE/encoder.h
+myclass_mx\app_dino.o: ../HARDWARE/joystick.h
 myclass_mx\app_dino.o: ..\APP\sys_sensor.h

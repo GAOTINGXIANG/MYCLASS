@@ -105,12 +105,13 @@ static osMessageQueueId_t s_q;
 static const fx_step_t   *s_seq;        /* 当前效果表，NULL=空闲 */
 static uint8_t            s_idx;
 static uint32_t           s_next_tick;
+static volatile uint8_t   s_sound_on = 1U;   /* 蜂鸣器音效开关，默认开 */
 
 static void fx_apply(const fx_step_t *st)
 {
     switch (st->op) {
     case FX_BEEP:
-        beep_write(st->arg);
+        beep_write((s_sound_on != 0U) ? st->arg : 0U);
         break;
     case FX_LED:
         led_write((led_id_t)(st->arg >> 1), st->arg & 1U);
@@ -208,6 +209,17 @@ uint8_t notify_send_ex(notify_cmd_t cmd, uint8_t arg)
 uint8_t notify_send(notify_cmd_t cmd)
 {
     return notify_send_ex(cmd, 0U);
+}
+
+void sys_notify_sound_set(uint8_t on)
+{
+    s_sound_on = (on != 0U) ? 1U : 0U;
+    if (s_sound_on == 0U) beep_write(0);   /* 关闭时立即停声 */
+}
+
+uint8_t sys_notify_sound_get(void)
+{
+    return s_sound_on;
 }
 
 void sys_notify_loop(void)

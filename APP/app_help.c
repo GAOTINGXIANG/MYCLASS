@@ -1,0 +1,154 @@
+﻿/**
+ * @file app_help.c
+ * @brief 说明 app：分页展示各 APP 的使用方法（指南针校准、游戏玩法等）。
+ *   KEY4 / 摇杆右 / 编码器顺时针 = 下一页
+ *   KEY3 / 摇杆左 / 编码器逆时针 = 上一页
+ *   KEY1 = 返回上一级菜单
+ */
+#include "app_help.h"
+#include "lvgl.h"
+#include "keys.h"
+#include "encoder.h"
+#include "joystick.h"
+
+#define PAGE_N       6
+#define ENC_DETENT   4
+
+static lv_timer_t *s_tm;
+static lv_obj_t   *s_title, *s_body, *s_idx;
+static uint8_t     s_page;
+static int32_t     s_last_cnt;
+static joy_dir_t   s_prev_dir = JOY_DIR_NONE;
+
+static const char *const PAGE_TITLE[PAGE_N] = {
+    "操作",
+    "指南针",
+    "小恐龙跳跃",
+    "打地鼠",
+    "游戏",
+    "音效",
+};
+
+static const char *const PAGE_BODY[PAGE_N] = {
+    "编码器旋转\n切换菜单\n\n"
+    "摇杆左右\n同样切换\n\n"
+    "KEY2 确认进入\nKEY1 返回上一级",
+
+    "按 KEY2 开始校准\n"
+    "水平旋转模块一周\n"
+    "再按 KEY2 结束\n\n"
+    "指针固定朝上\n"
+    "刻度盘随方位转动\n"
+    "正北时蜂鸣一声",
+
+    "手靠近超声波\n"
+    "小于 12 厘米起跳\n"
+    "退到 20 厘米才能再跳\n\n"
+    "编码器旋转调速度\n"
+    "KEY4 加速 KEY3 减速\n"
+    "摇杆推一下也能跳",
+
+    "手离传感器越近\n"
+    "锤子越靠左\n"
+    "4 厘米最左 40 厘米最右\n\n"
+    "摇杆左右移动锤子\n"
+    "编码器旋转同效\n"
+    "KEY4 右移 KEY3 左移",
+
+    "方向类游戏用摇杆\n"
+    "确认键开始或重开\n"
+    "KEY1 返回上一级\n\n"
+    "LED 灯显示生命\n"
+    "撞到扣一点\n"
+    "归零即游戏结束",
+
+    "系统信息页\n"
+    "按 KEY2 开关音效\n"
+    "默认开启\n\n"
+    "关闭后蜂鸣器静音\n"
+    "LED 照常工作",
+};
+
+static void page_show(uint8_t p)
+{
+    s_page = p;
+    lv_label_set_text(s_title, PAGE_TITLE[p]);
+    lv_label_set_text(s_body, PAGE_BODY[p]);
+    lv_label_set_text_fmt(s_idx, "%u/%u", (unsigned)(p + 1U), (unsigned)PAGE_N);
+}
+
+static void help_cb(lv_timer_t *t)
+{
+    uint8_t edge;
+    int32_t move = 0;
+    (void)t;
+
+    edge = keys_scan();
+    if ((edge & KEY_MASK(KEY_ID_4)) != 0U) move++;
+    if ((edge & KEY_MASK(KEY_ID_3)) != 0U) move--;
+
+    /* 编码器 */
+    {
+        int32_t c = encoder_count();
+        int32_t d = c - s_last_cnt;
+        s_last_cnt = c;
+        while (d >= ENC_DETENT)  { d -= ENC_DETENT; move++; }
+        while (d <= -ENC_DETENT) { d += ENC_DETENT; move--; }
+    }
+
+    /* 摇杆方向沿 */
+    {
+        joy_dir_t dir = joy_get_dir();
+        if (dir != s_prev_dir) {
+            if (dir == JOY_DIR_RIGHT || dir == JOY_DIR_DOWN ||
+                dir == JOY_DIR_DOWN_RIGHT) {
+                move++;
+            } else if (dir == JOY_DIR_LEFT || dir == JOY_DIR_UP ||
+                       dir == JOY_DIR_UP_LEFT) {
+                move--;
+            }
+            s_prev_dir = dir;
+        }
+    }
+
+    if (move != 0) {
+        int32_t p = (int32_t)s_page + move;
+        while (p < 0) p += PAGE_N;
+        page_show((uint8_t)((uint32_t)p % PAGE_N));
+    }
+}
+
+static void app_help_enter(void)
+{
+    lv_obj_t *scr = lv_scr_act();
+
+    lv_obj_set_style_bg_color(scr, lv_color_black(), 0);
+
+    s_title = lv_label_create(scr);
+    lv_obj_set_style_text_color(s_title, lv_color_white(), 0);
+    lv_obj_align(s_title, LV_ALIGN_TOP_MID, 0, 24);
+
+    s_body = lv_label_create(scr);
+    lv_obj_set_width(s_body, 186);
+    lv_obj_set_style_text_color(s_body, lv_color_white(), 0);
+    lv_obj_set_style_text_align(s_body, LV_TEXT_ALIGN_CENTER, 0);
+    lv_obj_set_style_text_line_space(s_body, 3, 0);
+    lv_label_set_long_mode(s_body, LV_LABEL_LONG_WRAP);
+    lv_obj_align(s_body, LV_ALIGN_CENTER, 0, 8);
+
+    s_idx = lv_label_create(scr);
+    lv_obj_set_style_text_color(s_idx, lv_palette_main(LV_PALETTE_GREY), 0);
+    lv_obj_align(s_idx, LV_ALIGN_BOTTOM_MID, 0, -20);
+
+    s_last_cnt = encoder_count();
+    s_prev_dir = joy_get_dir();
+    page_show(0);
+    s_tm = lv_timer_create(help_cb, 30, NULL);
+}
+
+static void app_help_exit(void)
+{
+    if (s_tm != NULL) { lv_timer_del(s_tm); s_tm = NULL; }
+}
+
+const app_t app_help = { "说明", app_help_enter, app_help_exit };

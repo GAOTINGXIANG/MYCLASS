@@ -5,7 +5,7 @@
  * 菜单：条目沿圆周均匀排布，中心大字显示当前选中项。
  *   编码器旋转 / 摇杆左右  = 切换选中
  *   ENCODER_KEY / JS_KEY   = 确认进入
- *   KEY1                   = 返回（子菜单回主菜单；app 退回主菜单）
+ *   KEY1                   = 返回上一级（app 退回进入它的那级菜单；游戏菜单退回主菜单）
  * 适配 240x240 圆屏（圆心 120,120）。
  */
 #include "app_launcher.h"
@@ -32,6 +32,7 @@ static uint8_t      s_main_cnt;
 static uint8_t      s_game_cnt;
 
 static state_t      s_state = ST_MAIN;
+static state_t      s_back  = ST_MAIN;      /* 当前 app 应退回的菜单级 */
 static const app_t *s_running;              /* 运行中的 app */
 static uint8_t      s_sel;                  /* 菜单高亮下标 */
 static uint8_t      s_item_cnt;             /* 当前菜单条目数（含 GAMES 伪条目） */
@@ -82,14 +83,17 @@ uint8_t app_register_game(const app_t *app)
 #include "app_mines.h"
 #include "app_dino.h"
 #include "app_mole.h"
+#include "app_help.h"
 
 static void register_builtin_apps(void)
 {
-    app_register(&app_temp);
+    /* 注册顺序 = 主菜单顺序（「游戏」固定排在最前面，不占这里的名额） */
     app_register(&app_radar);
     app_register(&app_clock);
     app_register(&app_compass);
     app_register(&app_info);
+    app_register(&app_help);
+    app_register(&app_temp);
 
     app_register_game(&app_snake);
     app_register_game(&app_breakout);
@@ -128,8 +132,8 @@ static void menu_open(state_t st)
 
     s_state = st;
     if (st == ST_MAIN) {
+        if (s_game_cnt > 0U) s_names[cnt++] = "游戏";   /* 游戏固定置顶 */
         for (uint8_t i = 0; i < s_main_cnt; i++) s_names[cnt++] = s_main[i]->name;
-        if (s_game_cnt > 0U) s_names[cnt++] = "游戏";
     } else {
         for (uint8_t i = 0; i < s_game_cnt; i++) s_names[cnt++] = s_game[i]->name;
     }
@@ -165,6 +169,7 @@ static void menu_open(state_t st)
 /* ---------------- app 启动 / 退出 ---------------- */
 static void app_launch(const app_t *app)
 {
+    s_back = (s_state == ST_GAMES) ? ST_GAMES : ST_MAIN;   /* 记住来路，KEY1 回这一级 */
     lv_obj_clean(lv_scr_act());
     s_state     = ST_APP;
     s_running   = app;
@@ -177,15 +182,18 @@ void app_launcher_exit_to_menu(void)
     if (s_state != ST_APP || s_running == NULL) return;
     if (s_running->exit != NULL) s_running->exit();
     s_running = NULL;
-    s_sel = 0;
-    menu_open(ST_MAIN);
+    menu_open(s_back);                    /* 返回进入该 app 的那级菜单，选中项保持 */
 }
 
 static void menu_confirm(void)
 {
     if (s_state == ST_MAIN) {
-        if (s_sel < s_main_cnt) app_launch(s_main[s_sel]);
-        else                    menu_open(ST_GAMES);   /* GAMES 伪条目 */
+        if (s_game_cnt > 0U && s_sel == 0U) {
+            menu_open(ST_GAMES);          /* 第 0 项固定是「游戏」 */
+        } else {
+            uint8_t idx = (s_game_cnt > 0U) ? (uint8_t)(s_sel - 1U) : s_sel;
+            if (idx < s_main_cnt) app_launch(s_main[idx]);
+        }
     } else if (s_state == ST_GAMES) {
         if (s_sel < s_game_cnt) app_launch(s_game[s_sel]);
     }
@@ -207,6 +215,7 @@ static void launcher_timer_cb(lv_timer_t *t)
         return;
     }
     if (back_edge != 0U && s_state == ST_GAMES) {
+        s_sel = 0;                       /* 回主菜单时高亮置顶的「游戏」 */
         menu_open(ST_MAIN);
         return;
     }

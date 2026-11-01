@@ -1,4 +1,4 @@
-#ifndef __SYS_NOTIFY_H
+﻿#ifndef __SYS_NOTIFY_H
 #define __SYS_NOTIFY_H
 
 #ifdef __cplusplus
@@ -32,6 +32,10 @@ uint8_t notify_send_ex(notify_cmd_t cmd, uint8_t arg);
 
 /* notify_task 启动时调用一次（创建命令队列） */
 void sys_notify_init(void);
+
+/* 蜂鸣器音效总开关：默认开启；关闭后所有效果只做 LED、不出声（不掉电保存） */
+void    sys_notify_sound_set(uint8_t on);
+uint8_t sys_notify_sound_get(void);
 
 /* notify_task 主循环，不返回 */
 void sys_notify_loop(void);

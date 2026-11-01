@@ -2063,6 +2063,11 @@
               <FilePath>..\APP\app_mole.c</FilePath>
             </File>
             <File>
+              <FileName>app_help.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_help.c</FilePath>
+            </File>
+            <File>
               <FileName>app_clock.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\APP\app_clock.c</FilePath>

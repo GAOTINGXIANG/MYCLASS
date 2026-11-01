@@ -17489,7 +17489,7 @@ I (../LVGL_BSP/lv_font_cn.h)(0x6AE70AC0)
 I (../HARDWARE/encoder.h)(0x6AE5AFC6)
 I (../HARDWARE/keys.h)(0x6AE5F5B6)
 I (../HARDWARE/joystick.h)(0x6ADF5AC9)
-F (..\APP\app_dino.c)(0x6AE73709)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\app_dino.o --omf_browse myclass_mx\app_dino.crf --depend myclass_mx\app_dino.d)
+F (..\APP\app_dino.c)(0x6AE73997)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\app_dino.o --omf_browse myclass_mx\app_dino.crf --depend myclass_mx\app_dino.d)
 I (..\APP\app_dino.h)(0x6AE73324)
 I (..\APP\app_launcher.h)(0x6AE6EFD5)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -17623,8 +17623,10 @@ I (../lvgl-8.3.11/src/extra/widgets/imgbtn/lv_imgbtn.h)(0x6AE5B2E7)
 I (../lvgl-8.3.11/src/extra/widgets/span/lv_span.h)(0x6AE5B2E7)
 I (..\APP\game_common.h)(0x6AE6F579)
 I (../HARDWARE/keys.h)(0x6AE5F5B6)
+I (../HARDWARE/encoder.h)(0x6AE5AFC6)
+I (../HARDWARE/joystick.h)(0x6ADF5AC9)
 I (..\APP\sys_sensor.h)(0x6AE734F2)
-F (..\APP\app_mole.c)(0x6AE73338)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\app_mole.o --omf_browse myclass_mx\app_mole.crf --depend myclass_mx\app_mole.d)
+F (..\APP\app_mole.c)(0x6AE73995)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\app_mole.o --omf_browse myclass_mx\app_mole.crf --depend myclass_mx\app_mole.d)
 I (..\APP\app_mole.h)(0x6AE73325)
 I (..\APP\app_launcher.h)(0x6AE6EFD5)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -17758,6 +17760,8 @@ I (../lvgl-8.3.11/src/extra/widgets/imgbtn/lv_imgbtn.h)(0x6AE5B2E7)
 I (../lvgl-8.3.11/src/extra/widgets/span/lv_span.h)(0x6AE5B2E7)
 I (..\APP\game_common.h)(0x6AE6F579)
 I (../HARDWARE/keys.h)(0x6AE5F5B6)
+I (../HARDWARE/encoder.h)(0x6AE5AFC6)
+I (../HARDWARE/joystick.h)(0x6ADF5AC9)
 I (..\APP\sys_sensor.h)(0x6AE734F2)
 I (..\APP\sys_notify.h)(0x6AE7185D)
 F (..\APP\app_clock.c)(0x6AE70A73)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\app_clock.o --omf_browse myclass_mx\app_clock.crf --depend myclass_mx\app_clock.d)
