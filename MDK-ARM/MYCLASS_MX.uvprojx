@@ -2048,6 +2048,11 @@
               <FilePath>..\APP\app_tetris.c</FilePath>
             </File>
             <File>
+              <FileName>app_mines.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_mines.c</FilePath>
+            </File>
+            <File>
               <FileName>app_clock.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\APP\app_clock.c</FilePath>

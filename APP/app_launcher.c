@@ -73,6 +73,7 @@ uint8_t app_register_game(const app_t *app)
 #include "app_info.h"
 #include "app_snake.h"
 #include "app_breakout.h"
+#include "app_mines.h"
 #include "app_2048.h"
 #include "app_puzzle.h"
 #include "app_gomoku.h"
@@ -94,6 +95,7 @@ static void register_builtin_apps(void)
     app_register_game(&app_gomoku);
     app_register_game(&app_beans);
     app_register_game(&app_tetris);
+    app_register_game(&app_mines);
 }
 
 /* ---------------- 圆环菜单 ---------------- */
