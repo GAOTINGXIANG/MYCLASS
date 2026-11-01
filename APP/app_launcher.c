@@ -224,7 +224,7 @@ static void launcher_timer_cb(lv_timer_t *t)
         while (ns < 0) ns += s_item_cnt;
         s_sel = (uint8_t)((uint32_t)ns % s_item_cnt);
         menu_refresh_sel();
-        notify_send(NOTIFY_BEEP_SHORT);          /* 切换选项提示音 */
+        notify_send(NOTIFY_MARQUEE_ONCE);        /* 切换选项：短滴一声 + LED 流水一遍 */
     }
 
     /* 确认：ENCODER_KEY / JS_KEY 按下沿 */

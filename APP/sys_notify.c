@@ -28,8 +28,15 @@ typedef struct {
 #define LED_ARG(id, on)  (uint8_t)(((id) << 1) | ((on) ? 1U : 0U))
 
 /* ---- 蜂鸣时长（ms），按需调整 ---- */
-#define BEEP_SHORT_MS   100
+#define BEEP_SHORT_MS   50
 #define BEEP_LONG_MS    500
+
+/* ---- 菜单切换流水灯 ----
+ * MARQUEE_ONCE_TOTAL_MS = 流水灯完整跑一遍（LED1→LED6）的总时间 ms。
+ * 调这个值相当于同时调整流水速度：时间越短，每颗灯停留越短、流动越快。
+ */
+#define MARQUEE_ONCE_TOTAL_MS   360
+#define MARQUEE_ONCE_STEP_MS    (MARQUEE_ONCE_TOTAL_MS / LED_COUNT)
 
 static const fx_step_t fx_beep_short[] = {
     { FX_BEEP, 1, BEEP_SHORT_MS }, { FX_BEEP, 0, 0 }, { FX_END, 0, 0 },
@@ -59,6 +66,21 @@ static const fx_step_t fx_marquee[] = {
     { FX_REPEAT, 0, 0 },
 };
 
+/* 切换选项反馈：先短滴一声，再流水跑一遍，末尾全灭。
+ * 蜂鸣放在第一步，因此即使连续快速切换被新命令抢占，每次也一定会响。 */
+static const fx_step_t fx_marquee_once[] = {
+    { FX_BEEP,     1, BEEP_SHORT_MS },
+    { FX_BEEP,     0, 0 },
+    { FX_LED_ONLY, LED_1, MARQUEE_ONCE_STEP_MS },
+    { FX_LED_ONLY, LED_2, MARQUEE_ONCE_STEP_MS },
+    { FX_LED_ONLY, LED_3, MARQUEE_ONCE_STEP_MS },
+    { FX_LED_ONLY, LED_4, MARQUEE_ONCE_STEP_MS },
+    { FX_LED_ONLY, LED_5, MARQUEE_ONCE_STEP_MS },
+    { FX_LED_ONLY, LED_6, MARQUEE_ONCE_STEP_MS },
+    { FX_LED,      LED_ARG(LED_6, 0), 0 },
+    { FX_END, 0, 0 },
+};
+
 static const fx_step_t *const fx_table[] = {
     NULL,            /* NOTIFY_STOP 特殊处理 */
     fx_beep_short,
@@ -67,6 +89,7 @@ static const fx_step_t *const fx_table[] = {
     fx_error,
     fx_marquee,
     NULL,            /* NOTIFY_LIVES 动态生成 */
+    fx_marquee_once,
 };
 
 #define FX_TABLE_COUNT  (sizeof(fx_table) / sizeof(fx_table[0]))

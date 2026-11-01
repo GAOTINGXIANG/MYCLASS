@@ -282,7 +282,7 @@ I (../LVGL_BSP/lv_port_disp.h)(0x6AE5BE61)
 I (../LVGL_BSP/lv_port_indev.h)(0x6AE5BE8B)
 I (../APP/app_launcher.h)(0x6AE6EFD5)
 I (../APP/sys_sensor.h)(0x6AE6EA16)
-I (../APP/sys_notify.h)(0x6AE6F220)
+I (../APP/sys_notify.h)(0x6AE7185D)
 F (../Core/Src/adc.c)(0x6ADE011B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\adc.o --omf_browse myclass_mx\adc.crf --depend myclass_mx\adc.d)
 I (../Core/Inc/adc.h)(0x6ADDCA3F)
 I (../Core/Inc/main.h)(0x6AE6DB94)
@@ -16392,7 +16392,7 @@ I (../lvgl-8.3.11/src/extra/widgets/colorwheel/lv_colorwheel.h)(0x6AE5B2E7)
 I (../lvgl-8.3.11/src/extra/widgets/led/lv_led.h)(0x6AE5B2E7)
 I (../lvgl-8.3.11/src/extra/widgets/imgbtn/lv_imgbtn.h)(0x6AE5B2E7)
 I (../lvgl-8.3.11/src/extra/widgets/span/lv_span.h)(0x6AE5B2E7)
-F (..\APP\app_launcher.c)(0x6AE70BCD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\app_launcher.o --omf_browse myclass_mx\app_launcher.crf --depend myclass_mx\app_launcher.d)
+F (..\APP\app_launcher.c)(0x6AE71964)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\app_launcher.o --omf_browse myclass_mx\app_launcher.crf --depend myclass_mx\app_launcher.d)
 I (..\APP\app_launcher.h)(0x6AE6EFD5)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (../lvgl-8.3.11/lvgl.h)(0x6AE5B2DF)
@@ -16526,7 +16526,7 @@ I (../lvgl-8.3.11/src/extra/widgets/span/lv_span.h)(0x6AE5B2E7)
 I (../HARDWARE/keys.h)(0x6AE5F5B6)
 I (../HARDWARE/encoder.h)(0x6AE5AFC6)
 I (../HARDWARE/joystick.h)(0x6ADF5AC9)
-I (..\APP\sys_notify.h)(0x6AE6F220)
+I (..\APP\sys_notify.h)(0x6AE7185D)
 I (..\APP\app_temp.h)(0x6AE6F06F)
 I (..\APP\app_radar.h)(0x6AE6F079)
 I (..\APP\app_clock.h)(0x6AE6F092)
@@ -16804,7 +16804,7 @@ I (../lvgl-8.3.11/src/extra/widgets/imgbtn/lv_imgbtn.h)(0x6AE5B2E7)
 I (../lvgl-8.3.11/src/extra/widgets/span/lv_span.h)(0x6AE5B2E7)
 I (../HARDWARE/encoder.h)(0x6AE5AFC6)
 I (../HARDWARE/keys.h)(0x6AE5F5B6)
-I (..\APP\sys_notify.h)(0x6AE6F220)
+I (..\APP\sys_notify.h)(0x6AE7185D)
 F (..\APP\app_compass.c)(0x6AE70A73)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\app_compass.o --omf_browse myclass_mx\app_compass.crf --depend myclass_mx\app_compass.d)
 I (..\APP\app_compass.h)(0x6AE6F0AB)
 I (..\APP\app_launcher.h)(0x6AE6EFD5)
@@ -16939,7 +16939,7 @@ I (../lvgl-8.3.11/src/extra/widgets/imgbtn/lv_imgbtn.h)(0x6AE5B2E7)
 I (../lvgl-8.3.11/src/extra/widgets/span/lv_span.h)(0x6AE5B2E7)
 I (../HARDWARE/hmc5883l.h)(0x6AE6DFAA)
 I (../HARDWARE/keys.h)(0x6AE5F5B6)
-I (..\APP\sys_notify.h)(0x6AE6F220)
+I (..\APP\sys_notify.h)(0x6AE7185D)
 F (..\APP\app_radar.c)(0x6AE70A73)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\app_radar.o --omf_browse myclass_mx\app_radar.crf --depend myclass_mx\app_radar.d)
 I (..\APP\app_radar.h)(0x6AE6F079)
 I (..\APP\app_launcher.h)(0x6AE6EFD5)
@@ -17344,10 +17344,10 @@ I (..\APP\sys_sensor.h)(0x6AE6EA16)
 F (..\APP\game_common.c)(0x6AE6F575)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\game_common.o --omf_browse myclass_mx\game_common.crf --depend myclass_mx\game_common.d)
 I (..\APP\game_common.h)(0x6AE6F579)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\APP\sys_notify.h)(0x6AE6F220)
+I (..\APP\sys_notify.h)(0x6AE7185D)
 I (../HARDWARE/led.h)(0x6ADE0195)
-F (..\APP\sys_notify.c)(0x6AE70CB4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\sys_notify.o --omf_browse myclass_mx\sys_notify.crf --depend myclass_mx\sys_notify.d)
-I (..\APP\sys_notify.h)(0x6AE6F220)
+F (..\APP\sys_notify.c)(0x6AE72983)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HARDWARE -I ../DEMO -I ../APP -I ../../MYCLASS_MX -I ../LVGL_BSP -I ../lvgl-8.3.11 -I APP-I.\RTE\_MYCLASS_MX-IC:\Users\19130\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o myclass_mx\sys_notify.o --omf_browse myclass_mx\sys_notify.crf --depend myclass_mx\sys_notify.d)
+I (..\APP\sys_notify.h)(0x6AE7185D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (../HARDWARE/led.h)(0x6ADE0195)
 I (../HARDWARE/beep.h)(0x6ADE0E29)

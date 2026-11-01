@@ -21,6 +21,7 @@ typedef enum {
     NOTIFY_ERROR,       /* 三短滴 + LED6 闪 3 次 */
     NOTIFY_MARQUEE,     /* 流水灯循环（直到 STOP 或新命令） */
     NOTIFY_LIVES,       /* arg=剩余生命 0~6：LED1..n 常亮，其余灭 */
+    NOTIFY_MARQUEE_ONCE,/* 流水灯完整跑一遍（时长由 MARQUEE_ONCE_TOTAL_MS 决定） */
 } notify_cmd_t;
 
 /* 发送命令；返回 1 成功（队列满或未初始化返回 0） */
