@@ -28,8 +28,8 @@ typedef struct {
 #define LED_ARG(id, on)  (uint8_t)(((id) << 1) | ((on) ? 1U : 0U))
 
 /* ---- 蜂鸣时长（ms），按需调整 ---- */
-#define BEEP_SHORT_MS   4000
-#define BEEP_LONG_MS    8000
+#define BEEP_SHORT_MS   100
+#define BEEP_LONG_MS    500
 
 static const fx_step_t fx_beep_short[] = {
     { FX_BEEP, 1, BEEP_SHORT_MS }, { FX_BEEP, 0, 0 }, { FX_END, 0, 0 },

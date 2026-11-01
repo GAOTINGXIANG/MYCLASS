@@ -407,7 +407,7 @@
 #define LV_FONT_FMT_TXT_LARGE 0
 
 /*Enables/disables support for compressed fonts.*/
-#define LV_USE_FONT_COMPRESSED 0
+#define LV_USE_FONT_COMPRESSED 1  /* lv_font_cn_14 是在线工具默认压缩格式 */
 
 /*Enable subpixel rendering*/
 #define LV_USE_FONT_SUBPX 1

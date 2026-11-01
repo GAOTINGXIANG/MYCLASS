@@ -133,6 +133,7 @@ myclass_mx\app_launcher.o: ../lvgl-8.3.11/src/extra/widgets/span/lv_span.h
 myclass_mx\app_launcher.o: ../HARDWARE/keys.h
 myclass_mx\app_launcher.o: ../HARDWARE/encoder.h
 myclass_mx\app_launcher.o: ../HARDWARE/joystick.h
+myclass_mx\app_launcher.o: ..\APP\sys_notify.h
 myclass_mx\app_launcher.o: ..\APP\app_temp.h
 myclass_mx\app_launcher.o: ..\APP\app_radar.h
 myclass_mx\app_launcher.o: ..\APP\app_clock.h

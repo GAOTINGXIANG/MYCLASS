@@ -13,6 +13,7 @@
 #include "keys.h"
 #include "encoder.h"
 #include "joystick.h"
+#include "sys_notify.h"
 
 /* ---------------- 可调参数 ---------------- */
 #define APP_MAX          8        /* 每类最多 app 数 */
@@ -203,15 +204,15 @@ static void launcher_timer_cb(lv_timer_t *t)
     while (s_enc_acc >= ENC_DETENT)  { s_enc_acc -= ENC_DETENT; move++; }
     while (s_enc_acc <= -ENC_DETENT) { s_enc_acc += ENC_DETENT; move--; }
 
-    /* 摇杆：左右方向沿 */
+    /* 摇杆：方向沿（左右/上下均切换，上=前一个，下=后一个） */
     {
         joy_dir_t dir = joy_get_dir();
         if (dir != s_prev_dir) {
             if (dir == JOY_DIR_RIGHT || dir == JOY_DIR_UP_RIGHT ||
-                dir == JOY_DIR_DOWN_RIGHT) {
+                dir == JOY_DIR_DOWN_RIGHT || dir == JOY_DIR_DOWN) {
                 move++;
             } else if (dir == JOY_DIR_LEFT || dir == JOY_DIR_UP_LEFT ||
-                       dir == JOY_DIR_DOWN_LEFT) {
+                       dir == JOY_DIR_DOWN_LEFT || dir == JOY_DIR_UP) {
                 move--;
             }
             s_prev_dir = dir;
@@ -223,6 +224,7 @@ static void launcher_timer_cb(lv_timer_t *t)
         while (ns < 0) ns += s_item_cnt;
         s_sel = (uint8_t)((uint32_t)ns % s_item_cnt);
         menu_refresh_sel();
+        notify_send(NOTIFY_BEEP_SHORT);          /* 切换选项提示音 */
     }
 
     /* 确认：ENCODER_KEY / JS_KEY 按下沿 */

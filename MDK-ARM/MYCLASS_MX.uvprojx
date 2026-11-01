@@ -1027,6 +1027,11 @@
               <FileType>1</FileType>
               <FilePath>..\LVGL_BSP\lv_font_cn_14.c</FilePath>
             </File>
+            <File>
+              <FileName>lv_font_cn.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\LVGL_BSP\lv_font_cn.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
