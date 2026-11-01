@@ -133,4 +133,5 @@ myclass_mx\app_breakout.o: ../lvgl-8.3.11/src/extra/widgets/imgbtn/lv_imgbtn.h
 myclass_mx\app_breakout.o: ../lvgl-8.3.11/src/extra/widgets/span/lv_span.h
 myclass_mx\app_breakout.o: ../HARDWARE/encoder.h
 myclass_mx\app_breakout.o: ../HARDWARE/keys.h
+myclass_mx\app_breakout.o: ../HARDWARE/joystick.h
 myclass_mx\app_breakout.o: ..\APP\game_common.h

@@ -1022,6 +1022,11 @@
               <FileType>5</FileType>
               <FilePath>..\LVGL_BSP\lv_port_indev.h</FilePath>
             </File>
+            <File>
+              <FileName>lv_font_cn_14.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL_BSP\lv_font_cn_14.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

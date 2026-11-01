@@ -27,11 +27,15 @@ typedef struct {
 
 #define LED_ARG(id, on)  (uint8_t)(((id) << 1) | ((on) ? 1U : 0U))
 
+/* ---- 蜂鸣时长（ms），按需调整 ---- */
+#define BEEP_SHORT_MS   4000
+#define BEEP_LONG_MS    8000
+
 static const fx_step_t fx_beep_short[] = {
-    { FX_BEEP, 1, 80 }, { FX_BEEP, 0, 0 }, { FX_END, 0, 0 },
+    { FX_BEEP, 1, BEEP_SHORT_MS }, { FX_BEEP, 0, 0 }, { FX_END, 0, 0 },
 };
 static const fx_step_t fx_beep_long[] = {
-    { FX_BEEP, 1, 300 }, { FX_BEEP, 0, 0 }, { FX_END, 0, 0 },
+    { FX_BEEP, 1, BEEP_LONG_MS }, { FX_BEEP, 0, 0 }, { FX_END, 0, 0 },
 };
 static const fx_step_t fx_ok[] = {
     { FX_BEEP, 1, 100 }, { FX_BEEP, 0, 0 },

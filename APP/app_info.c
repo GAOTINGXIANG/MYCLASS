@@ -17,12 +17,12 @@ static void info_timer_cb(lv_timer_t *t)
     lv_mem_monitor_t mon;
     (void)t;
 
-    lv_snprintf(buf, sizeof(buf), "UP %lu s",
+    lv_snprintf(buf, sizeof(buf), "运行 %lu 秒",
                 (unsigned long)(lv_tick_get() / 1000U));
     lv_label_set_text(s_lbl_up, buf);
 
     lv_mem_monitor(&mon);
-    lv_snprintf(buf, sizeof(buf), "MEM %u%% used", (unsigned int)mon.used_pct);
+    lv_snprintf(buf, sizeof(buf), "内存 %u%%", (unsigned int)mon.used_pct);
     lv_label_set_text(s_lbl_mem, buf);
 }
 

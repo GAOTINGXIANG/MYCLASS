@@ -111,7 +111,7 @@ static void menu_open(state_t st)
     s_state = st;
     if (st == ST_MAIN) {
         for (uint8_t i = 0; i < s_main_cnt; i++) s_names[cnt++] = s_main[i]->name;
-        if (s_game_cnt > 0U) s_names[cnt++] = "GAMES";
+        if (s_game_cnt > 0U) s_names[cnt++] = "游戏";
     } else {
         for (uint8_t i = 0; i < s_game_cnt; i++) s_names[cnt++] = s_game[i]->name;
     }
@@ -137,7 +137,7 @@ static void menu_open(state_t st)
 
     /* 中心大字显示选中项 */
     s_lbl_center = lv_label_create(scr);
-    lv_obj_set_style_text_font(s_lbl_center, &lv_font_montserrat_24, 0);
+    lv_obj_set_style_text_font(s_lbl_center, &lv_font_cn_14, 0);
     lv_obj_set_style_text_color(s_lbl_center, lv_color_white(), 0);
     lv_obj_center(s_lbl_center);
 
