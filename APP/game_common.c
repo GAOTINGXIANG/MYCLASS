@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file game_common.c
  * @brief 游戏公共模块：LED 生命值显示。
  */

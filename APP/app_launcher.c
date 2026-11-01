@@ -16,7 +16,7 @@
 #include "sys_notify.h"
 
 /* ---------------- 可调参数 ---------------- */
-#define APP_MAX          8        /* 每类最多 app 数 */
+#define APP_MAX          10       /* 每类最多 app 数 */
 #define MENU_R           88       /* 菜单项圆周半径 */
 #define MENU_ITEM_W      72       /* 菜单项标签宽（用于居中） */
 #define MENU_ITEM_H      18
@@ -79,6 +79,9 @@ uint8_t app_register_game(const app_t *app)
 #include "app_gomoku.h"
 #include "app_beans.h"
 #include "app_tetris.h"
+#include "app_mines.h"
+#include "app_dino.h"
+#include "app_mole.h"
 
 static void register_builtin_apps(void)
 {
@@ -96,6 +99,8 @@ static void register_builtin_apps(void)
     app_register_game(&app_beans);
     app_register_game(&app_tetris);
     app_register_game(&app_mines);
+    app_register_game(&app_dino);
+    app_register_game(&app_mole);
 }
 
 /* ---------------- 圆环菜单 ---------------- */
@@ -246,8 +251,9 @@ static void launcher_timer_cb(lv_timer_t *t)
         notify_send(NOTIFY_MARQUEE_ONCE);        /* 切换选项：短滴一声 + LED 流水一遍 */
     }
 
-    /* KEY2 = 确认 */
-    if ((edge & KEY_MASK(KEY_ID_2)) != 0U) {
+    /* KEY2 / 编码器 / 摇杆键 = 确认 */
+    if ((edge & (KEY_MASK(KEY_ID_2) | KEY_MASK(KEY_ID_JS) |
+                 KEY_MASK(KEY_ID_ENC))) != 0U) {
         notify_send(NOTIFY_MARQUEE_ONCE);         /* 确认选项：短滴一声 + LED 流水一遍 */
         menu_confirm();
     }

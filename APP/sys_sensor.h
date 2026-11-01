@@ -30,6 +30,10 @@ extern volatile sensor_data_t g_sensor;
 /* sensor_task 主循环周期调用（内部按采样周期节流） */
 void sys_sensor_poll(void);
 
+/* 距离采样提速开关：1 = 70ms 一拍（游戏用），0 = 250ms 一拍（默认）
+ * 注意：测量本身仍只在 sensor_task 中执行，app 只读 g_sensor */
+void sys_sensor_set_fast(uint8_t on);
+
 #ifdef __cplusplus
 }
 #endif

@@ -147,3 +147,5 @@ myclass_mx\app_launcher.o: ..\APP\app_puzzle.h
 myclass_mx\app_launcher.o: ..\APP\app_gomoku.h
 myclass_mx\app_launcher.o: ..\APP\app_beans.h
 myclass_mx\app_launcher.o: ..\APP\app_tetris.h
+myclass_mx\app_launcher.o: ..\APP\app_dino.h
+myclass_mx\app_launcher.o: ..\APP\app_mole.h

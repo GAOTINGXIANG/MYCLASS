@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file sys_notify.c
  * @brief 声光提示服务：命令队列 + 表驱动效果序列执行器。
  *        每个效果是一张步骤表 {操作, 参数, 到下一步的延时ms}，
@@ -28,7 +28,7 @@ typedef struct {
 #define LED_ARG(id, on)  (uint8_t)(((id) << 1) | ((on) ? 1U : 0U))
 
 /* ---- 蜂鸣时长（ms），按需调整 ---- */
-#define BEEP_SHORT_MS   50
+#define BEEP_SHORT_MS   20
 #define BEEP_LONG_MS    500
 
 /* ---- 菜单切换流水灯 ----

@@ -263,6 +263,8 @@
 "myclass_mx\app_beans.o"
 "myclass_mx\app_tetris.o"
 "myclass_mx\app_mines.o"
+"myclass_mx\app_dino.o"
+"myclass_mx\app_mole.o"
 "myclass_mx\app_clock.o"
 "myclass_mx\app_compass.o"
 "myclass_mx\app_radar.o"

@@ -2053,6 +2053,16 @@
               <FilePath>..\APP\app_mines.c</FilePath>
             </File>
             <File>
+              <FileName>app_dino.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_dino.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_mole.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_mole.c</FilePath>
+            </File>
+            <File>
               <FileName>app_clock.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\APP\app_clock.c</FilePath>
