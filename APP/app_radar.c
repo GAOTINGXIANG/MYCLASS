@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file app_radar.c
  * @brief 超声波雷达：扫描线旋转，障碍物按"距离=半径"显示为亮点并渐隐。
  *        距离来自 sys_sensor 共享数据（g_sensor）。
@@ -105,4 +105,4 @@ static void app_radar_exit(void)
     if (s_tm != NULL) { lv_timer_del(s_tm); s_tm = NULL; }
 }
 
-const app_t app_radar = { "RADAR", app_radar_enter, app_radar_exit };
+const app_t app_radar = { "雷达", app_radar_enter, app_radar_exit };

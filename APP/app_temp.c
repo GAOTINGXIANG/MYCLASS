@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file app_temp.c
  * @brief 温湿度显示：读取 sys_sensor 共享数据（g_sensor），不直接碰硬件。
  * KEY1 返回主菜单（启动器全局处理）。

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file app_snake.c
  * @brief 贪吃蛇：17x17 网格，活动区为圆屏内接正方形。
  *   摇杆              = 方向
@@ -138,7 +138,7 @@ static void snake_cb(lv_timer_t *t)
         if (game_lives_dec() == 0U) {
             s_running = 0;
             s_over = 1;
-            msg_show("GAME OVER");
+            msg_show("游戏结束");
         } else {
             round_reset();
         }
@@ -198,7 +198,7 @@ static void app_snake_enter(void)
     s_msg = lv_label_create(scr);
     lv_obj_set_style_text_color(s_msg, lv_color_white(), 0);
     lv_obj_align(s_msg, LV_ALIGN_CENTER, 0, 0);
-    msg_show("PRESS JS");
+    msg_show("按确认键开始");
 
     s_rng = lv_tick_get() | 1UL;
     s_running = 0;
@@ -213,4 +213,4 @@ static void app_snake_exit(void)
     game_lives_clear();
 }
 
-const app_t app_snake = { "SNAKE", app_snake_enter, app_snake_exit };
+const app_t app_snake = { "贪吃蛇", app_snake_enter, app_snake_exit };

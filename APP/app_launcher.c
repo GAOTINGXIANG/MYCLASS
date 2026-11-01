@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file app_launcher.c
  * @brief 应用启动器：圆环菜单 + 游戏子菜单 + app 生命周期管理。
  *

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file app_breakout.c
  * @brief 打砖块：编码器/摇杆控制挡板，活动区为圆屏内接正方形。
  *   编码器 / 摇杆左右 = 移动挡板（摇杆为比例控制：推得越多走得越快）
@@ -129,7 +129,7 @@ static void breakout_cb(lv_timer_t *t)
     if (s_by > BK_ORG + BK_W - BALL_R) {
         if (game_lives_dec() == 0U) {
             s_over = 1;
-            msg_show("GAME OVER");
+            msg_show("游戏结束");
         }
         ball_reset();
         return;
@@ -155,7 +155,7 @@ static void breakout_cb(lv_timer_t *t)
             s_vy = (int8_t)-s_vy;
             if (--s_left == 0U) {
                 s_over = 1;
-                msg_show("YOU WIN");
+                msg_show("你赢了");
             }
             break;
         }
@@ -218,7 +218,7 @@ static void app_breakout_enter(void)
     s_msg = lv_label_create(scr);
     lv_obj_set_style_text_color(s_msg, lv_color_white(), 0);
     lv_obj_align(s_msg, LV_ALIGN_CENTER, 0, 20);
-    msg_show("PRESS KEY2");
+    msg_show("按确认键开始");
 
     s_px = 120;
     s_over = 0;
@@ -234,4 +234,4 @@ static void app_breakout_exit(void)
     game_lives_clear();
 }
 
-const app_t app_breakout = { "BREAKOUT", app_breakout_enter, app_breakout_exit };
+const app_t app_breakout = { "打砖块", app_breakout_enter, app_breakout_exit };

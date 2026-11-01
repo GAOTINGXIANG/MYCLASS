@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file app_compass.c
  * @brief 指南针：指针固定朝上，刻度盘随方位旋转。
  *   正指北方时蜂鸣提醒一声（离开 10° 后重新允许提醒）
@@ -28,8 +28,6 @@ static uint16_t s_cal_cnt;
 
 static void dial_update(int16_t heading_d10)
 {
-    static const char *const names[4] = { "N", "E", "S", "W" };
-
     for (uint8_t i = 0; i < 12U; i++) {
         int16_t deg = (int16_t)(((int32_t)i * 300 - heading_d10) / 10);
         s_tick_pts[i][0].x = 120 + (DIAL_R_TICK0 * lv_trigo_sin(deg)) / LV_TRIGO_SIN_MAX;
@@ -43,7 +41,6 @@ static void dial_update(int16_t heading_d10)
         lv_coord_t x = 120 + (DIAL_R_DIR * lv_trigo_sin(deg)) / LV_TRIGO_SIN_MAX;
         lv_coord_t y = 120 - (DIAL_R_DIR * lv_trigo_cos(deg)) / LV_TRIGO_SIN_MAX;
         lv_obj_set_pos(s_lbl_dir[i], x - 8, y - 9);
-        (void)names;
     }
 }
 
@@ -67,19 +64,19 @@ static void compass_cb(lv_timer_t *t)
     }
 
     if (hmc5883l_read(&d) != HMC5883L_OK) {
-        lv_label_set_text(s_lbl_txt, "ERR");
+        lv_label_set_text(s_lbl_txt, "错误");
         return;
     }
 
     if (s_cal != 0U) {
         hmc5883l_calib_feed(&d);
-        lv_label_set_text_fmt(s_lbl_txt, "CAL %u", (unsigned)++s_cal_cnt);
+        lv_label_set_text_fmt(s_lbl_txt, "校准 %u", (unsigned)++s_cal_cnt);
         return;
     }
 
     h = hmc5883l_heading_deg10(&d);
     dial_update(h);
-    lv_label_set_text_fmt(s_lbl_txt, "%d", (int)((h + 5) / 10));
+    lv_label_set_text_fmt(s_lbl_txt, "%d°", (int)((h + 5) / 10));
 
     /* 正北提醒（边沿触发，离开 rearm 区后复位） */
     if (h <= NORTH_BEEP_D10 || h >= 3600 - NORTH_BEEP_D10) {
@@ -118,7 +115,7 @@ static void app_compass_enter(void)
         lv_line_set_points(s_ticks[i], s_tick_pts[i], 2);
     }
     {
-        static const char *const names[4] = { "N", "E", "S", "W" };
+        static const char *const names[4] = { "北", "东", "南", "西" };
         for (uint8_t i = 0; i < 4U; i++) {
             s_lbl_dir[i] = lv_label_create(scr);
             lv_label_set_text(s_lbl_dir[i], names[i]);
@@ -164,4 +161,4 @@ static void app_compass_exit(void)
     if (s_tm != NULL) { lv_timer_del(s_tm); s_tm = NULL; }
 }
 
-const app_t app_compass = { "COMPASS", app_compass_enter, app_compass_exit };
+const app_t app_compass = { "指南针", app_compass_enter, app_compass_exit };

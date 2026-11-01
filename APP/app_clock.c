@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file app_clock.c
  * @brief 模拟表盘 + 数字时间，可调表。
  *   编码器旋转        = 调整当前字段
@@ -171,4 +171,4 @@ static void app_clock_exit(void)
     if (s_tm_tick != NULL) { lv_timer_del(s_tm_tick); s_tm_tick = NULL; }
 }
 
-const app_t app_clock = { "CLOCK", app_clock_enter, app_clock_exit };
+const app_t app_clock = { "钟表", app_clock_enter, app_clock_exit };

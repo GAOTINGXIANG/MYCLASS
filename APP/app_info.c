@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file app_info.c
  * @brief 系统信息 app：显示运行时长和 LVGL 内存占用。
  *        结构是标准 app 模板：enter 建界面+定时器，exit 删定时器，
@@ -33,7 +33,7 @@ static void app_info_enter(void)
     lv_obj_set_style_bg_color(scr, lv_color_black(), 0);
 
     lv_obj_t *title = lv_label_create(scr);
-    lv_label_set_text(title, "SYS INFO");
+    lv_label_set_text(title, "系统信息");
     lv_obj_set_style_text_color(title, lv_palette_main(LV_PALETTE_GREY), 0);
     lv_obj_align(title, LV_ALIGN_CENTER, 0, -30);
 
@@ -57,4 +57,4 @@ static void app_info_exit(void)
     }
 }
 
-const app_t app_info = { "SYS INFO", app_info_enter, app_info_exit };
+const app_t app_info = { "系统信息", app_info_enter, app_info_exit };
