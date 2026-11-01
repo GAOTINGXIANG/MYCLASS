@@ -7,7 +7,7 @@
 #include "main.h"
 #include "spi.h"        /* MX_SPI1_Init() 生成的 hspi1 句柄 */
 
-/* 单次传输超时（ms）：42 MHz 下 512 字节约 98 us，100 ms 足够 */
+/* 单次传输超时（ms）：21 MHz 下 512 字节约 195 us，100 ms 足够 */
 #define LCD_SPI_TIMEOUT   100U
 
 /* 控制引脚电平操作（引脚定义见 main.h） */
@@ -102,4 +102,24 @@ void lcd_backlight(uint8_t on)
     } else {
         LCD_BLK_OFF();
     }
+}
+
+void lcd_spi_cs_high(void)
+{
+    LCD_CS_HIGH();
+}
+
+void lcd_spi_write_dma(const uint8_t *buf, uint32_t len)
+{
+    if (buf == NULL || len == 0U) {
+        return;
+    }
+
+    /* 像素流：DC=数据，CS 保持低直到 DMA 完成回调拉高 */
+    LCD_DC_DATA();
+    LCD_CS_LOW();
+
+    /* HAL_SPI_Transmit_DMA 在 1-line 模式下会自动设置 BIDIOE（发送方向） */
+    (void)HAL_SPI_Transmit_DMA(&hspi1, (uint8_t *)buf,
+                               (len > 0xFFFFU) ? 0xFFFFU : (uint16_t)len);
 }

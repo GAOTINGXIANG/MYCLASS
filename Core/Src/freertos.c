@@ -25,7 +25,14 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "lvgl.h"
+#include "lv_port_disp.h"
+#include "lv_port_indev.h"
+#include "demo_encoder.h"
+#include "demo_keys.h"
+#include "demo_sensor.h"
+#include "demo_clock.h"
+#include "demo_compass.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,6 +61,27 @@ const osThreadAttr_t defaultTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
+/* Definitions for LVGL */
+osThreadId_t LVGLHandle;
+const osThreadAttr_t LVGL_attributes = {
+  .name = "LVGL",
+  .stack_size = 1024 * 4,
+  .priority = (osPriority_t) osPriorityNormal7,
+};
+/* Definitions for sensor */
+osThreadId_t sensorHandle;
+const osThreadAttr_t sensor_attributes = {
+  .name = "sensor",
+  .stack_size = 256 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for notify */
+osThreadId_t notifyHandle;
+const osThreadAttr_t notify_attributes = {
+  .name = "notify",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow1,
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -61,6 +89,9 @@ const osThreadAttr_t defaultTask_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
+void LVGL_TASK(void *argument);
+void sensor_task(void *argument);
+void notify_task(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -94,6 +125,15 @@ void MX_FREERTOS_Init(void) {
   /* creation of defaultTask */
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
+  /* creation of LVGL */
+  LVGLHandle = osThreadNew(LVGL_TASK, NULL, &LVGL_attributes);
+
+  /* creation of sensor */
+  sensorHandle = osThreadNew(sensor_task, NULL, &sensor_attributes);
+
+  /* creation of notify */
+  notifyHandle = osThreadNew(notify_task, NULL, &notify_attributes);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -120,6 +160,70 @@ void StartDefaultTask(void *argument)
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
+}
+
+/* USER CODE BEGIN Header_LVGL_TASK */
+/**
+* @brief Function implementing the LVGL thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_LVGL_TASK */
+void LVGL_TASK(void *argument)
+{
+  /* USER CODE BEGIN LVGL_TASK */
+  lv_init();
+  lv_port_disp_init();
+  lv_port_indev_init();
+  /* demo_encoder_init(); */
+  /* demo_keys_init(); */
+  /* demo_sensor_init(); */
+  /* demo_clock_init(); */
+  demo_compass_init();
+
+  for(;;)
+  {
+    lv_tick_inc(5);
+    lv_timer_handler();
+    osDelay(5);
+  }
+  /* USER CODE END LVGL_TASK */
+}
+
+/* USER CODE BEGIN Header_sensor_task */
+/**
+* @brief Function implementing the sensor thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_sensor_task */
+void sensor_task(void *argument)
+{
+  /* USER CODE BEGIN sensor_task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END sensor_task */
+}
+
+/* USER CODE BEGIN Header_notify_task */
+/**
+* @brief Function implementing the notify thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_notify_task */
+void notify_task(void *argument)
+{
+  /* USER CODE BEGIN notify_task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END notify_task */
 }
 
 /* Private application code --------------------------------------------------*/

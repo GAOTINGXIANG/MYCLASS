@@ -1,0 +1,17 @@
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\lv_bidi.c
+myclass_mx\lv_bidi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\lv_bidi.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\../lv_conf_internal.h
+myclass_mx\lv_bidi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\../lv_conf_kconfig.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\../../../lv_conf.h
+myclass_mx\lv_bidi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\lv_txt.h
+myclass_mx\lv_bidi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\lv_area.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\../font/lv_font.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\../font/lv_symbol_def.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\lv_printf.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\lv_types.h
+myclass_mx\lv_bidi.o: ..\lvgl-8.3.11\src\misc\../misc/lv_mem.h
+myclass_mx\lv_bidi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

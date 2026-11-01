@@ -22,31 +22,16 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 D:\HuaweiMoveData\Users\19130\Desktop\MYCLASS\MYCLASS_MX\MDK-ARM\MYCLASS_MX.uvprojx
-Project File Date:  10/26/2026
+Project File Date:  11/01/2026
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'MYCLASS_MX'
-compiling joystick_lcd_demo.c...
-compiling gc9a01.c...
-compiling main.c...
-../Core/Src/main.c(127): warning:  #111-D: statement is unreachable
-    osKernelInitialize();  /* Call init function for freertos objects (in cmsis_os2.c) */
-../Core/Src/main.c(112): warning:  #177-D: variable "js"  was declared but never referenced
-  joy_state_t js;
-../Core/Src/main.c(113): warning:  #177-D: variable "i"  was declared but never referenced
-  int i=120;int j=120;
-../Core/Src/main.c(113): warning:  #177-D: variable "j"  was declared but never referenced
-  int i=120;int j=120;
-../Core/Src/main.c(114): warning:  #177-D: variable "distance_cm"  was declared but never referenced
-  uint16_t distance_cm = 0; 
-../Core/Src/main.c(115): warning:  #550-D: variable "state"  was set but never used
-  int state=-1;
-../Core/Src/main.c: 6 warnings, 0 errors
+compiling hmc5883l.c...
 linking...
-Program Size: Code=14124 RO-data=13368 RW-data=92 ZI-data=3116  
+Program Size: Code=188504 RO-data=24872 RW-data=792 ZI-data=102432  
 FromELF: creating hex file...
-"MYCLASS_MX\MYCLASS_MX.axf" - 0 Error(s), 6 Warning(s).
+"MYCLASS_MX\MYCLASS_MX.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -69,7 +54,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.5.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:04
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

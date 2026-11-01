@@ -34,6 +34,13 @@ void lcd_write_data16(uint16_t data);
 /** @brief 连续写 len 字节数据（DC = 1） */
 void lcd_write_data_buf(const uint8_t *buf, size_t len);
 
+/** @brief DMA 发送 len 字节像素数据：拉低 CS、置 DC=数据，启动 DMA（不等待完成）
+ *  @note  传输完成后会进入 HAL_SPI_TxCpltCallback，需在其中拉高 CS 并调用 lv_disp_flush_ready() */
+void lcd_spi_write_dma(const uint8_t *buf, uint32_t len);
+
+/** @brief 拉高片选，结束一次 DMA 传输 */
+void lcd_spi_cs_high(void);
+
 /** @brief 背光开关：on 非 0 点亮 */
 void lcd_backlight(uint8_t on);
 

@@ -1,0 +1,16 @@
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\lv_font.c
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\lv_font.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\../lv_conf_internal.h
+myclass_mx\lv_font.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\../lv_conf_kconfig.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\../../../lv_conf.h
+myclass_mx\lv_font.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+myclass_mx\lv_font.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\lv_symbol_def.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\../misc/lv_area.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\../misc/lv_utils.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\../misc/lv_log.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\../misc/lv_types.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\../misc/lv_assert.h
+myclass_mx\lv_font.o: ..\lvgl-8.3.11\src\font\../misc/lv_mem.h
+myclass_mx\lv_font.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

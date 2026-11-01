@@ -21,6 +21,7 @@
 #include "cmsis_os.h"
 #include "adc.h"
 #include "dma.h"
+#include "i2c.h"
 #include "spi.h"
 #include "tim.h"
 #include "gpio.h"
@@ -33,6 +34,8 @@
 #include "hcsr04.h"
 #include "beep.h"
 #include "dht11.h"
+#include "encoder.h"
+#include "hmc5883l.h"
 #include "joystick_lcd_demo.h"
 /* USER CODE END Includes */
 
@@ -103,24 +106,17 @@ int main(void)
   MX_ADC1_Init();
   MX_SPI1_Init();
   MX_TIM4_Init();
+  MX_TIM5_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
 gc9a01_init();
 joy_init(); 
 led_init();
 hcsr04_init();
 dht11_init();
-joy_state_t js;
-int i=120;int j=120;
-uint16_t distance_cm = 0; 
-int state=-1;
-dht11_data_t testdata;
-while(1){
-	state=dht11_read(&testdata);
-	gc9a01_printf_size(100,100,GC9A01_FONT_32,BLACK,WHITE,"state=%d",11);
-	gc9a01_printf(120,120,BLACK,WHITE,"wendu:%d",testdata.temperature);
-	gc9a01_printf(140,140,BLACK,WHITE,"shidu:%d",testdata.humidity);
+encoder_init();
+hmc5883l_init();
 
-}
   /* USER CODE END 2 */
 
   /* Init scheduler */

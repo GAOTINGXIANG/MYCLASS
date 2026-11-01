@@ -1,0 +1,15 @@
+myclass_mx\qrcodegen.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\qrcodegen.c
+myclass_mx\qrcodegen.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+myclass_mx\qrcodegen.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+myclass_mx\qrcodegen.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+myclass_mx\qrcodegen.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\qrcodegen.h
+myclass_mx\qrcodegen.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+myclass_mx\qrcodegen.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+myclass_mx\qrcodegen.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+myclass_mx\qrcodegen.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../misc/lv_assert.h
+myclass_mx\qrcodegen.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../misc/../lv_conf_internal.h
+myclass_mx\qrcodegen.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../misc/../lv_conf_kconfig.h
+myclass_mx\qrcodegen.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../misc/../../../lv_conf.h
+myclass_mx\qrcodegen.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../misc/lv_log.h
+myclass_mx\qrcodegen.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../misc/lv_types.h
+myclass_mx\qrcodegen.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../misc/lv_mem.h

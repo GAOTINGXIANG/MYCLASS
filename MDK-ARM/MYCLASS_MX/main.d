@@ -29,6 +29,8 @@ myclass_mx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 myclass_mx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 myclass_mx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 myclass_mx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+myclass_mx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+myclass_mx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 myclass_mx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 myclass_mx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 myclass_mx\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
@@ -47,6 +49,7 @@ myclass_mx\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 myclass_mx\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 myclass_mx\main.o: ../Core/Inc/adc.h
 myclass_mx\main.o: ../Core/Inc/dma.h
+myclass_mx\main.o: ../Core/Inc/i2c.h
 myclass_mx\main.o: ../Core/Inc/spi.h
 myclass_mx\main.o: ../Core/Inc/tim.h
 myclass_mx\main.o: ../Core/Inc/gpio.h
@@ -57,4 +60,6 @@ myclass_mx\main.o: ../HARDWARE/led.h
 myclass_mx\main.o: ../HARDWARE/hcsr04.h
 myclass_mx\main.o: ../HARDWARE/beep.h
 myclass_mx\main.o: ../HARDWARE/dht11.h
+myclass_mx\main.o: ../HARDWARE/encoder.h
+myclass_mx\main.o: ../HARDWARE/hmc5883l.h
 myclass_mx\main.o: ../DEMO/joystick_lcd_demo.h

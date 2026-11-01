@@ -1,0 +1,16 @@
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\gifdec.c
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\gifdec.h
+myclass_mx\gifdec.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/lv_fs.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/../lv_conf_internal.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/../lv_conf_kconfig.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/../../../lv_conf.h
+myclass_mx\gifdec.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/lv_log.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/lv_types.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/lv_mem.h
+myclass_mx\gifdec.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+myclass_mx\gifdec.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/lv_color.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/lv_assert.h
+myclass_mx\gifdec.o: ..\lvgl-8.3.11\src\extra\libs\gif\../../../misc/lv_math.h
