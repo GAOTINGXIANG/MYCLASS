@@ -2063,6 +2063,51 @@
               <FilePath>..\APP\app_mole.c</FilePath>
             </File>
             <File>
+              <FileName>app_fish.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_fish.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_tank.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_tank.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_gold.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_gold.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_fruit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_fruit.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_plane.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_plane.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_ski.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_ski.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_pool.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_pool.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_subway.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_subway.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_sniper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_sniper.c</FilePath>
+            </File>
+            <File>
               <FileName>app_help.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\APP\app_help.c</FilePath>

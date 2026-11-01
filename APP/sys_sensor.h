@@ -1,4 +1,4 @@
-#ifndef __SYS_SENSOR_H
+﻿#ifndef __SYS_SENSOR_H
 #define __SYS_SENSOR_H
 
 #ifdef __cplusplus

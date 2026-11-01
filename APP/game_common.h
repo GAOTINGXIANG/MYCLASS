@@ -1,4 +1,4 @@
-#ifndef __GAME_COMMON_H
+﻿#ifndef __GAME_COMMON_H
 #define __GAME_COMMON_H
 
 #ifdef __cplusplus

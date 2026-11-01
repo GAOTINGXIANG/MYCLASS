@@ -16,10 +16,12 @@
 #include "sys_notify.h"
 
 /* ---------------- 可调参数 ---------------- */
-#define APP_MAX          10       /* 每类最多 app 数 */
-#define MENU_R           88       /* 菜单项圆周半径 */
+#define APP_MAX          20       /* 每类最多 app 数 */
+#define MENU_R           80       /* 菜单项圆周半径 */
 #define MENU_ITEM_W      72       /* 菜单项标签宽（用于居中） */
 #define MENU_ITEM_H      18
+#define MENU_SLOTS       7        /* 条目多于 7 项时只显示选中项附近的 7 项 */
+#define SLOT_STEP        36       /* 窗口模式下相邻槽位的角度间隔 */
 #define MENU_SCAN_MS     30
 #define ENC_DETENT       4        /* 编码器每档计数（TI12 四倍频） */
 
@@ -83,6 +85,15 @@ uint8_t app_register_game(const app_t *app)
 #include "app_mines.h"
 #include "app_dino.h"
 #include "app_mole.h"
+#include "app_fish.h"
+#include "app_tank.h"
+#include "app_gold.h"
+#include "app_fruit.h"
+#include "app_plane.h"
+#include "app_ski.h"
+#include "app_pool.h"
+#include "app_subway.h"
+#include "app_sniper.h"
 #include "app_help.h"
 
 static void register_builtin_apps(void)
@@ -105,6 +116,15 @@ static void register_builtin_apps(void)
     app_register_game(&app_mines);
     app_register_game(&app_dino);
     app_register_game(&app_mole);
+    app_register_game(&app_fish);
+    app_register_game(&app_tank);
+    app_register_game(&app_gold);
+    app_register_game(&app_fruit);
+    app_register_game(&app_plane);
+    app_register_game(&app_ski);
+    app_register_game(&app_pool);
+    app_register_game(&app_subway);
+    app_register_game(&app_sniper);
 }
 
 /* ---------------- 圆环菜单 ---------------- */
@@ -117,10 +137,23 @@ static void polar(lv_coord_t r, int32_t deg, lv_coord_t *x, lv_coord_t *y)
 
 static void menu_refresh_sel(void)
 {
-    for (uint8_t i = 0; i < s_item_cnt; i++) {
-        lv_obj_set_style_text_color(s_items[i],
-            (i == s_sel) ? lv_color_white()
-                         : lv_palette_main(LV_PALETTE_GREY), 0);
+    if (s_item_cnt <= MENU_SLOTS) {
+        for (uint8_t i = 0; i < s_item_cnt; i++) {
+            lv_obj_set_style_text_color(s_items[i],
+                (i == s_sel) ? lv_color_white()
+                             : lv_palette_main(LV_PALETTE_GREY), 0);
+        }
+    } else {
+        /* 滚动窗口：固定 7 个槽位，中间槽位 = 选中项 */
+        for (uint8_t k = 0; k < MENU_SLOTS; k++) {
+            int32_t idx = (int32_t)s_sel - (int32_t)(MENU_SLOTS / 2) + (int32_t)k;
+            while (idx < 0) idx += (int32_t)s_item_cnt;
+            idx %= (int32_t)s_item_cnt;
+            lv_label_set_text(s_items[k], s_names[idx]);
+            lv_obj_set_style_text_color(s_items[k],
+                (k == MENU_SLOTS / 2) ? lv_color_white()
+                                      : lv_palette_main(LV_PALETTE_GREY), 0);
+        }
     }
     lv_label_set_text(s_lbl_center, s_names[s_sel]);
 }
@@ -144,17 +177,30 @@ static void menu_open(state_t st)
     lv_obj_set_style_bg_color(scr, lv_color_black(), 0);
     lv_obj_clear_flag(scr, LV_OBJ_FLAG_SCROLLABLE);
 
-    /* 圆周排布的条目 */
-    for (uint8_t i = 0; i < cnt; i++) {
-        lv_coord_t x, y;
-        lv_obj_t *lb = lv_label_create(scr);
+    /* 圆周排布的条目：<= 7 项均匀散布；更多则只建 7 个固定槽位滚动显示 */
+    if (cnt <= MENU_SLOTS) {
+        for (uint8_t i = 0; i < cnt; i++) {
+            lv_coord_t x, y;
+            lv_obj_t *lb = lv_label_create(scr);
 
-        polar(MENU_R, (int32_t)i * 360 / (int32_t)cnt, &x, &y);
-        lv_label_set_text(lb, s_names[i]);
-        lv_obj_set_size(lb, MENU_ITEM_W, MENU_ITEM_H);
-        lv_obj_set_style_text_align(lb, LV_TEXT_ALIGN_CENTER, 0);
-        lv_obj_set_pos(lb, x - MENU_ITEM_W / 2, y - MENU_ITEM_H / 2);
-        s_items[i] = lb;
+            polar(MENU_R, (int32_t)i * 360 / (int32_t)cnt, &x, &y);
+            lv_label_set_text(lb, s_names[i]);
+            lv_obj_set_size(lb, MENU_ITEM_W, MENU_ITEM_H);
+            lv_obj_set_style_text_align(lb, LV_TEXT_ALIGN_CENTER, 0);
+            lv_obj_set_pos(lb, x - MENU_ITEM_W / 2, y - MENU_ITEM_H / 2);
+            s_items[i] = lb;
+        }
+    } else {
+        for (uint8_t k = 0; k < MENU_SLOTS; k++) {
+            lv_coord_t x, y;
+            lv_obj_t *lb = lv_label_create(scr);
+
+            polar(MENU_R, ((int32_t)k - (int32_t)(MENU_SLOTS / 2)) * SLOT_STEP, &x, &y);
+            lv_obj_set_size(lb, MENU_ITEM_W, MENU_ITEM_H);
+            lv_obj_set_style_text_align(lb, LV_TEXT_ALIGN_CENTER, 0);
+            lv_obj_set_pos(lb, x - MENU_ITEM_W / 2, y - MENU_ITEM_H / 2);
+            s_items[k] = lb;
+        }
     }
 
     /* 中心大字显示选中项 */

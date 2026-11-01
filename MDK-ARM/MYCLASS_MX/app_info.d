@@ -131,3 +131,5 @@ myclass_mx\app_info.o: ../lvgl-8.3.11/src/extra/widgets/colorwheel/lv_colorwheel
 myclass_mx\app_info.o: ../lvgl-8.3.11/src/extra/widgets/led/lv_led.h
 myclass_mx\app_info.o: ../lvgl-8.3.11/src/extra/widgets/imgbtn/lv_imgbtn.h
 myclass_mx\app_info.o: ../lvgl-8.3.11/src/extra/widgets/span/lv_span.h
+myclass_mx\app_info.o: ../HARDWARE/keys.h
+myclass_mx\app_info.o: ..\APP\sys_notify.h

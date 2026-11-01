@@ -149,3 +149,13 @@ myclass_mx\app_launcher.o: ..\APP\app_beans.h
 myclass_mx\app_launcher.o: ..\APP\app_tetris.h
 myclass_mx\app_launcher.o: ..\APP\app_dino.h
 myclass_mx\app_launcher.o: ..\APP\app_mole.h
+myclass_mx\app_launcher.o: ..\APP\app_fish.h
+myclass_mx\app_launcher.o: ..\APP\app_tank.h
+myclass_mx\app_launcher.o: ..\APP\app_gold.h
+myclass_mx\app_launcher.o: ..\APP\app_fruit.h
+myclass_mx\app_launcher.o: ..\APP\app_plane.h
+myclass_mx\app_launcher.o: ..\APP\app_ski.h
+myclass_mx\app_launcher.o: ..\APP\app_pool.h
+myclass_mx\app_launcher.o: ..\APP\app_subway.h
+myclass_mx\app_launcher.o: ..\APP\app_sniper.h
+myclass_mx\app_launcher.o: ..\APP\app_help.h

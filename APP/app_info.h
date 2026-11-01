@@ -1,4 +1,4 @@
-#ifndef __APP_INFO_H
+﻿#ifndef __APP_INFO_H
 #define __APP_INFO_H
 
 #ifdef __cplusplus
