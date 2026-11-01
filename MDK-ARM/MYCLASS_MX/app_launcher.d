@@ -141,3 +141,8 @@ myclass_mx\app_launcher.o: ..\APP\app_compass.h
 myclass_mx\app_launcher.o: ..\APP\app_info.h
 myclass_mx\app_launcher.o: ..\APP\app_snake.h
 myclass_mx\app_launcher.o: ..\APP\app_breakout.h
+myclass_mx\app_launcher.o: ..\APP\app_2048.h
+myclass_mx\app_launcher.o: ..\APP\app_puzzle.h
+myclass_mx\app_launcher.o: ..\APP\app_gomoku.h
+myclass_mx\app_launcher.o: ..\APP\app_beans.h
+myclass_mx\app_launcher.o: ..\APP\app_tetris.h

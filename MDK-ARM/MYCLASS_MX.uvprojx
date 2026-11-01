@@ -2023,6 +2023,31 @@
               <FilePath>..\APP\app_breakout.c</FilePath>
             </File>
             <File>
+              <FileName>app_2048.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_2048.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_puzzle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_puzzle.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_gomoku.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_gomoku.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_beans.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_beans.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_tetris.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_tetris.c</FilePath>
+            </File>
+            <File>
               <FileName>app_clock.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\APP\app_clock.c</FilePath>

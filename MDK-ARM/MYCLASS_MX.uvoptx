@@ -3651,6 +3651,66 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
+      <PathWithFileName>..\APP\app_2048.c</PathWithFileName>
+      <FilenameWithoutPath>app_2048.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>10</GroupNumber>
+      <FileNumber>280</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\APP\app_puzzle.c</PathWithFileName>
+      <FilenameWithoutPath>app_puzzle.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>10</GroupNumber>
+      <FileNumber>281</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\APP\app_gomoku.c</PathWithFileName>
+      <FilenameWithoutPath>app_gomoku.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>10</GroupNumber>
+      <FileNumber>282</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\APP\app_beans.c</PathWithFileName>
+      <FilenameWithoutPath>app_beans.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>10</GroupNumber>
+      <FileNumber>283</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\APP\app_tetris.c</PathWithFileName>
+      <FilenameWithoutPath>app_tetris.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>10</GroupNumber>
+      <FileNumber>284</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
       <PathWithFileName>..\APP\app_clock.c</PathWithFileName>
       <FilenameWithoutPath>app_clock.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -3658,7 +3718,7 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>280</FileNumber>
+      <FileNumber>285</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3670,7 +3730,7 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>281</FileNumber>
+      <FileNumber>286</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3682,7 +3742,7 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>282</FileNumber>
+      <FileNumber>287</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3694,7 +3754,7 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>283</FileNumber>
+      <FileNumber>288</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3706,7 +3766,7 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>284</FileNumber>
+      <FileNumber>289</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3718,7 +3778,7 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>285</FileNumber>
+      <FileNumber>290</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3730,7 +3790,7 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>286</FileNumber>
+      <FileNumber>291</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3750,7 +3810,7 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>11</GroupNumber>
-      <FileNumber>287</FileNumber>
+      <FileNumber>292</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
