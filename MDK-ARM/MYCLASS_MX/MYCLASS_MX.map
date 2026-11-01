@@ -14602,422 +14602,422 @@ Image Symbol Table
     led_table                                0x08037c4c   Data          48  led.o(.constdata)
     .constdata                               0x08037c7c   Section       48  keys.o(.constdata)
     key_hw                                   0x08037c7c   Data          48  keys.o(.constdata)
-    .constdata                               0x08037cac   Section    34881  lv_font_cn_14.o(.constdata)
-    glyph_bitmap                             0x08037cac   Data       34881  lv_font_cn_14.o(.constdata)
-    .constdata                               0x080404f0   Section     2064  lv_font_cn_14.o(.constdata)
-    glyph_dsc                                0x080404f0   Data        2064  lv_font_cn_14.o(.constdata)
-    .constdata                               0x08040d00   Section      324  lv_font_cn_14.o(.constdata)
-    unicode_list_1                           0x08040d00   Data         324  lv_font_cn_14.o(.constdata)
-    .constdata                               0x08040e44   Section       40  lv_font_cn_14.o(.constdata)
-    cmaps                                    0x08040e44   Data          40  lv_font_cn_14.o(.constdata)
-    .constdata                               0x08040e6c   Section       24  lv_font_cn_14.o(.constdata)
-    font_dsc                                 0x08040e6c   Data          24  lv_font_cn_14.o(.constdata)
-    .constdata                               0x08040e84   Section       28  lv_font_cn_14.o(.constdata)
-    .constdata                               0x08040ea0   Section      291  lv_disp.o(.constdata)
-    __func__                                 0x08040ea0   Data          20  lv_disp.o(.constdata)
-    __func__                                 0x08040eb4   Data          21  lv_disp.o(.constdata)
-    __func__                                 0x08040ec9   Data          22  lv_disp.o(.constdata)
-    __func__                                 0x08040edf   Data          22  lv_disp.o(.constdata)
-    __func__                                 0x08040ef5   Data          18  lv_disp.o(.constdata)
-    __func__                                 0x08040f07   Data          21  lv_disp.o(.constdata)
-    __func__                                 0x08040f1c   Data          21  lv_disp.o(.constdata)
-    __func__                                 0x08040f31   Data          19  lv_disp.o(.constdata)
-    __func__                                 0x08040f44   Data          22  lv_disp.o(.constdata)
-    __func__                                 0x08040f5a   Data          21  lv_disp.o(.constdata)
-    __func__                                 0x08040f6f   Data          28  lv_disp.o(.constdata)
-    __func__                                 0x08040f8b   Data          32  lv_disp.o(.constdata)
-    __func__                                 0x08040fab   Data          24  lv_disp.o(.constdata)
-    .constdata                               0x08040fc3   Section      366  lv_event.o(.constdata)
-    __func__                                 0x08040fc3   Data          20  lv_event.o(.constdata)
-    __func__                                 0x08040fd7   Data          23  lv_event.o(.constdata)
-    __func__                                 0x08040fee   Data          38  lv_event.o(.constdata)
-    __func__                                 0x08041014   Data          24  lv_event.o(.constdata)
-    __func__                                 0x0804102c   Data          19  lv_event.o(.constdata)
-    __func__                                 0x0804103f   Data          27  lv_event.o(.constdata)
-    __func__                                 0x0804105a   Data          22  lv_event.o(.constdata)
-    __func__                                 0x08041070   Data          22  lv_event.o(.constdata)
-    __func__                                 0x08041086   Data          17  lv_event.o(.constdata)
-    __func__                                 0x08041097   Data          25  lv_event.o(.constdata)
-    __func__                                 0x080410b0   Data          27  lv_event.o(.constdata)
-    __func__                                 0x080410cb   Data          28  lv_event.o(.constdata)
-    __func__                                 0x080410e7   Data          27  lv_event.o(.constdata)
-    __func__                                 0x08041102   Data          24  lv_event.o(.constdata)
-    __func__                                 0x0804111a   Data          23  lv_event.o(.constdata)
-    .constdata                               0x08041131   Section       33  lv_group.o(.constdata)
-    __func__                                 0x08041131   Data          16  lv_group.o(.constdata)
-    __func__                                 0x08041141   Data          17  lv_group.o(.constdata)
-    .constdata                               0x08041152   Section       61  lv_indev.o(.constdata)
-    __func__                                 0x08041152   Data          24  lv_indev.o(.constdata)
-    __func__                                 0x0804116a   Data          19  lv_indev.o(.constdata)
-    __func__                                 0x0804117d   Data          18  lv_indev.o(.constdata)
-    .constdata                               0x08041190   Section       62  lv_obj.o(.constdata)
-    __func__                                 0x08041190   Data           8  lv_obj.o(.constdata)
-    __func__                                 0x080411b4   Data          26  lv_obj.o(.constdata)
-    .constdata                               0x080411ce   Section       24  lv_obj_class.o(.constdata)
-    __func__                                 0x080411ce   Data          24  lv_obj_class.o(.constdata)
-    .constdata                               0x080411e8   Section       27  lv_obj_pos.o(.constdata)
-    __func__                                 0x080411f0   Data          19  lv_obj_pos.o(.constdata)
-    .constdata                               0x08041203   Section       48  lv_obj_style.o(.constdata)
-    __func__                                 0x08041203   Data          32  lv_obj_style.o(.constdata)
-    __func__                                 0x08041223   Data          16  lv_obj_style.o(.constdata)
-    .constdata                               0x08041233   Section       45  lv_obj_tree.o(.constdata)
-    __func__                                 0x08041233   Data          11  lv_obj_tree.o(.constdata)
-    __func__                                 0x0804123e   Data          18  lv_obj_tree.o(.constdata)
-    __func__                                 0x08041250   Data          16  lv_obj_tree.o(.constdata)
-    .constdata                               0x08041260   Section      118  lv_refr.o(.constdata)
-    __func__                                 0x08041260   Data          13  lv_refr.o(.constdata)
-    __func__                                 0x0804126d   Data          20  lv_refr.o(.constdata)
-    __func__                                 0x08041281   Data          15  lv_refr.o(.constdata)
-    __func__                                 0x08041290   Data          15  lv_refr.o(.constdata)
-    __func__                                 0x0804129f   Data           9  lv_refr.o(.constdata)
-    __func__                                 0x080412a8   Data          12  lv_refr.o(.constdata)
-    __func__                                 0x080412b4   Data          16  lv_refr.o(.constdata)
-    __func__                                 0x080412c4   Data          18  lv_refr.o(.constdata)
-    .constdata                               0x080412d6   Section       48  lv_draw_img.o(.constdata)
-    __func__                                 0x080412d6   Data          12  lv_draw_img.o(.constdata)
-    __func__                                 0x080412e2   Data          20  lv_draw_img.o(.constdata)
-    __func__                                 0x080412f6   Data          16  lv_draw_img.o(.constdata)
-    .constdata                               0x08041306   Section       14  lv_draw_label.o(.constdata)
-    __func__                                 0x08041306   Data          14  lv_draw_label.o(.constdata)
-    .constdata                               0x08041314   Section       21  lv_draw_layer.o(.constdata)
-    __func__                                 0x08041314   Data          21  lv_draw_layer.o(.constdata)
-    .constdata                               0x08041329   Section       80  lv_draw_mask.o(.constdata)
-    __func__                                 0x08041329   Data          17  lv_draw_mask.o(.constdata)
-    __func__                                 0x0804133a   Data          24  lv_draw_mask.o(.constdata)
-    __func__                                 0x08041352   Data          25  lv_draw_mask.o(.constdata)
-    __func__                                 0x0804136b   Data          14  lv_draw_mask.o(.constdata)
-    .constdata                               0x08041379   Section       18  lv_draw_transform.o(.constdata)
-    __func__                                 0x08041379   Data          18  lv_draw_transform.o(.constdata)
-    .constdata                               0x0804138b   Section       41  lv_img_cache.o(.constdata)
-    __func__                                 0x0804138b   Data          19  lv_img_cache.o(.constdata)
-    __func__                                 0x0804139e   Data          22  lv_img_cache.o(.constdata)
-    .constdata                               0x080413b4   Section      195  lv_img_decoder.o(.constdata)
-    __func__                                 0x080413b4   Data          21  lv_img_decoder.o(.constdata)
-    __func__                                 0x080413c9   Data          20  lv_img_decoder.o(.constdata)
-    __func__                                 0x080413dd   Data          22  lv_img_decoder.o(.constdata)
-    __func__                                 0x080413f3   Data          29  lv_img_decoder.o(.constdata)
-    __func__                                 0x08041410   Data          29  lv_img_decoder.o(.constdata)
-    __func__                                 0x0804142d   Data          34  lv_img_decoder.o(.constdata)
-    __func__                                 0x0804144f   Data          40  lv_img_decoder.o(.constdata)
-    .constdata                               0x08041477   Section       25  lv_draw_sw_blend.o(.constdata)
-    __func__                                 0x08041477   Data          13  lv_draw_sw_blend.o(.constdata)
-    __func__                                 0x08041484   Data          12  lv_draw_sw_blend.o(.constdata)
-    .constdata                               0x08041490   Section       79  lv_draw_sw_gradient.o(.constdata)
-    __func__                                 0x08041490   Data          14  lv_draw_sw_gradient.o(.constdata)
-    __func__                                 0x0804149e   Data          27  lv_draw_sw_gradient.o(.constdata)
-    __func__                                 0x080414b9   Data          16  lv_draw_sw_gradient.o(.constdata)
-    __func__                                 0x080414c9   Data          22  lv_draw_sw_gradient.o(.constdata)
-    .constdata                               0x080414df   Section       24  lv_draw_sw_layer.o(.constdata)
-    __func__                                 0x080414df   Data          24  lv_draw_sw_layer.o(.constdata)
-    .constdata                               0x080414f7   Section      333  lv_draw_sw_letter.o(.constdata)
-    __func__                                 0x0804160d   Data          18  lv_draw_sw_letter.o(.constdata)
-    __func__                                 0x0804161f   Data          19  lv_draw_sw_letter.o(.constdata)
-    __func__                                 0x08041632   Data          18  lv_draw_sw_letter.o(.constdata)
-    .constdata                               0x08041644   Section       33  lv_draw_sw_line.o(.constdata)
-    wcorr                                    0x08041644   Data          33  lv_draw_sw_line.o(.constdata)
-    .constdata                               0x08041668   Section        8  lv_draw_sw_polygon.o(.constdata)
-    .constdata                               0x08041670   Section       12  lv_draw_sw_rect.o(.constdata)
-    __func__                                 0x08041670   Data          12  lv_draw_sw_rect.o(.constdata)
-    .constdata                               0x0804167c   Section       30  lv_flex.o(.constdata)
-    __func__                                 0x0804167c   Data          15  lv_flex.o(.constdata)
-    __func__                                 0x0804168b   Data          15  lv_flex.o(.constdata)
-    .constdata                               0x0804169a   Section       22  lv_theme_default.o(.constdata)
-    trans_props                              0x0804169a   Data          22  lv_theme_default.o(.constdata)
-    .constdata                               0x080416b0   Section       62  lv_calendar.o(.constdata)
-    __func__                                 0x080416cc   Data          34  lv_calendar.o(.constdata)
-    .constdata                               0x080416f0   Section       28  lv_calendar_header_arrow.o(.constdata)
-    .constdata                               0x0804170c   Section       28  lv_calendar_header_dropdown.o(.constdata)
-    .constdata                               0x08041728   Section      566  lv_chart.o(.constdata)
-    __func__                                 0x08041744   Data          18  lv_chart.o(.constdata)
-    __func__                                 0x08041756   Data          19  lv_chart.o(.constdata)
-    __func__                                 0x08041769   Data          27  lv_chart.o(.constdata)
-    __func__                                 0x08041784   Data          29  lv_chart.o(.constdata)
-    __func__                                 0x080417a1   Data          20  lv_chart.o(.constdata)
-    __func__                                 0x080417b5   Data          23  lv_chart.o(.constdata)
-    __func__                                 0x080417cc   Data          21  lv_chart.o(.constdata)
-    __func__                                 0x080417e1   Data          26  lv_chart.o(.constdata)
-    __func__                                 0x080417fb   Data          27  lv_chart.o(.constdata)
-    __func__                                 0x08041816   Data          20  lv_chart.o(.constdata)
-    __func__                                 0x0804182a   Data          24  lv_chart.o(.constdata)
-    __func__                                 0x08041842   Data          26  lv_chart.o(.constdata)
-    __func__                                 0x0804185c   Data          26  lv_chart.o(.constdata)
-    __func__                                 0x08041876   Data          23  lv_chart.o(.constdata)
-    __func__                                 0x0804188d   Data          24  lv_chart.o(.constdata)
-    __func__                                 0x080418a5   Data          25  lv_chart.o(.constdata)
-    __func__                                 0x080418be   Data          25  lv_chart.o(.constdata)
-    __func__                                 0x080418d7   Data          26  lv_chart.o(.constdata)
-    __func__                                 0x080418f1   Data          25  lv_chart.o(.constdata)
-    __func__                                 0x0804190a   Data          25  lv_chart.o(.constdata)
-    __func__                                 0x08041923   Data          21  lv_chart.o(.constdata)
-    __func__                                 0x08041938   Data          21  lv_chart.o(.constdata)
-    __func__                                 0x0804194d   Data          17  lv_chart.o(.constdata)
-    .constdata                               0x08041960   Section       28  lv_colorwheel.o(.constdata)
-    .constdata                               0x0804197c   Section       28  lv_keyboard.o(.constdata)
-    .constdata                               0x08041998   Section      176  lv_keyboard.o(.constdata)
-    default_kb_map_lc                        0x08041998   Data         176  lv_keyboard.o(.constdata)
-    .constdata                               0x08041a48   Section       80  lv_keyboard.o(.constdata)
-    default_kb_ctrl_lc_map                   0x08041a48   Data          80  lv_keyboard.o(.constdata)
-    .constdata                               0x08041a98   Section      176  lv_keyboard.o(.constdata)
-    default_kb_map_uc                        0x08041a98   Data         176  lv_keyboard.o(.constdata)
-    .constdata                               0x08041b48   Section       80  lv_keyboard.o(.constdata)
-    default_kb_ctrl_uc_map                   0x08041b48   Data          80  lv_keyboard.o(.constdata)
-    .constdata                               0x08041b98   Section      176  lv_keyboard.o(.constdata)
-    default_kb_map_spec                      0x08041b98   Data         176  lv_keyboard.o(.constdata)
-    .constdata                               0x08041c48   Section       80  lv_keyboard.o(.constdata)
-    default_kb_ctrl_spec_map                 0x08041c48   Data          80  lv_keyboard.o(.constdata)
-    .constdata                               0x08041c98   Section       84  lv_keyboard.o(.constdata)
-    default_kb_map_num                       0x08041c98   Data          84  lv_keyboard.o(.constdata)
-    .constdata                               0x08041cec   Section       34  lv_keyboard.o(.constdata)
-    default_kb_ctrl_num_map                  0x08041cec   Data          34  lv_keyboard.o(.constdata)
-    .constdata                               0x08041d10   Section       28  lv_led.o(.constdata)
-    .constdata                               0x08041d2c   Section       84  lv_list.o(.constdata)
-    .constdata                               0x08041d80   Section      289  lv_menu.o(.constdata)
-    __func__                                 0x08041e7c   Data          20  lv_menu.o(.constdata)
-    __func__                                 0x08041e90   Data          17  lv_menu.o(.constdata)
-    .constdata                               0x08041ea4   Section      138  lv_meter.o(.constdata)
-    __func__                                 0x08041ec0   Data          19  lv_meter.o(.constdata)
-    __func__                                 0x08041ed3   Data          25  lv_meter.o(.constdata)
-    __func__                                 0x08041eec   Data          24  lv_meter.o(.constdata)
-    __func__                                 0x08041f04   Data          17  lv_meter.o(.constdata)
-    __func__                                 0x08041f15   Data          25  lv_meter.o(.constdata)
-    .constdata                               0x08041f30   Section      101  lv_msgbox.o(.constdata)
-    __func__                                 0x08041f84   Data          17  lv_msgbox.o(.constdata)
-    .constdata                               0x08041f98   Section       28  lv_spinbox.o(.constdata)
-    .constdata                               0x08041fb4   Section       28  lv_spinner.o(.constdata)
-    .constdata                               0x08041fd0   Section       28  lv_tabview.o(.constdata)
-    .constdata                               0x08041fec   Section       75  lv_tileview.o(.constdata)
-    __func__                                 0x08042024   Data          19  lv_tileview.o(.constdata)
-    .constdata                               0x08042038   Section       28  lv_win.o(.constdata)
-    .constdata                               0x08042054   Section       71  lv_font.o(.constdata)
-    __func__                                 0x08042054   Data          25  lv_font.o(.constdata)
-    __func__                                 0x0804206d   Data          22  lv_font.o(.constdata)
-    __func__                                 0x08042083   Data          24  lv_font.o(.constdata)
-    .constdata                               0x0804209b   Section       27  lv_font_fmt_txt.o(.constdata)
-    __func__                                 0x0804209b   Data          27  lv_font_fmt_txt.o(.constdata)
-    .constdata                               0x080420b6   Section       64  lv_hal_disp.o(.constdata)
-    __func__                                 0x080420b6   Data          24  lv_hal_disp.o(.constdata)
-    __func__                                 0x080420ce   Data          21  lv_hal_disp.o(.constdata)
-    __func__                                 0x080420e3   Data          19  lv_hal_disp.o(.constdata)
-    .constdata                               0x080420f6   Section       73  lv_hal_indev.o(.constdata)
-    __func__                                 0x080420f6   Data          22  lv_hal_indev.o(.constdata)
-    __func__                                 0x0804210c   Data          20  lv_hal_indev.o(.constdata)
-    __func__                                 0x08042120   Data          16  lv_hal_indev.o(.constdata)
-    __func__                                 0x08042130   Data          15  lv_hal_indev.o(.constdata)
-    .constdata                               0x0804213f   Section       14  lv_anim.o(.constdata)
-    __func__                                 0x0804213f   Data          14  lv_anim.o(.constdata)
-    .constdata                               0x0804214e   Section      434  lv_color.o(.constdata)
-    colors                                   0x0804214e   Data          38  lv_color.o(.constdata)
-    __func__                                 0x08042174   Data          16  lv_color.o(.constdata)
-    colors                                   0x08042184   Data         190  lv_color.o(.constdata)
-    __func__                                 0x08042242   Data          19  lv_color.o(.constdata)
-    colors                                   0x08042256   Data         152  lv_color.o(.constdata)
-    __func__                                 0x080422ee   Data          18  lv_color.o(.constdata)
-    .constdata                               0x08042300   Section       48  lv_fs.o(.constdata)
-    __func__                                 0x08042300   Data          11  lv_fs.o(.constdata)
-    __func__                                 0x0804230b   Data          18  lv_fs.o(.constdata)
-    __func__                                 0x0804231d   Data          19  lv_fs.o(.constdata)
-    .constdata                               0x08042330   Section      182  lv_math.o(.constdata)
-    sin0_90_table                            0x08042330   Data         182  lv_math.o(.constdata)
-    .constdata                               0x080423e6   Section       61  lv_mem.o(.constdata)
-    __func__                                 0x080423e6   Data          15  lv_mem.o(.constdata)
-    __func__                                 0x080423f5   Data          12  lv_mem.o(.constdata)
-    __func__                                 0x08042401   Data          15  lv_mem.o(.constdata)
-    __func__                                 0x08042410   Data          19  lv_mem.o(.constdata)
-    .constdata                               0x08042424   Section      203  lv_style.o(.constdata)
-    null_style_value                         0x08042424   Data           4  lv_style.o(.constdata)
-    __func__                                 0x08042499   Data          15  lv_style.o(.constdata)
-    __func__                                 0x080424a8   Data          23  lv_style.o(.constdata)
-    __func__                                 0x080424bf   Data          21  lv_style.o(.constdata)
-    __func__                                 0x080424d4   Data          27  lv_style.o(.constdata)
-    .constdata                               0x080424ef   Section       33  lv_timer.o(.constdata)
-    __func__                                 0x080424ef   Data          17  lv_timer.o(.constdata)
-    __func__                                 0x08042500   Data          16  lv_timer.o(.constdata)
-    .constdata                               0x08042510   Section      382  lv_tlsf.o(.constdata)
-    __func__                                 0x08042510   Data          11  lv_tlsf.o(.constdata)
-    __func__                                 0x0804251b   Data          11  lv_tlsf.o(.constdata)
-    __func__                                 0x08042526   Data           9  lv_tlsf.o(.constdata)
-    __func__                                 0x0804252f   Data          11  lv_tlsf.o(.constdata)
-    __func__                                 0x0804253a   Data          10  lv_tlsf.o(.constdata)
-    __func__                                 0x08042544   Data          22  lv_tlsf.o(.constdata)
-    __func__                                 0x0804255a   Data          18  lv_tlsf.o(.constdata)
-    __func__                                 0x0804256c   Data          18  lv_tlsf.o(.constdata)
-    __func__                                 0x0804257e   Data          12  lv_tlsf.o(.constdata)
-    __func__                                 0x0804258a   Data          13  lv_tlsf.o(.constdata)
-    __func__                                 0x08042597   Data          17  lv_tlsf.o(.constdata)
-    __func__                                 0x080425a8   Data          17  lv_tlsf.o(.constdata)
-    __func__                                 0x080425b9   Data          16  lv_tlsf.o(.constdata)
-    __func__                                 0x080425c9   Data          16  lv_tlsf.o(.constdata)
-    __func__                                 0x080425d9   Data          18  lv_tlsf.o(.constdata)
-    __func__                                 0x080425eb   Data          19  lv_tlsf.o(.constdata)
-    __func__                                 0x080425fe   Data          17  lv_tlsf.o(.constdata)
-    __func__                                 0x0804260f   Data          14  lv_tlsf.o(.constdata)
-    __func__                                 0x0804261d   Data          15  lv_tlsf.o(.constdata)
-    __func__                                 0x0804262c   Data          17  lv_tlsf.o(.constdata)
-    __func__                                 0x0804263d   Data          20  lv_tlsf.o(.constdata)
-    __func__                                 0x08042651   Data          15  lv_tlsf.o(.constdata)
-    __func__                                 0x08042660   Data          17  lv_tlsf.o(.constdata)
-    __func__                                 0x08042671   Data          13  lv_tlsf.o(.constdata)
-    __func__                                 0x0804267e   Data          16  lv_tlsf.o(.constdata)
-    .constdata                               0x0804268e   Section       38  lv_txt.o(.constdata)
-    __func__                                 0x0804268e   Data          16  lv_txt.o(.constdata)
-    __func__                                 0x0804269e   Data          22  lv_txt.o(.constdata)
-    .constdata                               0x080426b4   Section       94  lv_arc.o(.constdata)
-    __func__                                 0x080426d0   Data          26  lv_arc.o(.constdata)
-    __func__                                 0x080426ea   Data          27  lv_arc.o(.constdata)
-    __func__                                 0x08042705   Data          13  lv_arc.o(.constdata)
-    .constdata                               0x08042714   Section       28  lv_bar.o(.constdata)
-    .constdata                               0x08042730   Section       28  lv_btn.o(.constdata)
-    .constdata                               0x0804274c   Section       60  lv_btnmatrix.o(.constdata)
-    __func__                                 0x08042768   Data          32  lv_btnmatrix.o(.constdata)
-    .constdata                               0x08042788   Section       28  lv_checkbox.o(.constdata)
-    .constdata                               0x080427a4   Section      163  lv_dropdown.o(.constdata)
-    __func__                                 0x080427dc   Data          24  lv_dropdown.o(.constdata)
-    __func__                                 0x080427f4   Data          31  lv_dropdown.o(.constdata)
-    __func__                                 0x08042813   Data          23  lv_dropdown.o(.constdata)
-    __func__                                 0x0804282a   Data          29  lv_dropdown.o(.constdata)
-    .constdata                               0x08042848   Section       52  lv_img.o(.constdata)
-    __func__                                 0x08042864   Data          15  lv_img.o(.constdata)
-    __func__                                 0x08042873   Data           9  lv_img.o(.constdata)
-    .constdata                               0x0804287c   Section      181  lv_label.o(.constdata)
-    __func__                                 0x08042898   Data          18  lv_label.o(.constdata)
-    __func__                                 0x080428aa   Data          22  lv_label.o(.constdata)
-    __func__                                 0x080428c0   Data          24  lv_label.o(.constdata)
-    __func__                                 0x080428d8   Data          23  lv_label.o(.constdata)
-    __func__                                 0x080428ef   Data          27  lv_label.o(.constdata)
-    __func__                                 0x0804290a   Data          18  lv_label.o(.constdata)
-    __func__                                 0x0804291c   Data          21  lv_label.o(.constdata)
-    .constdata                               0x08042934   Section       28  lv_line.o(.constdata)
-    .constdata                               0x08042950   Section      105  lv_roller.o(.constdata)
-    __func__                                 0x08042988   Data          22  lv_roller.o(.constdata)
-    __func__                                 0x0804299e   Data          27  lv_roller.o(.constdata)
-    .constdata                               0x080429bc   Section       28  lv_slider.o(.constdata)
-    .constdata                               0x080429d8   Section       28  lv_switch.o(.constdata)
-    .constdata                               0x080429f4   Section      296  lv_table.o(.constdata)
-    __func__                                 0x08042a10   Data          24  lv_table.o(.constdata)
-    __func__                                 0x08042a28   Data          28  lv_table.o(.constdata)
-    __func__                                 0x08042a44   Data          21  lv_table.o(.constdata)
-    __func__                                 0x08042a59   Data          21  lv_table.o(.constdata)
-    __func__                                 0x08042a6e   Data          23  lv_table.o(.constdata)
-    __func__                                 0x08042a85   Data          25  lv_table.o(.constdata)
-    __func__                                 0x08042a9e   Data          28  lv_table.o(.constdata)
-    __func__                                 0x08042aba   Data          24  lv_table.o(.constdata)
-    __func__                                 0x08042ad2   Data          23  lv_table.o(.constdata)
-    __func__                                 0x08042ae9   Data          23  lv_table.o(.constdata)
-    __func__                                 0x08042b00   Data          28  lv_table.o(.constdata)
-    .constdata                               0x08042b1c   Section      229  lv_textarea.o(.constdata)
-    __func__                                 0x08042b38   Data          21  lv_textarea.o(.constdata)
-    __func__                                 0x08042b4d   Data          21  lv_textarea.o(.constdata)
-    __func__                                 0x08042b62   Data          21  lv_textarea.o(.constdata)
-    __func__                                 0x08042b77   Data          21  lv_textarea.o(.constdata)
-    __func__                                 0x08042b8c   Data          33  lv_textarea.o(.constdata)
-    __func__                                 0x08042bad   Data          30  lv_textarea.o(.constdata)
-    __func__                                 0x08042bcb   Data          32  lv_textarea.o(.constdata)
-    __func__                                 0x08042beb   Data          22  lv_textarea.o(.constdata)
-    .constdata                               0x08042c04   Section       12  app_info.o(.constdata)
-    .constdata                               0x08042c10   Section       12  app_breakout.o(.constdata)
-    .constdata                               0x08042c1c   Section        4  app_breakout.o(.constdata)
-    row_pal                                  0x08042c1c   Data           4  app_breakout.o(.constdata)
-    .constdata                               0x08042c20   Section       12  app_2048.o(.constdata)
-    .constdata                               0x08042c2c   Section       12  app_puzzle.o(.constdata)
-    .constdata                               0x08042c38   Section       12  app_gomoku.o(.constdata)
-    .constdata                               0x08042c44   Section        8  app_gomoku.o(.constdata)
-    dirs                                     0x08042c44   Data           8  app_gomoku.o(.constdata)
-    .constdata                               0x08042c4c   Section        4  app_beans.o(.constdata)
-    PAL                                      0x08042c4c   Data           4  app_beans.o(.constdata)
-    .constdata                               0x08042c50   Section       12  app_beans.o(.constdata)
-    .constdata                               0x08042c5c   Section       64  app_tetris.o(.constdata)
-    PAL                                      0x08042c5c   Data           7  app_tetris.o(.constdata)
-    SHAPES                                   0x08042c64   Data          56  app_tetris.o(.constdata)
-    .constdata                               0x08042c9c   Section       12  app_tetris.o(.constdata)
-    .constdata                               0x08042ca8   Section       36  app_mines.o(.constdata)
-    DIGC                                     0x08042ca8   Data          36  app_mines.o(.constdata)
-    .constdata                               0x08042ccc   Section       12  app_mines.o(.constdata)
-    .constdata                               0x08042cd8   Section       12  app_dino.o(.constdata)
-    .constdata                               0x08042ce4   Section       10  app_mole.o(.constdata)
-    HOLE_X                                   0x08042ce4   Data          10  app_mole.o(.constdata)
-    .constdata                               0x08042cf0   Section       12  app_mole.o(.constdata)
-    .constdata                               0x08042cfc   Section       12  app_fish.o(.constdata)
-    .constdata                               0x08042d08   Section       12  app_tank.o(.constdata)
-    .constdata                               0x08042d14   Section       12  app_gold.o(.constdata)
-    .constdata                               0x08042d20   Section       12  app_fruit.o(.constdata)
-    .constdata                               0x08042d2c   Section       12  app_plane.o(.constdata)
-    .constdata                               0x08042d38   Section       12  app_ski.o(.constdata)
-    .constdata                               0x08042d44   Section       24  app_pool.o(.constdata)
-    POCKET_X                                 0x08042d44   Data          12  app_pool.o(.constdata)
-    POCKET_Y                                 0x08042d50   Data          12  app_pool.o(.constdata)
-    .constdata                               0x08042d5c   Section       12  app_pool.o(.constdata)
-    .constdata                               0x08042d68   Section        6  app_subway.o(.constdata)
-    LANE_X                                   0x08042d68   Data           6  app_subway.o(.constdata)
-    .constdata                               0x08042d70   Section       12  app_subway.o(.constdata)
-    .constdata                               0x08042d7c   Section       12  app_sniper.o(.constdata)
-    .constdata                               0x08042d88   Section      120  app_help.o(.constdata)
-    PAGE_TITLE                               0x08042d88   Data          60  app_help.o(.constdata)
-    PAGE_BODY                                0x08042dc4   Data          60  app_help.o(.constdata)
-    .constdata                               0x08042e00   Section       12  app_help.o(.constdata)
-    .constdata                               0x08042e0c   Section       12  app_clock.o(.constdata)
-    .constdata                               0x08042e18   Section       12  app_compass.o(.constdata)
-    .constdata                               0x08042e24   Section       16  app_compass.o(.constdata)
-    names                                    0x08042e24   Data          16  app_compass.o(.constdata)
-    .constdata                               0x08042e34   Section       12  app_radar.o(.constdata)
-    .constdata                               0x08042e40   Section       12  app_snake.o(.constdata)
-    .constdata                               0x08042e4c   Section       12  app_temp.o(.constdata)
-    .constdata                               0x08042e58   Section       12  sys_notify.o(.constdata)
-    fx_beep_short                            0x08042e58   Data          12  sys_notify.o(.constdata)
-    .constdata                               0x08042e64   Section       12  sys_notify.o(.constdata)
-    fx_beep_long                             0x08042e64   Data          12  sys_notify.o(.constdata)
-    .constdata                               0x08042e70   Section       28  sys_notify.o(.constdata)
-    fx_ok                                    0x08042e70   Data          28  sys_notify.o(.constdata)
-    .constdata                               0x08042e8c   Section       52  sys_notify.o(.constdata)
-    fx_error                                 0x08042e8c   Data          52  sys_notify.o(.constdata)
-    .constdata                               0x08042ec0   Section       28  sys_notify.o(.constdata)
-    fx_marquee                               0x08042ec0   Data          28  sys_notify.o(.constdata)
-    .constdata                               0x08042edc   Section       40  sys_notify.o(.constdata)
-    fx_marquee_once                          0x08042edc   Data          40  sys_notify.o(.constdata)
-    .constdata                               0x08042f04   Section       32  sys_notify.o(.constdata)
-    fx_table                                 0x08042f04   Data          32  sys_notify.o(.constdata)
-    .conststring                             0x08042f24   Section       35  freertos.o(.conststring)
-    .conststring                             0x08042f48   Section       78  lv_obj.o(.conststring)
-    .conststring                             0x08042f98   Section       90  lv_refr.o(.conststring)
-    .conststring                             0x08042ff4   Section       65  lv_draw_label.o(.conststring)
-    .conststring                             0x08043038   Section       94  lv_draw_sw_layer.o(.conststring)
-    .conststring                             0x08043098   Section       27  lv_calendar.o(.conststring)
-    .conststring                             0x080430b4   Section      105  lv_calendar_header_arrow.o(.conststring)
-    .conststring                             0x08043120   Section      652  lv_calendar_header_dropdown.o(.conststring)
-    .conststring                             0x080433ac   Section      157  lv_keyboard.o(.conststring)
-    .conststring                             0x0804344c   Section      108  lv_keyboard.o(.conststring)
-    .conststring                             0x080434b8   Section      126  lv_keyboard.o(.conststring)
-    .conststring                             0x08043538   Section        4  lv_keyboard.o(.conststring)
-    .conststring                             0x0804353c   Section       87  lv_hal_indev.o(.conststring)
-    .conststring                             0x08043594   Section       38  lv_log.o(.conststring)
-    .conststring                             0x080435bc   Section       81  lv_mem.o(.conststring)
-    .conststring                             0x08043610   Section      362  lv_tlsf.o(.conststring)
-    .conststring                             0x0804377c   Section       37  lv_btnmatrix.o(.conststring)
-    .conststring                             0x080437a4   Section       13  app_info.o(.conststring)
-    .conststring                             0x080437b4   Section       10  app_breakout.o(.conststring)
-    .conststring                             0x080437c0   Section        5  app_2048.o(.conststring)
-    .conststring                             0x080437c8   Section       16  app_puzzle.o(.conststring)
-    .conststring                             0x080437d8   Section       10  app_gomoku.o(.conststring)
-    .conststring                             0x080437e4   Section       10  app_beans.o(.conststring)
-    .conststring                             0x080437f0   Section       16  app_tetris.o(.conststring)
-    .conststring                             0x08043800   Section        7  app_mines.o(.conststring)
-    .conststring                             0x08043808   Section       16  app_dino.o(.conststring)
-    .conststring                             0x08043818   Section       10  app_mole.o(.conststring)
-    .conststring                             0x08043824   Section       13  app_fish.o(.conststring)
-    .conststring                             0x08043834   Section       13  app_tank.o(.conststring)
-    .conststring                             0x08043844   Section       13  app_gold.o(.conststring)
-    .conststring                             0x08043854   Section       10  app_fruit.o(.conststring)
-    .conststring                             0x08043860   Section       13  app_plane.o(.conststring)
-    .conststring                             0x08043870   Section       13  app_ski.o(.conststring)
-    .conststring                             0x08043880   Section        7  app_pool.o(.conststring)
-    .conststring                             0x08043888   Section       13  app_subway.o(.conststring)
-    .conststring                             0x08043898   Section       13  app_sniper.o(.conststring)
-    .conststring                             0x080438a8   Section     1770  app_help.o(.conststring)
-    .conststring                             0x08043f94   Section        7  app_help.o(.conststring)
-    .conststring                             0x08043f9c   Section        7  app_clock.o(.conststring)
-    .conststring                             0x08043fa4   Section       16  app_compass.o(.conststring)
-    .conststring                             0x08043fb4   Section        7  app_radar.o(.conststring)
-    .conststring                             0x08043fbc   Section       10  app_snake.o(.conststring)
-    .conststring                             0x08043fc8   Section       10  app_temp.o(.conststring)
+    .constdata                               0x08037cac   Section    59222  lv_font_cn_14.o(.constdata)
+    glyph_bitmap                             0x08037cac   Data       59222  lv_font_cn_14.o(.constdata)
+    .constdata                               0x08046404   Section     3136  lv_font_cn_14.o(.constdata)
+    glyph_dsc                                0x08046404   Data        3136  lv_font_cn_14.o(.constdata)
+    .constdata                               0x08047044   Section      592  lv_font_cn_14.o(.constdata)
+    unicode_list_1                           0x08047044   Data         592  lv_font_cn_14.o(.constdata)
+    .constdata                               0x08047294   Section       40  lv_font_cn_14.o(.constdata)
+    cmaps                                    0x08047294   Data          40  lv_font_cn_14.o(.constdata)
+    .constdata                               0x080472bc   Section       24  lv_font_cn_14.o(.constdata)
+    font_dsc                                 0x080472bc   Data          24  lv_font_cn_14.o(.constdata)
+    .constdata                               0x080472d4   Section       28  lv_font_cn_14.o(.constdata)
+    .constdata                               0x080472f0   Section      291  lv_disp.o(.constdata)
+    __func__                                 0x080472f0   Data          20  lv_disp.o(.constdata)
+    __func__                                 0x08047304   Data          21  lv_disp.o(.constdata)
+    __func__                                 0x08047319   Data          22  lv_disp.o(.constdata)
+    __func__                                 0x0804732f   Data          22  lv_disp.o(.constdata)
+    __func__                                 0x08047345   Data          18  lv_disp.o(.constdata)
+    __func__                                 0x08047357   Data          21  lv_disp.o(.constdata)
+    __func__                                 0x0804736c   Data          21  lv_disp.o(.constdata)
+    __func__                                 0x08047381   Data          19  lv_disp.o(.constdata)
+    __func__                                 0x08047394   Data          22  lv_disp.o(.constdata)
+    __func__                                 0x080473aa   Data          21  lv_disp.o(.constdata)
+    __func__                                 0x080473bf   Data          28  lv_disp.o(.constdata)
+    __func__                                 0x080473db   Data          32  lv_disp.o(.constdata)
+    __func__                                 0x080473fb   Data          24  lv_disp.o(.constdata)
+    .constdata                               0x08047413   Section      366  lv_event.o(.constdata)
+    __func__                                 0x08047413   Data          20  lv_event.o(.constdata)
+    __func__                                 0x08047427   Data          23  lv_event.o(.constdata)
+    __func__                                 0x0804743e   Data          38  lv_event.o(.constdata)
+    __func__                                 0x08047464   Data          24  lv_event.o(.constdata)
+    __func__                                 0x0804747c   Data          19  lv_event.o(.constdata)
+    __func__                                 0x0804748f   Data          27  lv_event.o(.constdata)
+    __func__                                 0x080474aa   Data          22  lv_event.o(.constdata)
+    __func__                                 0x080474c0   Data          22  lv_event.o(.constdata)
+    __func__                                 0x080474d6   Data          17  lv_event.o(.constdata)
+    __func__                                 0x080474e7   Data          25  lv_event.o(.constdata)
+    __func__                                 0x08047500   Data          27  lv_event.o(.constdata)
+    __func__                                 0x0804751b   Data          28  lv_event.o(.constdata)
+    __func__                                 0x08047537   Data          27  lv_event.o(.constdata)
+    __func__                                 0x08047552   Data          24  lv_event.o(.constdata)
+    __func__                                 0x0804756a   Data          23  lv_event.o(.constdata)
+    .constdata                               0x08047581   Section       33  lv_group.o(.constdata)
+    __func__                                 0x08047581   Data          16  lv_group.o(.constdata)
+    __func__                                 0x08047591   Data          17  lv_group.o(.constdata)
+    .constdata                               0x080475a2   Section       61  lv_indev.o(.constdata)
+    __func__                                 0x080475a2   Data          24  lv_indev.o(.constdata)
+    __func__                                 0x080475ba   Data          19  lv_indev.o(.constdata)
+    __func__                                 0x080475cd   Data          18  lv_indev.o(.constdata)
+    .constdata                               0x080475e0   Section       62  lv_obj.o(.constdata)
+    __func__                                 0x080475e0   Data           8  lv_obj.o(.constdata)
+    __func__                                 0x08047604   Data          26  lv_obj.o(.constdata)
+    .constdata                               0x0804761e   Section       24  lv_obj_class.o(.constdata)
+    __func__                                 0x0804761e   Data          24  lv_obj_class.o(.constdata)
+    .constdata                               0x08047638   Section       27  lv_obj_pos.o(.constdata)
+    __func__                                 0x08047640   Data          19  lv_obj_pos.o(.constdata)
+    .constdata                               0x08047653   Section       48  lv_obj_style.o(.constdata)
+    __func__                                 0x08047653   Data          32  lv_obj_style.o(.constdata)
+    __func__                                 0x08047673   Data          16  lv_obj_style.o(.constdata)
+    .constdata                               0x08047683   Section       45  lv_obj_tree.o(.constdata)
+    __func__                                 0x08047683   Data          11  lv_obj_tree.o(.constdata)
+    __func__                                 0x0804768e   Data          18  lv_obj_tree.o(.constdata)
+    __func__                                 0x080476a0   Data          16  lv_obj_tree.o(.constdata)
+    .constdata                               0x080476b0   Section      118  lv_refr.o(.constdata)
+    __func__                                 0x080476b0   Data          13  lv_refr.o(.constdata)
+    __func__                                 0x080476bd   Data          20  lv_refr.o(.constdata)
+    __func__                                 0x080476d1   Data          15  lv_refr.o(.constdata)
+    __func__                                 0x080476e0   Data          15  lv_refr.o(.constdata)
+    __func__                                 0x080476ef   Data           9  lv_refr.o(.constdata)
+    __func__                                 0x080476f8   Data          12  lv_refr.o(.constdata)
+    __func__                                 0x08047704   Data          16  lv_refr.o(.constdata)
+    __func__                                 0x08047714   Data          18  lv_refr.o(.constdata)
+    .constdata                               0x08047726   Section       48  lv_draw_img.o(.constdata)
+    __func__                                 0x08047726   Data          12  lv_draw_img.o(.constdata)
+    __func__                                 0x08047732   Data          20  lv_draw_img.o(.constdata)
+    __func__                                 0x08047746   Data          16  lv_draw_img.o(.constdata)
+    .constdata                               0x08047756   Section       14  lv_draw_label.o(.constdata)
+    __func__                                 0x08047756   Data          14  lv_draw_label.o(.constdata)
+    .constdata                               0x08047764   Section       21  lv_draw_layer.o(.constdata)
+    __func__                                 0x08047764   Data          21  lv_draw_layer.o(.constdata)
+    .constdata                               0x08047779   Section       80  lv_draw_mask.o(.constdata)
+    __func__                                 0x08047779   Data          17  lv_draw_mask.o(.constdata)
+    __func__                                 0x0804778a   Data          24  lv_draw_mask.o(.constdata)
+    __func__                                 0x080477a2   Data          25  lv_draw_mask.o(.constdata)
+    __func__                                 0x080477bb   Data          14  lv_draw_mask.o(.constdata)
+    .constdata                               0x080477c9   Section       18  lv_draw_transform.o(.constdata)
+    __func__                                 0x080477c9   Data          18  lv_draw_transform.o(.constdata)
+    .constdata                               0x080477db   Section       41  lv_img_cache.o(.constdata)
+    __func__                                 0x080477db   Data          19  lv_img_cache.o(.constdata)
+    __func__                                 0x080477ee   Data          22  lv_img_cache.o(.constdata)
+    .constdata                               0x08047804   Section      195  lv_img_decoder.o(.constdata)
+    __func__                                 0x08047804   Data          21  lv_img_decoder.o(.constdata)
+    __func__                                 0x08047819   Data          20  lv_img_decoder.o(.constdata)
+    __func__                                 0x0804782d   Data          22  lv_img_decoder.o(.constdata)
+    __func__                                 0x08047843   Data          29  lv_img_decoder.o(.constdata)
+    __func__                                 0x08047860   Data          29  lv_img_decoder.o(.constdata)
+    __func__                                 0x0804787d   Data          34  lv_img_decoder.o(.constdata)
+    __func__                                 0x0804789f   Data          40  lv_img_decoder.o(.constdata)
+    .constdata                               0x080478c7   Section       25  lv_draw_sw_blend.o(.constdata)
+    __func__                                 0x080478c7   Data          13  lv_draw_sw_blend.o(.constdata)
+    __func__                                 0x080478d4   Data          12  lv_draw_sw_blend.o(.constdata)
+    .constdata                               0x080478e0   Section       79  lv_draw_sw_gradient.o(.constdata)
+    __func__                                 0x080478e0   Data          14  lv_draw_sw_gradient.o(.constdata)
+    __func__                                 0x080478ee   Data          27  lv_draw_sw_gradient.o(.constdata)
+    __func__                                 0x08047909   Data          16  lv_draw_sw_gradient.o(.constdata)
+    __func__                                 0x08047919   Data          22  lv_draw_sw_gradient.o(.constdata)
+    .constdata                               0x0804792f   Section       24  lv_draw_sw_layer.o(.constdata)
+    __func__                                 0x0804792f   Data          24  lv_draw_sw_layer.o(.constdata)
+    .constdata                               0x08047947   Section      333  lv_draw_sw_letter.o(.constdata)
+    __func__                                 0x08047a5d   Data          18  lv_draw_sw_letter.o(.constdata)
+    __func__                                 0x08047a6f   Data          19  lv_draw_sw_letter.o(.constdata)
+    __func__                                 0x08047a82   Data          18  lv_draw_sw_letter.o(.constdata)
+    .constdata                               0x08047a94   Section       33  lv_draw_sw_line.o(.constdata)
+    wcorr                                    0x08047a94   Data          33  lv_draw_sw_line.o(.constdata)
+    .constdata                               0x08047ab8   Section        8  lv_draw_sw_polygon.o(.constdata)
+    .constdata                               0x08047ac0   Section       12  lv_draw_sw_rect.o(.constdata)
+    __func__                                 0x08047ac0   Data          12  lv_draw_sw_rect.o(.constdata)
+    .constdata                               0x08047acc   Section       30  lv_flex.o(.constdata)
+    __func__                                 0x08047acc   Data          15  lv_flex.o(.constdata)
+    __func__                                 0x08047adb   Data          15  lv_flex.o(.constdata)
+    .constdata                               0x08047aea   Section       22  lv_theme_default.o(.constdata)
+    trans_props                              0x08047aea   Data          22  lv_theme_default.o(.constdata)
+    .constdata                               0x08047b00   Section       62  lv_calendar.o(.constdata)
+    __func__                                 0x08047b1c   Data          34  lv_calendar.o(.constdata)
+    .constdata                               0x08047b40   Section       28  lv_calendar_header_arrow.o(.constdata)
+    .constdata                               0x08047b5c   Section       28  lv_calendar_header_dropdown.o(.constdata)
+    .constdata                               0x08047b78   Section      566  lv_chart.o(.constdata)
+    __func__                                 0x08047b94   Data          18  lv_chart.o(.constdata)
+    __func__                                 0x08047ba6   Data          19  lv_chart.o(.constdata)
+    __func__                                 0x08047bb9   Data          27  lv_chart.o(.constdata)
+    __func__                                 0x08047bd4   Data          29  lv_chart.o(.constdata)
+    __func__                                 0x08047bf1   Data          20  lv_chart.o(.constdata)
+    __func__                                 0x08047c05   Data          23  lv_chart.o(.constdata)
+    __func__                                 0x08047c1c   Data          21  lv_chart.o(.constdata)
+    __func__                                 0x08047c31   Data          26  lv_chart.o(.constdata)
+    __func__                                 0x08047c4b   Data          27  lv_chart.o(.constdata)
+    __func__                                 0x08047c66   Data          20  lv_chart.o(.constdata)
+    __func__                                 0x08047c7a   Data          24  lv_chart.o(.constdata)
+    __func__                                 0x08047c92   Data          26  lv_chart.o(.constdata)
+    __func__                                 0x08047cac   Data          26  lv_chart.o(.constdata)
+    __func__                                 0x08047cc6   Data          23  lv_chart.o(.constdata)
+    __func__                                 0x08047cdd   Data          24  lv_chart.o(.constdata)
+    __func__                                 0x08047cf5   Data          25  lv_chart.o(.constdata)
+    __func__                                 0x08047d0e   Data          25  lv_chart.o(.constdata)
+    __func__                                 0x08047d27   Data          26  lv_chart.o(.constdata)
+    __func__                                 0x08047d41   Data          25  lv_chart.o(.constdata)
+    __func__                                 0x08047d5a   Data          25  lv_chart.o(.constdata)
+    __func__                                 0x08047d73   Data          21  lv_chart.o(.constdata)
+    __func__                                 0x08047d88   Data          21  lv_chart.o(.constdata)
+    __func__                                 0x08047d9d   Data          17  lv_chart.o(.constdata)
+    .constdata                               0x08047db0   Section       28  lv_colorwheel.o(.constdata)
+    .constdata                               0x08047dcc   Section       28  lv_keyboard.o(.constdata)
+    .constdata                               0x08047de8   Section      176  lv_keyboard.o(.constdata)
+    default_kb_map_lc                        0x08047de8   Data         176  lv_keyboard.o(.constdata)
+    .constdata                               0x08047e98   Section       80  lv_keyboard.o(.constdata)
+    default_kb_ctrl_lc_map                   0x08047e98   Data          80  lv_keyboard.o(.constdata)
+    .constdata                               0x08047ee8   Section      176  lv_keyboard.o(.constdata)
+    default_kb_map_uc                        0x08047ee8   Data         176  lv_keyboard.o(.constdata)
+    .constdata                               0x08047f98   Section       80  lv_keyboard.o(.constdata)
+    default_kb_ctrl_uc_map                   0x08047f98   Data          80  lv_keyboard.o(.constdata)
+    .constdata                               0x08047fe8   Section      176  lv_keyboard.o(.constdata)
+    default_kb_map_spec                      0x08047fe8   Data         176  lv_keyboard.o(.constdata)
+    .constdata                               0x08048098   Section       80  lv_keyboard.o(.constdata)
+    default_kb_ctrl_spec_map                 0x08048098   Data          80  lv_keyboard.o(.constdata)
+    .constdata                               0x080480e8   Section       84  lv_keyboard.o(.constdata)
+    default_kb_map_num                       0x080480e8   Data          84  lv_keyboard.o(.constdata)
+    .constdata                               0x0804813c   Section       34  lv_keyboard.o(.constdata)
+    default_kb_ctrl_num_map                  0x0804813c   Data          34  lv_keyboard.o(.constdata)
+    .constdata                               0x08048160   Section       28  lv_led.o(.constdata)
+    .constdata                               0x0804817c   Section       84  lv_list.o(.constdata)
+    .constdata                               0x080481d0   Section      289  lv_menu.o(.constdata)
+    __func__                                 0x080482cc   Data          20  lv_menu.o(.constdata)
+    __func__                                 0x080482e0   Data          17  lv_menu.o(.constdata)
+    .constdata                               0x080482f4   Section      138  lv_meter.o(.constdata)
+    __func__                                 0x08048310   Data          19  lv_meter.o(.constdata)
+    __func__                                 0x08048323   Data          25  lv_meter.o(.constdata)
+    __func__                                 0x0804833c   Data          24  lv_meter.o(.constdata)
+    __func__                                 0x08048354   Data          17  lv_meter.o(.constdata)
+    __func__                                 0x08048365   Data          25  lv_meter.o(.constdata)
+    .constdata                               0x08048380   Section      101  lv_msgbox.o(.constdata)
+    __func__                                 0x080483d4   Data          17  lv_msgbox.o(.constdata)
+    .constdata                               0x080483e8   Section       28  lv_spinbox.o(.constdata)
+    .constdata                               0x08048404   Section       28  lv_spinner.o(.constdata)
+    .constdata                               0x08048420   Section       28  lv_tabview.o(.constdata)
+    .constdata                               0x0804843c   Section       75  lv_tileview.o(.constdata)
+    __func__                                 0x08048474   Data          19  lv_tileview.o(.constdata)
+    .constdata                               0x08048488   Section       28  lv_win.o(.constdata)
+    .constdata                               0x080484a4   Section       71  lv_font.o(.constdata)
+    __func__                                 0x080484a4   Data          25  lv_font.o(.constdata)
+    __func__                                 0x080484bd   Data          22  lv_font.o(.constdata)
+    __func__                                 0x080484d3   Data          24  lv_font.o(.constdata)
+    .constdata                               0x080484eb   Section       27  lv_font_fmt_txt.o(.constdata)
+    __func__                                 0x080484eb   Data          27  lv_font_fmt_txt.o(.constdata)
+    .constdata                               0x08048506   Section       64  lv_hal_disp.o(.constdata)
+    __func__                                 0x08048506   Data          24  lv_hal_disp.o(.constdata)
+    __func__                                 0x0804851e   Data          21  lv_hal_disp.o(.constdata)
+    __func__                                 0x08048533   Data          19  lv_hal_disp.o(.constdata)
+    .constdata                               0x08048546   Section       73  lv_hal_indev.o(.constdata)
+    __func__                                 0x08048546   Data          22  lv_hal_indev.o(.constdata)
+    __func__                                 0x0804855c   Data          20  lv_hal_indev.o(.constdata)
+    __func__                                 0x08048570   Data          16  lv_hal_indev.o(.constdata)
+    __func__                                 0x08048580   Data          15  lv_hal_indev.o(.constdata)
+    .constdata                               0x0804858f   Section       14  lv_anim.o(.constdata)
+    __func__                                 0x0804858f   Data          14  lv_anim.o(.constdata)
+    .constdata                               0x0804859e   Section      434  lv_color.o(.constdata)
+    colors                                   0x0804859e   Data          38  lv_color.o(.constdata)
+    __func__                                 0x080485c4   Data          16  lv_color.o(.constdata)
+    colors                                   0x080485d4   Data         190  lv_color.o(.constdata)
+    __func__                                 0x08048692   Data          19  lv_color.o(.constdata)
+    colors                                   0x080486a6   Data         152  lv_color.o(.constdata)
+    __func__                                 0x0804873e   Data          18  lv_color.o(.constdata)
+    .constdata                               0x08048750   Section       48  lv_fs.o(.constdata)
+    __func__                                 0x08048750   Data          11  lv_fs.o(.constdata)
+    __func__                                 0x0804875b   Data          18  lv_fs.o(.constdata)
+    __func__                                 0x0804876d   Data          19  lv_fs.o(.constdata)
+    .constdata                               0x08048780   Section      182  lv_math.o(.constdata)
+    sin0_90_table                            0x08048780   Data         182  lv_math.o(.constdata)
+    .constdata                               0x08048836   Section       61  lv_mem.o(.constdata)
+    __func__                                 0x08048836   Data          15  lv_mem.o(.constdata)
+    __func__                                 0x08048845   Data          12  lv_mem.o(.constdata)
+    __func__                                 0x08048851   Data          15  lv_mem.o(.constdata)
+    __func__                                 0x08048860   Data          19  lv_mem.o(.constdata)
+    .constdata                               0x08048874   Section      203  lv_style.o(.constdata)
+    null_style_value                         0x08048874   Data           4  lv_style.o(.constdata)
+    __func__                                 0x080488e9   Data          15  lv_style.o(.constdata)
+    __func__                                 0x080488f8   Data          23  lv_style.o(.constdata)
+    __func__                                 0x0804890f   Data          21  lv_style.o(.constdata)
+    __func__                                 0x08048924   Data          27  lv_style.o(.constdata)
+    .constdata                               0x0804893f   Section       33  lv_timer.o(.constdata)
+    __func__                                 0x0804893f   Data          17  lv_timer.o(.constdata)
+    __func__                                 0x08048950   Data          16  lv_timer.o(.constdata)
+    .constdata                               0x08048960   Section      382  lv_tlsf.o(.constdata)
+    __func__                                 0x08048960   Data          11  lv_tlsf.o(.constdata)
+    __func__                                 0x0804896b   Data          11  lv_tlsf.o(.constdata)
+    __func__                                 0x08048976   Data           9  lv_tlsf.o(.constdata)
+    __func__                                 0x0804897f   Data          11  lv_tlsf.o(.constdata)
+    __func__                                 0x0804898a   Data          10  lv_tlsf.o(.constdata)
+    __func__                                 0x08048994   Data          22  lv_tlsf.o(.constdata)
+    __func__                                 0x080489aa   Data          18  lv_tlsf.o(.constdata)
+    __func__                                 0x080489bc   Data          18  lv_tlsf.o(.constdata)
+    __func__                                 0x080489ce   Data          12  lv_tlsf.o(.constdata)
+    __func__                                 0x080489da   Data          13  lv_tlsf.o(.constdata)
+    __func__                                 0x080489e7   Data          17  lv_tlsf.o(.constdata)
+    __func__                                 0x080489f8   Data          17  lv_tlsf.o(.constdata)
+    __func__                                 0x08048a09   Data          16  lv_tlsf.o(.constdata)
+    __func__                                 0x08048a19   Data          16  lv_tlsf.o(.constdata)
+    __func__                                 0x08048a29   Data          18  lv_tlsf.o(.constdata)
+    __func__                                 0x08048a3b   Data          19  lv_tlsf.o(.constdata)
+    __func__                                 0x08048a4e   Data          17  lv_tlsf.o(.constdata)
+    __func__                                 0x08048a5f   Data          14  lv_tlsf.o(.constdata)
+    __func__                                 0x08048a6d   Data          15  lv_tlsf.o(.constdata)
+    __func__                                 0x08048a7c   Data          17  lv_tlsf.o(.constdata)
+    __func__                                 0x08048a8d   Data          20  lv_tlsf.o(.constdata)
+    __func__                                 0x08048aa1   Data          15  lv_tlsf.o(.constdata)
+    __func__                                 0x08048ab0   Data          17  lv_tlsf.o(.constdata)
+    __func__                                 0x08048ac1   Data          13  lv_tlsf.o(.constdata)
+    __func__                                 0x08048ace   Data          16  lv_tlsf.o(.constdata)
+    .constdata                               0x08048ade   Section       38  lv_txt.o(.constdata)
+    __func__                                 0x08048ade   Data          16  lv_txt.o(.constdata)
+    __func__                                 0x08048aee   Data          22  lv_txt.o(.constdata)
+    .constdata                               0x08048b04   Section       94  lv_arc.o(.constdata)
+    __func__                                 0x08048b20   Data          26  lv_arc.o(.constdata)
+    __func__                                 0x08048b3a   Data          27  lv_arc.o(.constdata)
+    __func__                                 0x08048b55   Data          13  lv_arc.o(.constdata)
+    .constdata                               0x08048b64   Section       28  lv_bar.o(.constdata)
+    .constdata                               0x08048b80   Section       28  lv_btn.o(.constdata)
+    .constdata                               0x08048b9c   Section       60  lv_btnmatrix.o(.constdata)
+    __func__                                 0x08048bb8   Data          32  lv_btnmatrix.o(.constdata)
+    .constdata                               0x08048bd8   Section       28  lv_checkbox.o(.constdata)
+    .constdata                               0x08048bf4   Section      163  lv_dropdown.o(.constdata)
+    __func__                                 0x08048c2c   Data          24  lv_dropdown.o(.constdata)
+    __func__                                 0x08048c44   Data          31  lv_dropdown.o(.constdata)
+    __func__                                 0x08048c63   Data          23  lv_dropdown.o(.constdata)
+    __func__                                 0x08048c7a   Data          29  lv_dropdown.o(.constdata)
+    .constdata                               0x08048c98   Section       52  lv_img.o(.constdata)
+    __func__                                 0x08048cb4   Data          15  lv_img.o(.constdata)
+    __func__                                 0x08048cc3   Data           9  lv_img.o(.constdata)
+    .constdata                               0x08048ccc   Section      181  lv_label.o(.constdata)
+    __func__                                 0x08048ce8   Data          18  lv_label.o(.constdata)
+    __func__                                 0x08048cfa   Data          22  lv_label.o(.constdata)
+    __func__                                 0x08048d10   Data          24  lv_label.o(.constdata)
+    __func__                                 0x08048d28   Data          23  lv_label.o(.constdata)
+    __func__                                 0x08048d3f   Data          27  lv_label.o(.constdata)
+    __func__                                 0x08048d5a   Data          18  lv_label.o(.constdata)
+    __func__                                 0x08048d6c   Data          21  lv_label.o(.constdata)
+    .constdata                               0x08048d84   Section       28  lv_line.o(.constdata)
+    .constdata                               0x08048da0   Section      105  lv_roller.o(.constdata)
+    __func__                                 0x08048dd8   Data          22  lv_roller.o(.constdata)
+    __func__                                 0x08048dee   Data          27  lv_roller.o(.constdata)
+    .constdata                               0x08048e0c   Section       28  lv_slider.o(.constdata)
+    .constdata                               0x08048e28   Section       28  lv_switch.o(.constdata)
+    .constdata                               0x08048e44   Section      296  lv_table.o(.constdata)
+    __func__                                 0x08048e60   Data          24  lv_table.o(.constdata)
+    __func__                                 0x08048e78   Data          28  lv_table.o(.constdata)
+    __func__                                 0x08048e94   Data          21  lv_table.o(.constdata)
+    __func__                                 0x08048ea9   Data          21  lv_table.o(.constdata)
+    __func__                                 0x08048ebe   Data          23  lv_table.o(.constdata)
+    __func__                                 0x08048ed5   Data          25  lv_table.o(.constdata)
+    __func__                                 0x08048eee   Data          28  lv_table.o(.constdata)
+    __func__                                 0x08048f0a   Data          24  lv_table.o(.constdata)
+    __func__                                 0x08048f22   Data          23  lv_table.o(.constdata)
+    __func__                                 0x08048f39   Data          23  lv_table.o(.constdata)
+    __func__                                 0x08048f50   Data          28  lv_table.o(.constdata)
+    .constdata                               0x08048f6c   Section      229  lv_textarea.o(.constdata)
+    __func__                                 0x08048f88   Data          21  lv_textarea.o(.constdata)
+    __func__                                 0x08048f9d   Data          21  lv_textarea.o(.constdata)
+    __func__                                 0x08048fb2   Data          21  lv_textarea.o(.constdata)
+    __func__                                 0x08048fc7   Data          21  lv_textarea.o(.constdata)
+    __func__                                 0x08048fdc   Data          33  lv_textarea.o(.constdata)
+    __func__                                 0x08048ffd   Data          30  lv_textarea.o(.constdata)
+    __func__                                 0x0804901b   Data          32  lv_textarea.o(.constdata)
+    __func__                                 0x0804903b   Data          22  lv_textarea.o(.constdata)
+    .constdata                               0x08049054   Section       12  app_info.o(.constdata)
+    .constdata                               0x08049060   Section       12  app_breakout.o(.constdata)
+    .constdata                               0x0804906c   Section        4  app_breakout.o(.constdata)
+    row_pal                                  0x0804906c   Data           4  app_breakout.o(.constdata)
+    .constdata                               0x08049070   Section       12  app_2048.o(.constdata)
+    .constdata                               0x0804907c   Section       12  app_puzzle.o(.constdata)
+    .constdata                               0x08049088   Section       12  app_gomoku.o(.constdata)
+    .constdata                               0x08049094   Section        8  app_gomoku.o(.constdata)
+    dirs                                     0x08049094   Data           8  app_gomoku.o(.constdata)
+    .constdata                               0x0804909c   Section        4  app_beans.o(.constdata)
+    PAL                                      0x0804909c   Data           4  app_beans.o(.constdata)
+    .constdata                               0x080490a0   Section       12  app_beans.o(.constdata)
+    .constdata                               0x080490ac   Section       64  app_tetris.o(.constdata)
+    PAL                                      0x080490ac   Data           7  app_tetris.o(.constdata)
+    SHAPES                                   0x080490b4   Data          56  app_tetris.o(.constdata)
+    .constdata                               0x080490ec   Section       12  app_tetris.o(.constdata)
+    .constdata                               0x080490f8   Section       36  app_mines.o(.constdata)
+    DIGC                                     0x080490f8   Data          36  app_mines.o(.constdata)
+    .constdata                               0x0804911c   Section       12  app_mines.o(.constdata)
+    .constdata                               0x08049128   Section       12  app_dino.o(.constdata)
+    .constdata                               0x08049134   Section       10  app_mole.o(.constdata)
+    HOLE_X                                   0x08049134   Data          10  app_mole.o(.constdata)
+    .constdata                               0x08049140   Section       12  app_mole.o(.constdata)
+    .constdata                               0x0804914c   Section       12  app_fish.o(.constdata)
+    .constdata                               0x08049158   Section       12  app_tank.o(.constdata)
+    .constdata                               0x08049164   Section       12  app_gold.o(.constdata)
+    .constdata                               0x08049170   Section       12  app_fruit.o(.constdata)
+    .constdata                               0x0804917c   Section       12  app_plane.o(.constdata)
+    .constdata                               0x08049188   Section       12  app_ski.o(.constdata)
+    .constdata                               0x08049194   Section       24  app_pool.o(.constdata)
+    POCKET_X                                 0x08049194   Data          12  app_pool.o(.constdata)
+    POCKET_Y                                 0x080491a0   Data          12  app_pool.o(.constdata)
+    .constdata                               0x080491ac   Section       12  app_pool.o(.constdata)
+    .constdata                               0x080491b8   Section        6  app_subway.o(.constdata)
+    LANE_X                                   0x080491b8   Data           6  app_subway.o(.constdata)
+    .constdata                               0x080491c0   Section       12  app_subway.o(.constdata)
+    .constdata                               0x080491cc   Section       12  app_sniper.o(.constdata)
+    .constdata                               0x080491d8   Section      120  app_help.o(.constdata)
+    PAGE_TITLE                               0x080491d8   Data          60  app_help.o(.constdata)
+    PAGE_BODY                                0x08049214   Data          60  app_help.o(.constdata)
+    .constdata                               0x08049250   Section       12  app_help.o(.constdata)
+    .constdata                               0x0804925c   Section       12  app_clock.o(.constdata)
+    .constdata                               0x08049268   Section       12  app_compass.o(.constdata)
+    .constdata                               0x08049274   Section       16  app_compass.o(.constdata)
+    names                                    0x08049274   Data          16  app_compass.o(.constdata)
+    .constdata                               0x08049284   Section       12  app_radar.o(.constdata)
+    .constdata                               0x08049290   Section       12  app_snake.o(.constdata)
+    .constdata                               0x0804929c   Section       12  app_temp.o(.constdata)
+    .constdata                               0x080492a8   Section       12  sys_notify.o(.constdata)
+    fx_beep_short                            0x080492a8   Data          12  sys_notify.o(.constdata)
+    .constdata                               0x080492b4   Section       12  sys_notify.o(.constdata)
+    fx_beep_long                             0x080492b4   Data          12  sys_notify.o(.constdata)
+    .constdata                               0x080492c0   Section       28  sys_notify.o(.constdata)
+    fx_ok                                    0x080492c0   Data          28  sys_notify.o(.constdata)
+    .constdata                               0x080492dc   Section       52  sys_notify.o(.constdata)
+    fx_error                                 0x080492dc   Data          52  sys_notify.o(.constdata)
+    .constdata                               0x08049310   Section       28  sys_notify.o(.constdata)
+    fx_marquee                               0x08049310   Data          28  sys_notify.o(.constdata)
+    .constdata                               0x0804932c   Section       40  sys_notify.o(.constdata)
+    fx_marquee_once                          0x0804932c   Data          40  sys_notify.o(.constdata)
+    .constdata                               0x08049354   Section       32  sys_notify.o(.constdata)
+    fx_table                                 0x08049354   Data          32  sys_notify.o(.constdata)
+    .conststring                             0x08049374   Section       35  freertos.o(.conststring)
+    .conststring                             0x08049398   Section       78  lv_obj.o(.conststring)
+    .conststring                             0x080493e8   Section       90  lv_refr.o(.conststring)
+    .conststring                             0x08049444   Section       65  lv_draw_label.o(.conststring)
+    .conststring                             0x08049488   Section       94  lv_draw_sw_layer.o(.conststring)
+    .conststring                             0x080494e8   Section       27  lv_calendar.o(.conststring)
+    .conststring                             0x08049504   Section      105  lv_calendar_header_arrow.o(.conststring)
+    .conststring                             0x08049570   Section      652  lv_calendar_header_dropdown.o(.conststring)
+    .conststring                             0x080497fc   Section      157  lv_keyboard.o(.conststring)
+    .conststring                             0x0804989c   Section      108  lv_keyboard.o(.conststring)
+    .conststring                             0x08049908   Section      126  lv_keyboard.o(.conststring)
+    .conststring                             0x08049988   Section        4  lv_keyboard.o(.conststring)
+    .conststring                             0x0804998c   Section       87  lv_hal_indev.o(.conststring)
+    .conststring                             0x080499e4   Section       38  lv_log.o(.conststring)
+    .conststring                             0x08049a0c   Section       81  lv_mem.o(.conststring)
+    .conststring                             0x08049a60   Section      362  lv_tlsf.o(.conststring)
+    .conststring                             0x08049bcc   Section       37  lv_btnmatrix.o(.conststring)
+    .conststring                             0x08049bf4   Section       13  app_info.o(.conststring)
+    .conststring                             0x08049c04   Section       10  app_breakout.o(.conststring)
+    .conststring                             0x08049c10   Section        5  app_2048.o(.conststring)
+    .conststring                             0x08049c18   Section       16  app_puzzle.o(.conststring)
+    .conststring                             0x08049c28   Section       10  app_gomoku.o(.conststring)
+    .conststring                             0x08049c34   Section       10  app_beans.o(.conststring)
+    .conststring                             0x08049c40   Section       16  app_tetris.o(.conststring)
+    .conststring                             0x08049c50   Section        7  app_mines.o(.conststring)
+    .conststring                             0x08049c58   Section       16  app_dino.o(.conststring)
+    .conststring                             0x08049c68   Section       10  app_mole.o(.conststring)
+    .conststring                             0x08049c74   Section       13  app_fish.o(.conststring)
+    .conststring                             0x08049c84   Section       13  app_tank.o(.conststring)
+    .conststring                             0x08049c94   Section       13  app_gold.o(.conststring)
+    .conststring                             0x08049ca4   Section       10  app_fruit.o(.conststring)
+    .conststring                             0x08049cb0   Section       13  app_plane.o(.conststring)
+    .conststring                             0x08049cc0   Section       13  app_ski.o(.conststring)
+    .conststring                             0x08049cd0   Section        7  app_pool.o(.conststring)
+    .conststring                             0x08049cd8   Section       13  app_subway.o(.conststring)
+    .conststring                             0x08049ce8   Section       13  app_sniper.o(.conststring)
+    .conststring                             0x08049cf8   Section     1770  app_help.o(.conststring)
+    .conststring                             0x0804a3e4   Section        7  app_help.o(.conststring)
+    .conststring                             0x0804a3ec   Section        7  app_clock.o(.conststring)
+    .conststring                             0x0804a3f4   Section       16  app_compass.o(.conststring)
+    .conststring                             0x0804a404   Section        7  app_radar.o(.conststring)
+    .conststring                             0x0804a40c   Section       10  app_snake.o(.conststring)
+    .conststring                             0x0804a418   Section       10  app_temp.o(.conststring)
     .data                                    0x20000000   Section       60  tasks.o(.data)
     uxDeletedTasksWaitingCleanUp             0x20000004   Data           4  tasks.o(.data)
     uxCurrentNumberOfTasks                   0x20000008   Data           4  tasks.o(.data)
@@ -16534,85 +16534,85 @@ Image Symbol Table
     notify_attributes                        0x08037958   Data          36  freertos.o(.constdata)
     AHBPrescTable                            0x08037984   Data          16  system_stm32f4xx.o(.constdata)
     APBPrescTable                            0x08037994   Data           8  system_stm32f4xx.o(.constdata)
-    lv_font_cn_14                            0x08040e84   Data          28  lv_font_cn_14.o(.constdata)
-    lv_obj_class                             0x08041198   Data          28  lv_obj.o(.constdata)
-    _lv_bpp1_opa_table                       0x080414f7   Data           2  lv_draw_sw_letter.o(.constdata)
-    _lv_bpp2_opa_table                       0x080414f9   Data           4  lv_draw_sw_letter.o(.constdata)
-    _lv_bpp4_opa_table                       0x080414fd   Data          16  lv_draw_sw_letter.o(.constdata)
-    _lv_bpp8_opa_table                       0x0804150d   Data         256  lv_draw_sw_letter.o(.constdata)
-    lv_calendar_class                        0x080416b0   Data          28  lv_calendar.o(.constdata)
-    lv_calendar_header_arrow_class           0x080416f0   Data          28  lv_calendar_header_arrow.o(.constdata)
-    lv_calendar_header_dropdown_class        0x0804170c   Data          28  lv_calendar_header_dropdown.o(.constdata)
-    lv_chart_class                           0x08041728   Data          28  lv_chart.o(.constdata)
-    lv_colorwheel_class                      0x08041960   Data          28  lv_colorwheel.o(.constdata)
-    lv_keyboard_class                        0x0804197c   Data          28  lv_keyboard.o(.constdata)
-    lv_led_class                             0x08041d10   Data          28  lv_led.o(.constdata)
-    lv_list_class                            0x08041d2c   Data          28  lv_list.o(.constdata)
-    lv_list_btn_class                        0x08041d48   Data          28  lv_list.o(.constdata)
-    lv_list_text_class                       0x08041d64   Data          28  lv_list.o(.constdata)
-    lv_menu_class                            0x08041d80   Data          28  lv_menu.o(.constdata)
-    lv_menu_page_class                       0x08041d9c   Data          28  lv_menu.o(.constdata)
-    lv_menu_cont_class                       0x08041db8   Data          28  lv_menu.o(.constdata)
-    lv_menu_section_class                    0x08041dd4   Data          28  lv_menu.o(.constdata)
-    lv_menu_separator_class                  0x08041df0   Data          28  lv_menu.o(.constdata)
-    lv_menu_sidebar_cont_class               0x08041e0c   Data          28  lv_menu.o(.constdata)
-    lv_menu_main_cont_class                  0x08041e28   Data          28  lv_menu.o(.constdata)
-    lv_menu_main_header_cont_class           0x08041e44   Data          28  lv_menu.o(.constdata)
-    lv_menu_sidebar_header_cont_class        0x08041e60   Data          28  lv_menu.o(.constdata)
-    lv_meter_class                           0x08041ea4   Data          28  lv_meter.o(.constdata)
-    lv_msgbox_class                          0x08041f30   Data          28  lv_msgbox.o(.constdata)
-    lv_msgbox_content_class                  0x08041f4c   Data          28  lv_msgbox.o(.constdata)
-    lv_msgbox_backdrop_class                 0x08041f68   Data          28  lv_msgbox.o(.constdata)
-    lv_spinbox_class                         0x08041f98   Data          28  lv_spinbox.o(.constdata)
-    lv_spinner_class                         0x08041fb4   Data          28  lv_spinner.o(.constdata)
-    lv_tabview_class                         0x08041fd0   Data          28  lv_tabview.o(.constdata)
-    lv_tileview_class                        0x08041fec   Data          28  lv_tileview.o(.constdata)
-    lv_tileview_tile_class                   0x08042008   Data          28  lv_tileview.o(.constdata)
-    lv_win_class                             0x08042038   Data          28  lv_win.o(.constdata)
-    _lv_style_builtin_prop_flag_lookup_table 0x08042428   Data         113  lv_style.o(.constdata)
-    lv_arc_class                             0x080426b4   Data          28  lv_arc.o(.constdata)
-    lv_bar_class                             0x08042714   Data          28  lv_bar.o(.constdata)
-    lv_btn_class                             0x08042730   Data          28  lv_btn.o(.constdata)
-    lv_btnmatrix_class                       0x0804274c   Data          28  lv_btnmatrix.o(.constdata)
-    lv_checkbox_class                        0x08042788   Data          28  lv_checkbox.o(.constdata)
-    lv_dropdown_class                        0x080427a4   Data          28  lv_dropdown.o(.constdata)
-    lv_dropdownlist_class                    0x080427c0   Data          28  lv_dropdown.o(.constdata)
-    lv_img_class                             0x08042848   Data          28  lv_img.o(.constdata)
-    lv_label_class                           0x0804287c   Data          28  lv_label.o(.constdata)
-    lv_line_class                            0x08042934   Data          28  lv_line.o(.constdata)
-    lv_roller_class                          0x08042950   Data          28  lv_roller.o(.constdata)
-    lv_roller_label_class                    0x0804296c   Data          28  lv_roller.o(.constdata)
-    lv_slider_class                          0x080429bc   Data          28  lv_slider.o(.constdata)
-    lv_switch_class                          0x080429d8   Data          28  lv_switch.o(.constdata)
-    lv_table_class                           0x080429f4   Data          28  lv_table.o(.constdata)
-    lv_textarea_class                        0x08042b1c   Data          28  lv_textarea.o(.constdata)
-    app_info                                 0x08042c04   Data          12  app_info.o(.constdata)
-    app_breakout                             0x08042c10   Data          12  app_breakout.o(.constdata)
-    app_2048                                 0x08042c20   Data          12  app_2048.o(.constdata)
-    app_puzzle                               0x08042c2c   Data          12  app_puzzle.o(.constdata)
-    app_gomoku                               0x08042c38   Data          12  app_gomoku.o(.constdata)
-    app_beans                                0x08042c50   Data          12  app_beans.o(.constdata)
-    app_tetris                               0x08042c9c   Data          12  app_tetris.o(.constdata)
-    app_mines                                0x08042ccc   Data          12  app_mines.o(.constdata)
-    app_dino                                 0x08042cd8   Data          12  app_dino.o(.constdata)
-    app_mole                                 0x08042cf0   Data          12  app_mole.o(.constdata)
-    app_fish                                 0x08042cfc   Data          12  app_fish.o(.constdata)
-    app_tank                                 0x08042d08   Data          12  app_tank.o(.constdata)
-    app_gold                                 0x08042d14   Data          12  app_gold.o(.constdata)
-    app_fruit                                0x08042d20   Data          12  app_fruit.o(.constdata)
-    app_plane                                0x08042d2c   Data          12  app_plane.o(.constdata)
-    app_ski                                  0x08042d38   Data          12  app_ski.o(.constdata)
-    app_pool                                 0x08042d5c   Data          12  app_pool.o(.constdata)
-    app_subway                               0x08042d70   Data          12  app_subway.o(.constdata)
-    app_sniper                               0x08042d7c   Data          12  app_sniper.o(.constdata)
-    app_help                                 0x08042e00   Data          12  app_help.o(.constdata)
-    app_clock                                0x08042e0c   Data          12  app_clock.o(.constdata)
-    app_compass                              0x08042e18   Data          12  app_compass.o(.constdata)
-    app_radar                                0x08042e34   Data          12  app_radar.o(.constdata)
-    app_snake                                0x08042e40   Data          12  app_snake.o(.constdata)
-    app_temp                                 0x08042e4c   Data          12  app_temp.o(.constdata)
-    Region$$Table$$Base                      0x08043fd4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08044014   Number         0  anon$$obj.o(Region$$Table)
+    lv_font_cn_14                            0x080472d4   Data          28  lv_font_cn_14.o(.constdata)
+    lv_obj_class                             0x080475e8   Data          28  lv_obj.o(.constdata)
+    _lv_bpp1_opa_table                       0x08047947   Data           2  lv_draw_sw_letter.o(.constdata)
+    _lv_bpp2_opa_table                       0x08047949   Data           4  lv_draw_sw_letter.o(.constdata)
+    _lv_bpp4_opa_table                       0x0804794d   Data          16  lv_draw_sw_letter.o(.constdata)
+    _lv_bpp8_opa_table                       0x0804795d   Data         256  lv_draw_sw_letter.o(.constdata)
+    lv_calendar_class                        0x08047b00   Data          28  lv_calendar.o(.constdata)
+    lv_calendar_header_arrow_class           0x08047b40   Data          28  lv_calendar_header_arrow.o(.constdata)
+    lv_calendar_header_dropdown_class        0x08047b5c   Data          28  lv_calendar_header_dropdown.o(.constdata)
+    lv_chart_class                           0x08047b78   Data          28  lv_chart.o(.constdata)
+    lv_colorwheel_class                      0x08047db0   Data          28  lv_colorwheel.o(.constdata)
+    lv_keyboard_class                        0x08047dcc   Data          28  lv_keyboard.o(.constdata)
+    lv_led_class                             0x08048160   Data          28  lv_led.o(.constdata)
+    lv_list_class                            0x0804817c   Data          28  lv_list.o(.constdata)
+    lv_list_btn_class                        0x08048198   Data          28  lv_list.o(.constdata)
+    lv_list_text_class                       0x080481b4   Data          28  lv_list.o(.constdata)
+    lv_menu_class                            0x080481d0   Data          28  lv_menu.o(.constdata)
+    lv_menu_page_class                       0x080481ec   Data          28  lv_menu.o(.constdata)
+    lv_menu_cont_class                       0x08048208   Data          28  lv_menu.o(.constdata)
+    lv_menu_section_class                    0x08048224   Data          28  lv_menu.o(.constdata)
+    lv_menu_separator_class                  0x08048240   Data          28  lv_menu.o(.constdata)
+    lv_menu_sidebar_cont_class               0x0804825c   Data          28  lv_menu.o(.constdata)
+    lv_menu_main_cont_class                  0x08048278   Data          28  lv_menu.o(.constdata)
+    lv_menu_main_header_cont_class           0x08048294   Data          28  lv_menu.o(.constdata)
+    lv_menu_sidebar_header_cont_class        0x080482b0   Data          28  lv_menu.o(.constdata)
+    lv_meter_class                           0x080482f4   Data          28  lv_meter.o(.constdata)
+    lv_msgbox_class                          0x08048380   Data          28  lv_msgbox.o(.constdata)
+    lv_msgbox_content_class                  0x0804839c   Data          28  lv_msgbox.o(.constdata)
+    lv_msgbox_backdrop_class                 0x080483b8   Data          28  lv_msgbox.o(.constdata)
+    lv_spinbox_class                         0x080483e8   Data          28  lv_spinbox.o(.constdata)
+    lv_spinner_class                         0x08048404   Data          28  lv_spinner.o(.constdata)
+    lv_tabview_class                         0x08048420   Data          28  lv_tabview.o(.constdata)
+    lv_tileview_class                        0x0804843c   Data          28  lv_tileview.o(.constdata)
+    lv_tileview_tile_class                   0x08048458   Data          28  lv_tileview.o(.constdata)
+    lv_win_class                             0x08048488   Data          28  lv_win.o(.constdata)
+    _lv_style_builtin_prop_flag_lookup_table 0x08048878   Data         113  lv_style.o(.constdata)
+    lv_arc_class                             0x08048b04   Data          28  lv_arc.o(.constdata)
+    lv_bar_class                             0x08048b64   Data          28  lv_bar.o(.constdata)
+    lv_btn_class                             0x08048b80   Data          28  lv_btn.o(.constdata)
+    lv_btnmatrix_class                       0x08048b9c   Data          28  lv_btnmatrix.o(.constdata)
+    lv_checkbox_class                        0x08048bd8   Data          28  lv_checkbox.o(.constdata)
+    lv_dropdown_class                        0x08048bf4   Data          28  lv_dropdown.o(.constdata)
+    lv_dropdownlist_class                    0x08048c10   Data          28  lv_dropdown.o(.constdata)
+    lv_img_class                             0x08048c98   Data          28  lv_img.o(.constdata)
+    lv_label_class                           0x08048ccc   Data          28  lv_label.o(.constdata)
+    lv_line_class                            0x08048d84   Data          28  lv_line.o(.constdata)
+    lv_roller_class                          0x08048da0   Data          28  lv_roller.o(.constdata)
+    lv_roller_label_class                    0x08048dbc   Data          28  lv_roller.o(.constdata)
+    lv_slider_class                          0x08048e0c   Data          28  lv_slider.o(.constdata)
+    lv_switch_class                          0x08048e28   Data          28  lv_switch.o(.constdata)
+    lv_table_class                           0x08048e44   Data          28  lv_table.o(.constdata)
+    lv_textarea_class                        0x08048f6c   Data          28  lv_textarea.o(.constdata)
+    app_info                                 0x08049054   Data          12  app_info.o(.constdata)
+    app_breakout                             0x08049060   Data          12  app_breakout.o(.constdata)
+    app_2048                                 0x08049070   Data          12  app_2048.o(.constdata)
+    app_puzzle                               0x0804907c   Data          12  app_puzzle.o(.constdata)
+    app_gomoku                               0x08049088   Data          12  app_gomoku.o(.constdata)
+    app_beans                                0x080490a0   Data          12  app_beans.o(.constdata)
+    app_tetris                               0x080490ec   Data          12  app_tetris.o(.constdata)
+    app_mines                                0x0804911c   Data          12  app_mines.o(.constdata)
+    app_dino                                 0x08049128   Data          12  app_dino.o(.constdata)
+    app_mole                                 0x08049140   Data          12  app_mole.o(.constdata)
+    app_fish                                 0x0804914c   Data          12  app_fish.o(.constdata)
+    app_tank                                 0x08049158   Data          12  app_tank.o(.constdata)
+    app_gold                                 0x08049164   Data          12  app_gold.o(.constdata)
+    app_fruit                                0x08049170   Data          12  app_fruit.o(.constdata)
+    app_plane                                0x0804917c   Data          12  app_plane.o(.constdata)
+    app_ski                                  0x08049188   Data          12  app_ski.o(.constdata)
+    app_pool                                 0x080491ac   Data          12  app_pool.o(.constdata)
+    app_subway                               0x080491c0   Data          12  app_subway.o(.constdata)
+    app_sniper                               0x080491cc   Data          12  app_sniper.o(.constdata)
+    app_help                                 0x08049250   Data          12  app_help.o(.constdata)
+    app_clock                                0x0804925c   Data          12  app_clock.o(.constdata)
+    app_compass                              0x08049268   Data          12  app_compass.o(.constdata)
+    app_radar                                0x08049284   Data          12  app_radar.o(.constdata)
+    app_snake                                0x08049290   Data          12  app_snake.o(.constdata)
+    app_temp                                 0x0804929c   Data          12  app_temp.o(.constdata)
+    Region$$Table$$Base                      0x0804a424   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0804a464   Number         0  anon$$obj.o(Region$$Table)
     pxCurrentTCB                             0x20000000   Data           4  tasks.o(.data)
     LV_LAYOUT_FLEX                           0x200000a8   Data           2  lv_flex.o(.data)
     LV_STYLE_FLEX_FLOW                       0x200000aa   Data           2  lv_flex.o(.data)
@@ -16685,9 +16685,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000189
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00044680, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x0004416c])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0004aad0, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x0004a5c0])
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00044014, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x0004a464, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -18533,234 +18533,234 @@ Memory Map of the image
     0x08037c4a   0x08037c4a   0x00000002   PAD
     0x08037c4c   0x08037c4c   0x00000030   Data   RO         6339    .constdata          led.o
     0x08037c7c   0x08037c7c   0x00000030   Data   RO         6614    .constdata          keys.o
-    0x08037cac   0x08037cac   0x00008841   Data   RO         7705    .constdata          lv_font_cn_14.o
-    0x080404ed   0x080404ed   0x00000003   PAD
-    0x080404f0   0x080404f0   0x00000810   Data   RO         7706    .constdata          lv_font_cn_14.o
-    0x08040d00   0x08040d00   0x00000144   Data   RO         7707    .constdata          lv_font_cn_14.o
-    0x08040e44   0x08040e44   0x00000028   Data   RO         7708    .constdata          lv_font_cn_14.o
-    0x08040e6c   0x08040e6c   0x00000018   Data   RO         7709    .constdata          lv_font_cn_14.o
-    0x08040e84   0x08040e84   0x0000001c   Data   RO         7710    .constdata          lv_font_cn_14.o
-    0x08040ea0   0x08040ea0   0x00000123   Data   RO         8404    .constdata          lv_disp.o
-    0x08040fc3   0x08040fc3   0x0000016e   Data   RO         8714    .constdata          lv_event.o
-    0x08041131   0x08041131   0x00000021   Data   RO         9022    .constdata          lv_group.o
-    0x08041152   0x08041152   0x0000003d   Data   RO         9342    .constdata          lv_indev.o
-    0x0804118f   0x0804118f   0x00000001   PAD
-    0x08041190   0x08041190   0x0000003e   Data   RO         9690    .constdata          lv_obj.o
-    0x080411ce   0x080411ce   0x00000018   Data   RO        10189    .constdata          lv_obj_class.o
-    0x080411e6   0x080411e6   0x00000002   PAD
-    0x080411e8   0x080411e8   0x0000001b   Data   RO        10566    .constdata          lv_obj_pos.o
-    0x08041203   0x08041203   0x00000030   Data   RO        11291    .constdata          lv_obj_style.o
-    0x08041233   0x08041233   0x0000002d   Data   RO        12073    .constdata          lv_obj_tree.o
-    0x08041260   0x08041260   0x00000076   Data   RO        12259    .constdata          lv_refr.o
-    0x080412d6   0x080412d6   0x00000030   Data   RO        13355    .constdata          lv_draw_img.o
-    0x08041306   0x08041306   0x0000000e   Data   RO        13525    .constdata          lv_draw_label.o
-    0x08041314   0x08041314   0x00000015   Data   RO        13650    .constdata          lv_draw_layer.o
-    0x08041329   0x08041329   0x00000050   Data   RO        13911    .constdata          lv_draw_mask.o
-    0x08041379   0x08041379   0x00000012   Data   RO        14176    .constdata          lv_draw_transform.o
-    0x0804138b   0x0804138b   0x00000029   Data   RO        14324    .constdata          lv_img_cache.o
-    0x080413b4   0x080413b4   0x000000c3   Data   RO        14401    .constdata          lv_img_decoder.o
-    0x08041477   0x08041477   0x00000019   Data   RO        15518    .constdata          lv_draw_sw_blend.o
-    0x08041490   0x08041490   0x0000004f   Data   RO        15716    .constdata          lv_draw_sw_gradient.o
-    0x080414df   0x080414df   0x00000018   Data   RO        15931    .constdata          lv_draw_sw_layer.o
-    0x080414f7   0x080414f7   0x0000014d   Data   RO        16043    .constdata          lv_draw_sw_letter.o
-    0x08041644   0x08041644   0x00000021   Data   RO        16154    .constdata          lv_draw_sw_line.o
-    0x08041665   0x08041665   0x00000003   PAD
-    0x08041668   0x08041668   0x00000008   Data   RO        16251    .constdata          lv_draw_sw_polygon.o
-    0x08041670   0x08041670   0x0000000c   Data   RO        16283    .constdata          lv_draw_sw_rect.o
-    0x0804167c   0x0804167c   0x0000001e   Data   RO        16689    .constdata          lv_flex.o
-    0x0804169a   0x0804169a   0x00000016   Data   RO        24664    .constdata          lv_theme_default.o
-    0x080416b0   0x080416b0   0x0000003e   Data   RO        26098    .constdata          lv_calendar.o
-    0x080416ee   0x080416ee   0x00000002   PAD
-    0x080416f0   0x080416f0   0x0000001c   Data   RO        26594    .constdata          lv_calendar_header_arrow.o
-    0x0804170c   0x0804170c   0x0000001c   Data   RO        26802    .constdata          lv_calendar_header_dropdown.o
-    0x08041728   0x08041728   0x00000236   Data   RO        26987    .constdata          lv_chart.o
-    0x0804195e   0x0804195e   0x00000002   PAD
-    0x08041960   0x08041960   0x0000001c   Data   RO        27689    .constdata          lv_colorwheel.o
-    0x0804197c   0x0804197c   0x0000001c   Data   RO        28704    .constdata          lv_keyboard.o
-    0x08041998   0x08041998   0x000000b0   Data   RO        28705    .constdata          lv_keyboard.o
-    0x08041a48   0x08041a48   0x00000050   Data   RO        28706    .constdata          lv_keyboard.o
-    0x08041a98   0x08041a98   0x000000b0   Data   RO        28707    .constdata          lv_keyboard.o
-    0x08041b48   0x08041b48   0x00000050   Data   RO        28708    .constdata          lv_keyboard.o
-    0x08041b98   0x08041b98   0x000000b0   Data   RO        28709    .constdata          lv_keyboard.o
-    0x08041c48   0x08041c48   0x00000050   Data   RO        28710    .constdata          lv_keyboard.o
-    0x08041c98   0x08041c98   0x00000054   Data   RO        28711    .constdata          lv_keyboard.o
-    0x08041cec   0x08041cec   0x00000022   Data   RO        28712    .constdata          lv_keyboard.o
-    0x08041d0e   0x08041d0e   0x00000002   PAD
-    0x08041d10   0x08041d10   0x0000001c   Data   RO        28965    .constdata          lv_led.o
-    0x08041d2c   0x08041d2c   0x00000054   Data   RO        29436    .constdata          lv_list.o
-    0x08041d80   0x08041d80   0x00000121   Data   RO        29673    .constdata          lv_menu.o
-    0x08041ea1   0x08041ea1   0x00000003   PAD
-    0x08041ea4   0x08041ea4   0x0000008a   Data   RO        30014    .constdata          lv_meter.o
-    0x08041f2e   0x08041f2e   0x00000002   PAD
-    0x08041f30   0x08041f30   0x00000065   Data   RO        30542    .constdata          lv_msgbox.o
-    0x08041f95   0x08041f95   0x00000003   PAD
-    0x08041f98   0x08041f98   0x0000001c   Data   RO        31659    .constdata          lv_spinbox.o
-    0x08041fb4   0x08041fb4   0x0000001c   Data   RO        32165    .constdata          lv_spinner.o
-    0x08041fd0   0x08041fd0   0x0000001c   Data   RO        32612    .constdata          lv_tabview.o
-    0x08041fec   0x08041fec   0x0000004b   Data   RO        33097    .constdata          lv_tileview.o
-    0x08042037   0x08042037   0x00000001   PAD
-    0x08042038   0x08042038   0x0000001c   Data   RO        33308    .constdata          lv_win.o
-    0x08042054   0x08042054   0x00000047   Data   RO        33756    .constdata          lv_font.o
-    0x0804209b   0x0804209b   0x0000001b   Data   RO        34238    .constdata          lv_font_fmt_txt.o
-    0x080420b6   0x080420b6   0x00000040   Data   RO        34809    .constdata          lv_hal_disp.o
-    0x080420f6   0x080420f6   0x00000049   Data   RO        35161    .constdata          lv_hal_indev.o
-    0x0804213f   0x0804213f   0x0000000e   Data   RO        35414    .constdata          lv_anim.o
-    0x0804214d   0x0804214d   0x00000001   PAD
-    0x0804214e   0x0804214e   0x000001b2   Data   RO        35854    .constdata          lv_color.o
-    0x08042300   0x08042300   0x00000030   Data   RO        35946    .constdata          lv_fs.o
-    0x08042330   0x08042330   0x000000b6   Data   RO        36299    .constdata          lv_math.o
-    0x080423e6   0x080423e6   0x0000003d   Data   RO        36359    .constdata          lv_mem.o
-    0x08042423   0x08042423   0x00000001   PAD
-    0x08042424   0x08042424   0x000000cb   Data   RO        36522    .constdata          lv_style.o
-    0x080424ef   0x080424ef   0x00000021   Data   RO        37219    .constdata          lv_timer.o
-    0x08042510   0x08042510   0x0000017e   Data   RO        37354    .constdata          lv_tlsf.o
-    0x0804268e   0x0804268e   0x00000026   Data   RO        37591    .constdata          lv_txt.o
-    0x080426b4   0x080426b4   0x0000005e   Data   RO        37825    .constdata          lv_arc.o
-    0x08042712   0x08042712   0x00000002   PAD
-    0x08042714   0x08042714   0x0000001c   Data   RO        38198    .constdata          lv_bar.o
-    0x08042730   0x08042730   0x0000001c   Data   RO        38406    .constdata          lv_btn.o
-    0x0804274c   0x0804274c   0x0000003c   Data   RO        38464    .constdata          lv_btnmatrix.o
-    0x08042788   0x08042788   0x0000001c   Data   RO        38933    .constdata          lv_checkbox.o
-    0x080427a4   0x080427a4   0x000000a3   Data   RO        39128    .constdata          lv_dropdown.o
-    0x08042847   0x08042847   0x00000001   PAD
-    0x08042848   0x08042848   0x00000034   Data   RO        39435    .constdata          lv_img.o
-    0x0804287c   0x0804287c   0x000000b5   Data   RO        39668    .constdata          lv_label.o
-    0x08042931   0x08042931   0x00000003   PAD
-    0x08042934   0x08042934   0x0000001c   Data   RO        39914    .constdata          lv_line.o
-    0x08042950   0x08042950   0x00000069   Data   RO        39989    .constdata          lv_roller.o
-    0x080429b9   0x080429b9   0x00000003   PAD
-    0x080429bc   0x080429bc   0x0000001c   Data   RO        40185    .constdata          lv_slider.o
-    0x080429d8   0x080429d8   0x0000001c   Data   RO        40330    .constdata          lv_switch.o
-    0x080429f4   0x080429f4   0x00000128   Data   RO        40491    .constdata          lv_table.o
-    0x08042b1c   0x08042b1c   0x000000e5   Data   RO        40803    .constdata          lv_textarea.o
-    0x08042c01   0x08042c01   0x00000003   PAD
-    0x08042c04   0x08042c04   0x0000000c   Data   RO        41167    .constdata          app_info.o
-    0x08042c10   0x08042c10   0x0000000c   Data   RO        41594    .constdata          app_breakout.o
-    0x08042c1c   0x08042c1c   0x00000004   Data   RO        41595    .constdata          app_breakout.o
-    0x08042c20   0x08042c20   0x0000000c   Data   RO        41848    .constdata          app_2048.o
-    0x08042c2c   0x08042c2c   0x0000000c   Data   RO        42113    .constdata          app_puzzle.o
-    0x08042c38   0x08042c38   0x0000000c   Data   RO        42189    .constdata          app_gomoku.o
-    0x08042c44   0x08042c44   0x00000008   Data   RO        42190    .constdata          app_gomoku.o
-    0x08042c4c   0x08042c4c   0x00000004   Data   RO        42456    .constdata          app_beans.o
-    0x08042c50   0x08042c50   0x0000000c   Data   RO        42457    .constdata          app_beans.o
-    0x08042c5c   0x08042c5c   0x00000040   Data   RO        42539    .constdata          app_tetris.o
-    0x08042c9c   0x08042c9c   0x0000000c   Data   RO        42540    .constdata          app_tetris.o
-    0x08042ca8   0x08042ca8   0x00000024   Data   RO        42635    .constdata          app_mines.o
-    0x08042ccc   0x08042ccc   0x0000000c   Data   RO        42636    .constdata          app_mines.o
-    0x08042cd8   0x08042cd8   0x0000000c   Data   RO        42969    .constdata          app_dino.o
-    0x08042ce4   0x08042ce4   0x0000000a   Data   RO        43053    .constdata          app_mole.o
-    0x08042cee   0x08042cee   0x00000002   PAD
-    0x08042cf0   0x08042cf0   0x0000000c   Data   RO        43054    .constdata          app_mole.o
-    0x08042cfc   0x08042cfc   0x0000000c   Data   RO        43123    .constdata          app_fish.o
-    0x08042d08   0x08042d08   0x0000000c   Data   RO        43207    .constdata          app_tank.o
-    0x08042d14   0x08042d14   0x0000000c   Data   RO        43287    .constdata          app_gold.o
-    0x08042d20   0x08042d20   0x0000000c   Data   RO        43366    .constdata          app_fruit.o
-    0x08042d2c   0x08042d2c   0x0000000c   Data   RO        43439    .constdata          app_plane.o
-    0x08042d38   0x08042d38   0x0000000c   Data   RO        43505    .constdata          app_ski.o
-    0x08042d44   0x08042d44   0x00000018   Data   RO        43578    .constdata          app_pool.o
-    0x08042d5c   0x08042d5c   0x0000000c   Data   RO        43579    .constdata          app_pool.o
-    0x08042d68   0x08042d68   0x00000006   Data   RO        43660    .constdata          app_subway.o
-    0x08042d6e   0x08042d6e   0x00000002   PAD
-    0x08042d70   0x08042d70   0x0000000c   Data   RO        43661    .constdata          app_subway.o
-    0x08042d7c   0x08042d7c   0x0000000c   Data   RO        43727    .constdata          app_sniper.o
-    0x08042d88   0x08042d88   0x00000078   Data   RO        43795    .constdata          app_help.o
-    0x08042e00   0x08042e00   0x0000000c   Data   RO        43796    .constdata          app_help.o
-    0x08042e0c   0x08042e0c   0x0000000c   Data   RO        43847    .constdata          app_clock.o
-    0x08042e18   0x08042e18   0x0000000c   Data   RO        43914    .constdata          app_compass.o
-    0x08042e24   0x08042e24   0x00000010   Data   RO        43915    .constdata          app_compass.o
-    0x08042e34   0x08042e34   0x0000000c   Data   RO        43967    .constdata          app_radar.o
-    0x08042e40   0x08042e40   0x0000000c   Data   RO        44008    .constdata          app_snake.o
-    0x08042e4c   0x08042e4c   0x0000000c   Data   RO        44068    .constdata          app_temp.o
-    0x08042e58   0x08042e58   0x0000000c   Data   RO        44147    .constdata          sys_notify.o
-    0x08042e64   0x08042e64   0x0000000c   Data   RO        44148    .constdata          sys_notify.o
-    0x08042e70   0x08042e70   0x0000001c   Data   RO        44149    .constdata          sys_notify.o
-    0x08042e8c   0x08042e8c   0x00000034   Data   RO        44150    .constdata          sys_notify.o
-    0x08042ec0   0x08042ec0   0x0000001c   Data   RO        44151    .constdata          sys_notify.o
-    0x08042edc   0x08042edc   0x00000028   Data   RO        44152    .constdata          sys_notify.o
-    0x08042f04   0x08042f04   0x00000020   Data   RO        44153    .constdata          sys_notify.o
-    0x08042f24   0x08042f24   0x00000023   Data   RO          280    .conststring        freertos.o
-    0x08042f47   0x08042f47   0x00000001   PAD
-    0x08042f48   0x08042f48   0x0000004e   Data   RO         9691    .conststring        lv_obj.o
-    0x08042f96   0x08042f96   0x00000002   PAD
-    0x08042f98   0x08042f98   0x0000005a   Data   RO        12260    .conststring        lv_refr.o
-    0x08042ff2   0x08042ff2   0x00000002   PAD
-    0x08042ff4   0x08042ff4   0x00000041   Data   RO        13526    .conststring        lv_draw_label.o
-    0x08043035   0x08043035   0x00000003   PAD
-    0x08043038   0x08043038   0x0000005e   Data   RO        15932    .conststring        lv_draw_sw_layer.o
-    0x08043096   0x08043096   0x00000002   PAD
-    0x08043098   0x08043098   0x0000001b   Data   RO        26099    .conststring        lv_calendar.o
-    0x080430b3   0x080430b3   0x00000001   PAD
-    0x080430b4   0x080430b4   0x00000069   Data   RO        26595    .conststring        lv_calendar_header_arrow.o
-    0x0804311d   0x0804311d   0x00000003   PAD
-    0x08043120   0x08043120   0x0000028c   Data   RO        26803    .conststring        lv_calendar_header_dropdown.o
-    0x080433ac   0x080433ac   0x0000009d   Data   RO        28713    .conststring        lv_keyboard.o
-    0x08043449   0x08043449   0x00000003   PAD
-    0x0804344c   0x0804344c   0x0000006c   Data   RO        28714    .conststring        lv_keyboard.o
-    0x080434b8   0x080434b8   0x0000007e   Data   RO        28715    .conststring        lv_keyboard.o
-    0x08043536   0x08043536   0x00000002   PAD
-    0x08043538   0x08043538   0x00000004   Data   RO        28716    .conststring        lv_keyboard.o
-    0x0804353c   0x0804353c   0x00000057   Data   RO        35162    .conststring        lv_hal_indev.o
-    0x08043593   0x08043593   0x00000001   PAD
-    0x08043594   0x08043594   0x00000026   Data   RO        36204    .conststring        lv_log.o
-    0x080435ba   0x080435ba   0x00000002   PAD
-    0x080435bc   0x080435bc   0x00000051   Data   RO        36360    .conststring        lv_mem.o
-    0x0804360d   0x0804360d   0x00000003   PAD
-    0x08043610   0x08043610   0x0000016a   Data   RO        37355    .conststring        lv_tlsf.o
-    0x0804377a   0x0804377a   0x00000002   PAD
-    0x0804377c   0x0804377c   0x00000025   Data   RO        38465    .conststring        lv_btnmatrix.o
-    0x080437a1   0x080437a1   0x00000003   PAD
-    0x080437a4   0x080437a4   0x0000000d   Data   RO        41168    .conststring        app_info.o
-    0x080437b1   0x080437b1   0x00000003   PAD
-    0x080437b4   0x080437b4   0x0000000a   Data   RO        41596    .conststring        app_breakout.o
-    0x080437be   0x080437be   0x00000002   PAD
-    0x080437c0   0x080437c0   0x00000005   Data   RO        41849    .conststring        app_2048.o
-    0x080437c5   0x080437c5   0x00000003   PAD
-    0x080437c8   0x080437c8   0x00000010   Data   RO        42114    .conststring        app_puzzle.o
-    0x080437d8   0x080437d8   0x0000000a   Data   RO        42191    .conststring        app_gomoku.o
-    0x080437e2   0x080437e2   0x00000002   PAD
-    0x080437e4   0x080437e4   0x0000000a   Data   RO        42458    .conststring        app_beans.o
-    0x080437ee   0x080437ee   0x00000002   PAD
-    0x080437f0   0x080437f0   0x00000010   Data   RO        42541    .conststring        app_tetris.o
-    0x08043800   0x08043800   0x00000007   Data   RO        42637    .conststring        app_mines.o
-    0x08043807   0x08043807   0x00000001   PAD
-    0x08043808   0x08043808   0x00000010   Data   RO        42970    .conststring        app_dino.o
-    0x08043818   0x08043818   0x0000000a   Data   RO        43055    .conststring        app_mole.o
-    0x08043822   0x08043822   0x00000002   PAD
-    0x08043824   0x08043824   0x0000000d   Data   RO        43124    .conststring        app_fish.o
-    0x08043831   0x08043831   0x00000003   PAD
-    0x08043834   0x08043834   0x0000000d   Data   RO        43208    .conststring        app_tank.o
-    0x08043841   0x08043841   0x00000003   PAD
-    0x08043844   0x08043844   0x0000000d   Data   RO        43288    .conststring        app_gold.o
-    0x08043851   0x08043851   0x00000003   PAD
-    0x08043854   0x08043854   0x0000000a   Data   RO        43367    .conststring        app_fruit.o
-    0x0804385e   0x0804385e   0x00000002   PAD
-    0x08043860   0x08043860   0x0000000d   Data   RO        43440    .conststring        app_plane.o
-    0x0804386d   0x0804386d   0x00000003   PAD
-    0x08043870   0x08043870   0x0000000d   Data   RO        43506    .conststring        app_ski.o
-    0x0804387d   0x0804387d   0x00000003   PAD
-    0x08043880   0x08043880   0x00000007   Data   RO        43580    .conststring        app_pool.o
-    0x08043887   0x08043887   0x00000001   PAD
-    0x08043888   0x08043888   0x0000000d   Data   RO        43662    .conststring        app_subway.o
-    0x08043895   0x08043895   0x00000003   PAD
-    0x08043898   0x08043898   0x0000000d   Data   RO        43728    .conststring        app_sniper.o
-    0x080438a5   0x080438a5   0x00000003   PAD
-    0x080438a8   0x080438a8   0x000006ea   Data   RO        43797    .conststring        app_help.o
-    0x08043f92   0x08043f92   0x00000002   PAD
-    0x08043f94   0x08043f94   0x00000007   Data   RO        43798    .conststring        app_help.o
-    0x08043f9b   0x08043f9b   0x00000001   PAD
-    0x08043f9c   0x08043f9c   0x00000007   Data   RO        43848    .conststring        app_clock.o
-    0x08043fa3   0x08043fa3   0x00000001   PAD
-    0x08043fa4   0x08043fa4   0x00000010   Data   RO        43917    .conststring        app_compass.o
-    0x08043fb4   0x08043fb4   0x00000007   Data   RO        43968    .conststring        app_radar.o
-    0x08043fbb   0x08043fbb   0x00000001   PAD
-    0x08043fbc   0x08043fbc   0x0000000a   Data   RO        44009    .conststring        app_snake.o
-    0x08043fc6   0x08043fc6   0x00000002   PAD
-    0x08043fc8   0x08043fc8   0x0000000a   Data   RO        44069    .conststring        app_temp.o
-    0x08043fd2   0x08043fd2   0x00000002   PAD
-    0x08043fd4   0x08043fd4   0x00000040   Data   RO        44377    Region$$Table       anon$$obj.o
+    0x08037cac   0x08037cac   0x0000e756   Data   RO         7705    .constdata          lv_font_cn_14.o
+    0x08046402   0x08046402   0x00000002   PAD
+    0x08046404   0x08046404   0x00000c40   Data   RO         7706    .constdata          lv_font_cn_14.o
+    0x08047044   0x08047044   0x00000250   Data   RO         7707    .constdata          lv_font_cn_14.o
+    0x08047294   0x08047294   0x00000028   Data   RO         7708    .constdata          lv_font_cn_14.o
+    0x080472bc   0x080472bc   0x00000018   Data   RO         7709    .constdata          lv_font_cn_14.o
+    0x080472d4   0x080472d4   0x0000001c   Data   RO         7710    .constdata          lv_font_cn_14.o
+    0x080472f0   0x080472f0   0x00000123   Data   RO         8404    .constdata          lv_disp.o
+    0x08047413   0x08047413   0x0000016e   Data   RO         8714    .constdata          lv_event.o
+    0x08047581   0x08047581   0x00000021   Data   RO         9022    .constdata          lv_group.o
+    0x080475a2   0x080475a2   0x0000003d   Data   RO         9342    .constdata          lv_indev.o
+    0x080475df   0x080475df   0x00000001   PAD
+    0x080475e0   0x080475e0   0x0000003e   Data   RO         9690    .constdata          lv_obj.o
+    0x0804761e   0x0804761e   0x00000018   Data   RO        10189    .constdata          lv_obj_class.o
+    0x08047636   0x08047636   0x00000002   PAD
+    0x08047638   0x08047638   0x0000001b   Data   RO        10566    .constdata          lv_obj_pos.o
+    0x08047653   0x08047653   0x00000030   Data   RO        11291    .constdata          lv_obj_style.o
+    0x08047683   0x08047683   0x0000002d   Data   RO        12073    .constdata          lv_obj_tree.o
+    0x080476b0   0x080476b0   0x00000076   Data   RO        12259    .constdata          lv_refr.o
+    0x08047726   0x08047726   0x00000030   Data   RO        13355    .constdata          lv_draw_img.o
+    0x08047756   0x08047756   0x0000000e   Data   RO        13525    .constdata          lv_draw_label.o
+    0x08047764   0x08047764   0x00000015   Data   RO        13650    .constdata          lv_draw_layer.o
+    0x08047779   0x08047779   0x00000050   Data   RO        13911    .constdata          lv_draw_mask.o
+    0x080477c9   0x080477c9   0x00000012   Data   RO        14176    .constdata          lv_draw_transform.o
+    0x080477db   0x080477db   0x00000029   Data   RO        14324    .constdata          lv_img_cache.o
+    0x08047804   0x08047804   0x000000c3   Data   RO        14401    .constdata          lv_img_decoder.o
+    0x080478c7   0x080478c7   0x00000019   Data   RO        15518    .constdata          lv_draw_sw_blend.o
+    0x080478e0   0x080478e0   0x0000004f   Data   RO        15716    .constdata          lv_draw_sw_gradient.o
+    0x0804792f   0x0804792f   0x00000018   Data   RO        15931    .constdata          lv_draw_sw_layer.o
+    0x08047947   0x08047947   0x0000014d   Data   RO        16043    .constdata          lv_draw_sw_letter.o
+    0x08047a94   0x08047a94   0x00000021   Data   RO        16154    .constdata          lv_draw_sw_line.o
+    0x08047ab5   0x08047ab5   0x00000003   PAD
+    0x08047ab8   0x08047ab8   0x00000008   Data   RO        16251    .constdata          lv_draw_sw_polygon.o
+    0x08047ac0   0x08047ac0   0x0000000c   Data   RO        16283    .constdata          lv_draw_sw_rect.o
+    0x08047acc   0x08047acc   0x0000001e   Data   RO        16689    .constdata          lv_flex.o
+    0x08047aea   0x08047aea   0x00000016   Data   RO        24664    .constdata          lv_theme_default.o
+    0x08047b00   0x08047b00   0x0000003e   Data   RO        26098    .constdata          lv_calendar.o
+    0x08047b3e   0x08047b3e   0x00000002   PAD
+    0x08047b40   0x08047b40   0x0000001c   Data   RO        26594    .constdata          lv_calendar_header_arrow.o
+    0x08047b5c   0x08047b5c   0x0000001c   Data   RO        26802    .constdata          lv_calendar_header_dropdown.o
+    0x08047b78   0x08047b78   0x00000236   Data   RO        26987    .constdata          lv_chart.o
+    0x08047dae   0x08047dae   0x00000002   PAD
+    0x08047db0   0x08047db0   0x0000001c   Data   RO        27689    .constdata          lv_colorwheel.o
+    0x08047dcc   0x08047dcc   0x0000001c   Data   RO        28704    .constdata          lv_keyboard.o
+    0x08047de8   0x08047de8   0x000000b0   Data   RO        28705    .constdata          lv_keyboard.o
+    0x08047e98   0x08047e98   0x00000050   Data   RO        28706    .constdata          lv_keyboard.o
+    0x08047ee8   0x08047ee8   0x000000b0   Data   RO        28707    .constdata          lv_keyboard.o
+    0x08047f98   0x08047f98   0x00000050   Data   RO        28708    .constdata          lv_keyboard.o
+    0x08047fe8   0x08047fe8   0x000000b0   Data   RO        28709    .constdata          lv_keyboard.o
+    0x08048098   0x08048098   0x00000050   Data   RO        28710    .constdata          lv_keyboard.o
+    0x080480e8   0x080480e8   0x00000054   Data   RO        28711    .constdata          lv_keyboard.o
+    0x0804813c   0x0804813c   0x00000022   Data   RO        28712    .constdata          lv_keyboard.o
+    0x0804815e   0x0804815e   0x00000002   PAD
+    0x08048160   0x08048160   0x0000001c   Data   RO        28965    .constdata          lv_led.o
+    0x0804817c   0x0804817c   0x00000054   Data   RO        29436    .constdata          lv_list.o
+    0x080481d0   0x080481d0   0x00000121   Data   RO        29673    .constdata          lv_menu.o
+    0x080482f1   0x080482f1   0x00000003   PAD
+    0x080482f4   0x080482f4   0x0000008a   Data   RO        30014    .constdata          lv_meter.o
+    0x0804837e   0x0804837e   0x00000002   PAD
+    0x08048380   0x08048380   0x00000065   Data   RO        30542    .constdata          lv_msgbox.o
+    0x080483e5   0x080483e5   0x00000003   PAD
+    0x080483e8   0x080483e8   0x0000001c   Data   RO        31659    .constdata          lv_spinbox.o
+    0x08048404   0x08048404   0x0000001c   Data   RO        32165    .constdata          lv_spinner.o
+    0x08048420   0x08048420   0x0000001c   Data   RO        32612    .constdata          lv_tabview.o
+    0x0804843c   0x0804843c   0x0000004b   Data   RO        33097    .constdata          lv_tileview.o
+    0x08048487   0x08048487   0x00000001   PAD
+    0x08048488   0x08048488   0x0000001c   Data   RO        33308    .constdata          lv_win.o
+    0x080484a4   0x080484a4   0x00000047   Data   RO        33756    .constdata          lv_font.o
+    0x080484eb   0x080484eb   0x0000001b   Data   RO        34238    .constdata          lv_font_fmt_txt.o
+    0x08048506   0x08048506   0x00000040   Data   RO        34809    .constdata          lv_hal_disp.o
+    0x08048546   0x08048546   0x00000049   Data   RO        35161    .constdata          lv_hal_indev.o
+    0x0804858f   0x0804858f   0x0000000e   Data   RO        35414    .constdata          lv_anim.o
+    0x0804859d   0x0804859d   0x00000001   PAD
+    0x0804859e   0x0804859e   0x000001b2   Data   RO        35854    .constdata          lv_color.o
+    0x08048750   0x08048750   0x00000030   Data   RO        35946    .constdata          lv_fs.o
+    0x08048780   0x08048780   0x000000b6   Data   RO        36299    .constdata          lv_math.o
+    0x08048836   0x08048836   0x0000003d   Data   RO        36359    .constdata          lv_mem.o
+    0x08048873   0x08048873   0x00000001   PAD
+    0x08048874   0x08048874   0x000000cb   Data   RO        36522    .constdata          lv_style.o
+    0x0804893f   0x0804893f   0x00000021   Data   RO        37219    .constdata          lv_timer.o
+    0x08048960   0x08048960   0x0000017e   Data   RO        37354    .constdata          lv_tlsf.o
+    0x08048ade   0x08048ade   0x00000026   Data   RO        37591    .constdata          lv_txt.o
+    0x08048b04   0x08048b04   0x0000005e   Data   RO        37825    .constdata          lv_arc.o
+    0x08048b62   0x08048b62   0x00000002   PAD
+    0x08048b64   0x08048b64   0x0000001c   Data   RO        38198    .constdata          lv_bar.o
+    0x08048b80   0x08048b80   0x0000001c   Data   RO        38406    .constdata          lv_btn.o
+    0x08048b9c   0x08048b9c   0x0000003c   Data   RO        38464    .constdata          lv_btnmatrix.o
+    0x08048bd8   0x08048bd8   0x0000001c   Data   RO        38933    .constdata          lv_checkbox.o
+    0x08048bf4   0x08048bf4   0x000000a3   Data   RO        39128    .constdata          lv_dropdown.o
+    0x08048c97   0x08048c97   0x00000001   PAD
+    0x08048c98   0x08048c98   0x00000034   Data   RO        39435    .constdata          lv_img.o
+    0x08048ccc   0x08048ccc   0x000000b5   Data   RO        39668    .constdata          lv_label.o
+    0x08048d81   0x08048d81   0x00000003   PAD
+    0x08048d84   0x08048d84   0x0000001c   Data   RO        39914    .constdata          lv_line.o
+    0x08048da0   0x08048da0   0x00000069   Data   RO        39989    .constdata          lv_roller.o
+    0x08048e09   0x08048e09   0x00000003   PAD
+    0x08048e0c   0x08048e0c   0x0000001c   Data   RO        40185    .constdata          lv_slider.o
+    0x08048e28   0x08048e28   0x0000001c   Data   RO        40330    .constdata          lv_switch.o
+    0x08048e44   0x08048e44   0x00000128   Data   RO        40491    .constdata          lv_table.o
+    0x08048f6c   0x08048f6c   0x000000e5   Data   RO        40803    .constdata          lv_textarea.o
+    0x08049051   0x08049051   0x00000003   PAD
+    0x08049054   0x08049054   0x0000000c   Data   RO        41167    .constdata          app_info.o
+    0x08049060   0x08049060   0x0000000c   Data   RO        41594    .constdata          app_breakout.o
+    0x0804906c   0x0804906c   0x00000004   Data   RO        41595    .constdata          app_breakout.o
+    0x08049070   0x08049070   0x0000000c   Data   RO        41848    .constdata          app_2048.o
+    0x0804907c   0x0804907c   0x0000000c   Data   RO        42113    .constdata          app_puzzle.o
+    0x08049088   0x08049088   0x0000000c   Data   RO        42189    .constdata          app_gomoku.o
+    0x08049094   0x08049094   0x00000008   Data   RO        42190    .constdata          app_gomoku.o
+    0x0804909c   0x0804909c   0x00000004   Data   RO        42456    .constdata          app_beans.o
+    0x080490a0   0x080490a0   0x0000000c   Data   RO        42457    .constdata          app_beans.o
+    0x080490ac   0x080490ac   0x00000040   Data   RO        42539    .constdata          app_tetris.o
+    0x080490ec   0x080490ec   0x0000000c   Data   RO        42540    .constdata          app_tetris.o
+    0x080490f8   0x080490f8   0x00000024   Data   RO        42635    .constdata          app_mines.o
+    0x0804911c   0x0804911c   0x0000000c   Data   RO        42636    .constdata          app_mines.o
+    0x08049128   0x08049128   0x0000000c   Data   RO        42969    .constdata          app_dino.o
+    0x08049134   0x08049134   0x0000000a   Data   RO        43053    .constdata          app_mole.o
+    0x0804913e   0x0804913e   0x00000002   PAD
+    0x08049140   0x08049140   0x0000000c   Data   RO        43054    .constdata          app_mole.o
+    0x0804914c   0x0804914c   0x0000000c   Data   RO        43123    .constdata          app_fish.o
+    0x08049158   0x08049158   0x0000000c   Data   RO        43207    .constdata          app_tank.o
+    0x08049164   0x08049164   0x0000000c   Data   RO        43287    .constdata          app_gold.o
+    0x08049170   0x08049170   0x0000000c   Data   RO        43366    .constdata          app_fruit.o
+    0x0804917c   0x0804917c   0x0000000c   Data   RO        43439    .constdata          app_plane.o
+    0x08049188   0x08049188   0x0000000c   Data   RO        43505    .constdata          app_ski.o
+    0x08049194   0x08049194   0x00000018   Data   RO        43578    .constdata          app_pool.o
+    0x080491ac   0x080491ac   0x0000000c   Data   RO        43579    .constdata          app_pool.o
+    0x080491b8   0x080491b8   0x00000006   Data   RO        43660    .constdata          app_subway.o
+    0x080491be   0x080491be   0x00000002   PAD
+    0x080491c0   0x080491c0   0x0000000c   Data   RO        43661    .constdata          app_subway.o
+    0x080491cc   0x080491cc   0x0000000c   Data   RO        43727    .constdata          app_sniper.o
+    0x080491d8   0x080491d8   0x00000078   Data   RO        43795    .constdata          app_help.o
+    0x08049250   0x08049250   0x0000000c   Data   RO        43796    .constdata          app_help.o
+    0x0804925c   0x0804925c   0x0000000c   Data   RO        43847    .constdata          app_clock.o
+    0x08049268   0x08049268   0x0000000c   Data   RO        43914    .constdata          app_compass.o
+    0x08049274   0x08049274   0x00000010   Data   RO        43915    .constdata          app_compass.o
+    0x08049284   0x08049284   0x0000000c   Data   RO        43967    .constdata          app_radar.o
+    0x08049290   0x08049290   0x0000000c   Data   RO        44008    .constdata          app_snake.o
+    0x0804929c   0x0804929c   0x0000000c   Data   RO        44068    .constdata          app_temp.o
+    0x080492a8   0x080492a8   0x0000000c   Data   RO        44147    .constdata          sys_notify.o
+    0x080492b4   0x080492b4   0x0000000c   Data   RO        44148    .constdata          sys_notify.o
+    0x080492c0   0x080492c0   0x0000001c   Data   RO        44149    .constdata          sys_notify.o
+    0x080492dc   0x080492dc   0x00000034   Data   RO        44150    .constdata          sys_notify.o
+    0x08049310   0x08049310   0x0000001c   Data   RO        44151    .constdata          sys_notify.o
+    0x0804932c   0x0804932c   0x00000028   Data   RO        44152    .constdata          sys_notify.o
+    0x08049354   0x08049354   0x00000020   Data   RO        44153    .constdata          sys_notify.o
+    0x08049374   0x08049374   0x00000023   Data   RO          280    .conststring        freertos.o
+    0x08049397   0x08049397   0x00000001   PAD
+    0x08049398   0x08049398   0x0000004e   Data   RO         9691    .conststring        lv_obj.o
+    0x080493e6   0x080493e6   0x00000002   PAD
+    0x080493e8   0x080493e8   0x0000005a   Data   RO        12260    .conststring        lv_refr.o
+    0x08049442   0x08049442   0x00000002   PAD
+    0x08049444   0x08049444   0x00000041   Data   RO        13526    .conststring        lv_draw_label.o
+    0x08049485   0x08049485   0x00000003   PAD
+    0x08049488   0x08049488   0x0000005e   Data   RO        15932    .conststring        lv_draw_sw_layer.o
+    0x080494e6   0x080494e6   0x00000002   PAD
+    0x080494e8   0x080494e8   0x0000001b   Data   RO        26099    .conststring        lv_calendar.o
+    0x08049503   0x08049503   0x00000001   PAD
+    0x08049504   0x08049504   0x00000069   Data   RO        26595    .conststring        lv_calendar_header_arrow.o
+    0x0804956d   0x0804956d   0x00000003   PAD
+    0x08049570   0x08049570   0x0000028c   Data   RO        26803    .conststring        lv_calendar_header_dropdown.o
+    0x080497fc   0x080497fc   0x0000009d   Data   RO        28713    .conststring        lv_keyboard.o
+    0x08049899   0x08049899   0x00000003   PAD
+    0x0804989c   0x0804989c   0x0000006c   Data   RO        28714    .conststring        lv_keyboard.o
+    0x08049908   0x08049908   0x0000007e   Data   RO        28715    .conststring        lv_keyboard.o
+    0x08049986   0x08049986   0x00000002   PAD
+    0x08049988   0x08049988   0x00000004   Data   RO        28716    .conststring        lv_keyboard.o
+    0x0804998c   0x0804998c   0x00000057   Data   RO        35162    .conststring        lv_hal_indev.o
+    0x080499e3   0x080499e3   0x00000001   PAD
+    0x080499e4   0x080499e4   0x00000026   Data   RO        36204    .conststring        lv_log.o
+    0x08049a0a   0x08049a0a   0x00000002   PAD
+    0x08049a0c   0x08049a0c   0x00000051   Data   RO        36360    .conststring        lv_mem.o
+    0x08049a5d   0x08049a5d   0x00000003   PAD
+    0x08049a60   0x08049a60   0x0000016a   Data   RO        37355    .conststring        lv_tlsf.o
+    0x08049bca   0x08049bca   0x00000002   PAD
+    0x08049bcc   0x08049bcc   0x00000025   Data   RO        38465    .conststring        lv_btnmatrix.o
+    0x08049bf1   0x08049bf1   0x00000003   PAD
+    0x08049bf4   0x08049bf4   0x0000000d   Data   RO        41168    .conststring        app_info.o
+    0x08049c01   0x08049c01   0x00000003   PAD
+    0x08049c04   0x08049c04   0x0000000a   Data   RO        41596    .conststring        app_breakout.o
+    0x08049c0e   0x08049c0e   0x00000002   PAD
+    0x08049c10   0x08049c10   0x00000005   Data   RO        41849    .conststring        app_2048.o
+    0x08049c15   0x08049c15   0x00000003   PAD
+    0x08049c18   0x08049c18   0x00000010   Data   RO        42114    .conststring        app_puzzle.o
+    0x08049c28   0x08049c28   0x0000000a   Data   RO        42191    .conststring        app_gomoku.o
+    0x08049c32   0x08049c32   0x00000002   PAD
+    0x08049c34   0x08049c34   0x0000000a   Data   RO        42458    .conststring        app_beans.o
+    0x08049c3e   0x08049c3e   0x00000002   PAD
+    0x08049c40   0x08049c40   0x00000010   Data   RO        42541    .conststring        app_tetris.o
+    0x08049c50   0x08049c50   0x00000007   Data   RO        42637    .conststring        app_mines.o
+    0x08049c57   0x08049c57   0x00000001   PAD
+    0x08049c58   0x08049c58   0x00000010   Data   RO        42970    .conststring        app_dino.o
+    0x08049c68   0x08049c68   0x0000000a   Data   RO        43055    .conststring        app_mole.o
+    0x08049c72   0x08049c72   0x00000002   PAD
+    0x08049c74   0x08049c74   0x0000000d   Data   RO        43124    .conststring        app_fish.o
+    0x08049c81   0x08049c81   0x00000003   PAD
+    0x08049c84   0x08049c84   0x0000000d   Data   RO        43208    .conststring        app_tank.o
+    0x08049c91   0x08049c91   0x00000003   PAD
+    0x08049c94   0x08049c94   0x0000000d   Data   RO        43288    .conststring        app_gold.o
+    0x08049ca1   0x08049ca1   0x00000003   PAD
+    0x08049ca4   0x08049ca4   0x0000000a   Data   RO        43367    .conststring        app_fruit.o
+    0x08049cae   0x08049cae   0x00000002   PAD
+    0x08049cb0   0x08049cb0   0x0000000d   Data   RO        43440    .conststring        app_plane.o
+    0x08049cbd   0x08049cbd   0x00000003   PAD
+    0x08049cc0   0x08049cc0   0x0000000d   Data   RO        43506    .conststring        app_ski.o
+    0x08049ccd   0x08049ccd   0x00000003   PAD
+    0x08049cd0   0x08049cd0   0x00000007   Data   RO        43580    .conststring        app_pool.o
+    0x08049cd7   0x08049cd7   0x00000001   PAD
+    0x08049cd8   0x08049cd8   0x0000000d   Data   RO        43662    .conststring        app_subway.o
+    0x08049ce5   0x08049ce5   0x00000003   PAD
+    0x08049ce8   0x08049ce8   0x0000000d   Data   RO        43728    .conststring        app_sniper.o
+    0x08049cf5   0x08049cf5   0x00000003   PAD
+    0x08049cf8   0x08049cf8   0x000006ea   Data   RO        43797    .conststring        app_help.o
+    0x0804a3e2   0x0804a3e2   0x00000002   PAD
+    0x0804a3e4   0x0804a3e4   0x00000007   Data   RO        43798    .conststring        app_help.o
+    0x0804a3eb   0x0804a3eb   0x00000001   PAD
+    0x0804a3ec   0x0804a3ec   0x00000007   Data   RO        43848    .conststring        app_clock.o
+    0x0804a3f3   0x0804a3f3   0x00000001   PAD
+    0x0804a3f4   0x0804a3f4   0x00000010   Data   RO        43917    .conststring        app_compass.o
+    0x0804a404   0x0804a404   0x00000007   Data   RO        43968    .conststring        app_radar.o
+    0x0804a40b   0x0804a40b   0x00000001   PAD
+    0x0804a40c   0x0804a40c   0x0000000a   Data   RO        44009    .conststring        app_snake.o
+    0x0804a416   0x0804a416   0x00000002   PAD
+    0x0804a418   0x0804a418   0x0000000a   Data   RO        44069    .conststring        app_temp.o
+    0x0804a422   0x0804a422   0x00000002   PAD
+    0x0804a424   0x0804a424   0x00000040   Data   RO        44377    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08044014, Size: 0x0001904c, Max: 0x0001c000, ABSOLUTE, COMPRESSED[0x00000098])
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x0804a464, Size: 0x0001904c, Max: 0x0001c000, ABSOLUTE, COMPRESSED[0x00000098])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -18837,7 +18837,7 @@ Memory Map of the image
     0x2001903c        -       0x00000010   Zero   RW        44209    .bss                sys_sensor.o
 
 
-    Execution Region RW_IRAM2 (Exec base: 0x2001c000, Load base: 0x080440ac, Size: 0x00001048, Max: 0x00004000, ABSOLUTE, COMPRESSED[0x000000c0])
+    Execution Region RW_IRAM2 (Exec base: 0x2001c000, Load base: 0x0804a4fc, Size: 0x00001048, Max: 0x00004000, ABSOLUTE, COMPRESSED[0x000000c4])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -19002,7 +19002,7 @@ Image component sizes
         14          0          0          0          0        540   lv_extra.o
       3110        308         30         12          0      81786   lv_flex.o
        632        332         71          0          0       7615   lv_font.o
-         0          0      37361          8          0       2256   lv_font_cn_14.o
+         0          0      63042          8          0       2256   lv_font_cn_14.o
       1590        164         27         16          0      14981   lv_font_fmt_txt.o
       1336        406         48          0          0      10628   lv_fs.o
          0          0          0         28        508       1662   lv_gc.o
@@ -19085,9 +19085,9 @@ Image component sizes
        972         80          0         20        280      32455   timers.o
 
     ----------------------------------------------------------------------
-    225916      20890      51376       1640     105000    5370978   Object Totals
+    225916      20890      77056       1640     105000    5370978   Object Totals
          0          0         64          0          0          0   (incl. Generated)
-       254          0        122         14          7          0   (incl. Padding)
+       254          0        121         14          7          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -19140,15 +19140,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-    227172      21008      51376       1644     105000    5205518   Grand Totals
-    227172      21008      51376        344     105000    5205518   ELF Image Totals (compressed)
-    227172      21008      51376        344          0          0   ROM Totals
+    227172      21008      77056       1644     105000    5205518   Grand Totals
+    227172      21008      77056        348     105000    5205518   ELF Image Totals (compressed)
+    227172      21008      77056        348          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               278548 ( 272.02kB)
+    Total RO  Size (Code + RO Data)               304228 ( 297.10kB)
     Total RW  Size (RW Data + ZI Data)            106644 ( 104.14kB)
-    Total ROM Size (Code + RO Data + RW Data)     278892 ( 272.36kB)
+    Total ROM Size (Code + RO Data + RW Data)     304576 ( 297.44kB)
 
 ==============================================================================
 
