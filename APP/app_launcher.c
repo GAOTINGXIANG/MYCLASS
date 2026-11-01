@@ -189,7 +189,7 @@ static void menu_confirm(void)
 /* ---------------- 输入扫描 ---------------- */
 static void launcher_timer_cb(lv_timer_t *t)
 {
-    uint8_t back, back_edge;
+    uint8_t back, back_edge, edge;
     (void)t;
 
     /* KEY1 返回：电平沿检测（不被 app 的 keys_scan 抢走） */
@@ -205,6 +205,9 @@ static void launcher_timer_cb(lv_timer_t *t)
         menu_open(ST_MAIN);
         return;
     }
+
+    /* 按键按下沿（KEY1 已单独处理，不参与菜单操作） */
+    edge = keys_scan();
 
     /* 编码器：累计计数换档 */
     {
@@ -231,6 +234,10 @@ static void launcher_timer_cb(lv_timer_t *t)
         }
     }
 
+    /* KEY3 = 上一个，KEY4 = 下一个 */
+    if ((edge & KEY_MASK(KEY_ID_3)) != 0U) move--;
+    if ((edge & KEY_MASK(KEY_ID_4)) != 0U) move++;
+
     if (move != 0 && s_item_cnt > 0U) {
         int32_t ns = (int32_t)s_sel + move;
         while (ns < 0) ns += s_item_cnt;
@@ -239,8 +246,9 @@ static void launcher_timer_cb(lv_timer_t *t)
         notify_send(NOTIFY_MARQUEE_ONCE);        /* 切换选项：短滴一声 + LED 流水一遍 */
     }
 
-    /* 确认：ENCODER_KEY / JS_KEY 按下沿 */
-    if ((keys_scan() & (KEY_MASK(KEY_ID_JS) | KEY_MASK(KEY_ID_ENC))) != 0U) {
+    /* KEY2 = 确认 */
+    if ((edge & KEY_MASK(KEY_ID_2)) != 0U) {
+        notify_send(NOTIFY_MARQUEE_ONCE);         /* 确认选项：短滴一声 + LED 流水一遍 */
         menu_confirm();
     }
 }
