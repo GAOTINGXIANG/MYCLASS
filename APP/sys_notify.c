@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file sys_notify.c
  * @brief 声光提示服务：命令队列 + 表驱动效果序列执行器。
  *        每个效果是一张步骤表 {操作, 参数, 到下一步的延时ms}，
@@ -35,7 +35,7 @@ typedef struct {
  * MARQUEE_ONCE_TOTAL_MS = 流水灯完整跑一遍（LED1→LED6）的总时间 ms。
  * 调这个值相当于同时调整流水速度：时间越短，每颗灯停留越短、流动越快。
  */
-#define MARQUEE_ONCE_TOTAL_MS   360
+#define MARQUEE_ONCE_TOTAL_MS   120
 #define MARQUEE_ONCE_STEP_MS    (MARQUEE_ONCE_TOTAL_MS / LED_COUNT)
 
 static const fx_step_t fx_beep_short[] = {

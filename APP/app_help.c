@@ -11,11 +11,12 @@
 #include "encoder.h"
 #include "joystick.h"
 
-#define PAGE_N       15
+#define PAGE_N       16
 #define ENC_DETENT   4
+#define QR_TEXT      "https://gitee.com/GAOTINGXIANG/myclass"
 
 static lv_timer_t *s_tm;
-static lv_obj_t   *s_title, *s_body, *s_idx;
+static lv_obj_t   *s_title, *s_body, *s_idx, *s_qr;
 static uint8_t     s_page;
 static int32_t     s_last_cnt;
 static joy_dir_t   s_prev_dir = JOY_DIR_NONE;
@@ -36,6 +37,7 @@ static const char *const PAGE_TITLE[PAGE_N] = {
     "狙击外星",
     "游戏",
     "音效",
+    "关于",
 };
 
 static const char *const PAGE_BODY[PAGE_N] = {
@@ -136,6 +138,8 @@ static const char *const PAGE_BODY[PAGE_N] = {
     "默认开启\n\n"
     "关闭后蜂鸣器静音\n"
     "LED 照常工作",
+
+    "扫码",
 };
 
 static void page_show(uint8_t p)
@@ -144,6 +148,15 @@ static void page_show(uint8_t p)
     lv_label_set_text(s_title, PAGE_TITLE[p]);
     lv_label_set_text(s_body, PAGE_BODY[p]);
     lv_label_set_text_fmt(s_idx, "%u/%u", (unsigned)(p + 1U), (unsigned)PAGE_N);
+
+    /* 末页：正文下沉到底部当二维码图注，显示二维码 */
+    if (p == (PAGE_N - 1U)) {
+        lv_obj_align(s_body, LV_ALIGN_BOTTOM_MID, 0, -36);
+        lv_obj_clear_flag(s_qr, LV_OBJ_FLAG_HIDDEN);
+    } else {
+        lv_obj_align(s_body, LV_ALIGN_CENTER, 0, 8);
+        lv_obj_add_flag(s_qr, LV_OBJ_FLAG_HIDDEN);
+    }
 }
 
 static void help_cb(lv_timer_t *t)
@@ -208,6 +221,15 @@ static void app_help_enter(void)
     s_idx = lv_label_create(scr);
     lv_obj_set_style_text_color(s_idx, lv_palette_main(LV_PALETTE_GREY), 0);
     lv_obj_align(s_idx, LV_ALIGN_BOTTOM_MID, 0, -20);
+
+    /* 末页二维码：黑模块白底，白底 pad 充当静区 */
+    s_qr = lv_qrcode_create(scr, 100, lv_color_black(), lv_color_white());
+    lv_qrcode_update(s_qr, QR_TEXT, (uint32_t)(sizeof(QR_TEXT) - 1U));
+    lv_obj_set_style_bg_color(s_qr, lv_color_white(), 0);
+    lv_obj_set_style_bg_opa(s_qr, LV_OPA_COVER, 0);
+    lv_obj_set_style_pad_all(s_qr, 8, 0);
+    lv_obj_align(s_qr, LV_ALIGN_CENTER, 0, 4);
+    lv_obj_add_flag(s_qr, LV_OBJ_FLAG_HIDDEN);
 
     s_last_cnt = encoder_count();
     s_prev_dir = joy_get_dir();

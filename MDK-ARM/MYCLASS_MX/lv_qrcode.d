@@ -131,3 +131,4 @@ myclass_mx\lv_qrcode.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../../src/ext
 myclass_mx\lv_qrcode.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../../src/extra/widgets/led/lv_led.h
 myclass_mx\lv_qrcode.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../../src/extra/widgets/imgbtn/lv_imgbtn.h
 myclass_mx\lv_qrcode.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\../../../../src/extra/widgets/span/lv_span.h
+myclass_mx\lv_qrcode.o: ..\lvgl-8.3.11\src\extra\libs\qrcode\qrcodegen.h
